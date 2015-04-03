@@ -1108,3 +1108,2609 @@ NameError (uninitialized constant Users):
   Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.3ms)
   Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.0ms)
   Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (47.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-03 11:55:30 -0400
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.0) lib/active_record/migration.rb:393:in `check_pending!'
+  activerecord (4.2.0) lib/active_record/migration.rb:374:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:18:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /home/csvm/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/csvm/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/csvm/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (3.9ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (6.4ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (45.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-03 11:55:32 -0400
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.0) lib/active_record/migration.rb:393:in `check_pending!'
+  activerecord (4.2.0) lib/active_record/migration.rb:374:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:18:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /home/csvm/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/csvm/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/csvm/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (3.3ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (6.9ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (5.8ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (2.9ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (63.0ms)
+  [1m[36m (6.6ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.5ms)[0m  select sqlite_version(*)
+  [1m[36m (3.9ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to DeviseCreateUsers (20150402191216)
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+DEPRECATION WARNING: `#timestamp` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in change at /home/csvm/TBD-App/db/migrate/20150402191216_devise_create_users.rb:34)
+  [1m[35m (0.6ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.3ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (0.3ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150402191216"]]
+  [1m[36m (5.9ms)[0m  [1mcommit transaction[0m
+Migrating to AddColumnsToUsers (20150402191338)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "users" ADD "provider" varchar[0m
+  [1m[35m (0.8ms)[0m  ALTER TABLE "users" ADD "uid" varchar
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "users" ADD "name" varchar[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "users" ADD "birthday" date
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "users" ADD "driver" varchar[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150402191338"]]
+  [1m[36m (17.5ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-03 11:55:53 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (6.7ms)
+Completed 200 OK in 180ms (Views: 179.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-2a1d517c9b0418e62735f9a4a6eb6998.css?body=1" for 127.0.0.1 at 2015-04-03 11:55:54 -0400
+
+
+Started GET "/assets/users-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-04-03 11:55:54 -0400
+
+
+Started GET "/assets/application-d727d9d08688c7bf93b956a43dd9ec02.css?body=1" for 127.0.0.1 at 2015-04-03 11:55:54 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-03 11:55:54 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-03 11:55:54 -0400
+
+
+Started GET "/assets/application-110154e6a06efeee4a01b13a39295ae0.js?body=1" for 127.0.0.1 at 2015-04-03 11:55:54 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 11:55:54 -0400
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 11:55:54 -0400
+
+
+Started GET "/users/login" for 127.0.0.1 at 2015-04-03 11:55:57 -0400
+Processing by UsersController#login as HTML
+  Rendered users/login.html.haml within layouts/application (42.5ms)
+Completed 200 OK in 121ms (Views: 121.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-2a1d517c9b0418e62735f9a4a6eb6998.css?body=1" for 127.0.0.1 at 2015-04-03 11:55:57 -0400
+
+
+Started GET "/assets/users-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-04-03 11:55:57 -0400
+
+
+Started GET "/assets/application-d727d9d08688c7bf93b956a43dd9ec02.css?body=1" for 127.0.0.1 at 2015-04-03 11:55:57 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 11:55:57 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-03 11:55:57 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-03 11:55:57 -0400
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 11:55:57 -0400
+
+
+Started GET "/assets/application-110154e6a06efeee4a01b13a39295ae0.js?body=1" for 127.0.0.1 at 2015-04-03 11:55:57 -0400
+
+
+Started GET "/users/register" for 127.0.0.1 at 2015-04-03 11:56:08 -0400
+Processing by UsersController#register as HTML
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (2.7ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'ttester@colgate.edu' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("name", "email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Tony Tester"], ["email", "ttester@colgate.edu"], ["encrypted_password", "$2a$10$e.omZB2GmGog2SXJOX19ze/OiyJivd8OxBOwyhJUPFyA4WJTHymam"], ["created_at", "2015-04-03 15:56:08.873540"], ["updated_at", "2015-04-03 15:56:08.873540"]]
+  [1m[36m (4.3ms)[0m  [1mcommit transaction[0m
+  Rendered users/register.html.haml within layouts/application (8.5ms)
+Completed 200 OK in 313ms (Views: 103.6ms | ActiveRecord: 16.4ms)
+
+
+Started GET "/assets/products-2a1d517c9b0418e62735f9a4a6eb6998.css?body=1" for 127.0.0.1 at 2015-04-03 11:56:09 -0400
+
+
+Started GET "/assets/users-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-04-03 11:56:09 -0400
+
+
+Started GET "/assets/application-d727d9d08688c7bf93b956a43dd9ec02.css?body=1" for 127.0.0.1 at 2015-04-03 11:56:09 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-03 11:56:09 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-03 11:56:09 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 11:56:09 -0400
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 11:56:09 -0400
+
+
+Started GET "/assets/application-110154e6a06efeee4a01b13a39295ae0.js?body=1" for 127.0.0.1 at 2015-04-03 11:56:09 -0400
+
+
+Started GET "/users/edit/1" for 127.0.0.1 at 2015-04-03 11:56:16 -0400
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered users/edit.html.haml within layouts/application (23.0ms)
+Completed 200 OK in 134ms (Views: 125.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/products-2a1d517c9b0418e62735f9a4a6eb6998.css?body=1" for 127.0.0.1 at 2015-04-03 11:56:17 -0400
+
+
+Started GET "/assets/users-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-04-03 11:56:17 -0400
+
+
+Started GET "/assets/application-d727d9d08688c7bf93b956a43dd9ec02.css?body=1" for 127.0.0.1 at 2015-04-03 11:56:17 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-03 11:56:17 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 11:56:17 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-03 11:56:17 -0400
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 11:56:17 -0400
+
+
+Started GET "/assets/application-110154e6a06efeee4a01b13a39295ae0.js?body=1" for 127.0.0.1 at 2015-04-03 11:56:17 -0400
+
+
+Started GET "/users/register" for 127.0.0.1 at 2015-04-03 11:56:26 -0400
+Processing by UsersController#register as HTML
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'ttester@colgate.edu' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Completed 422 Unprocessable Entity in 146ms
+
+ActiveRecord::RecordInvalid (Validation failed: Email has already been taken):
+  app/controllers/users_controller.rb:13:in `register'
+
+
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (9.9ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (3.1ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.2ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (54.7ms)
+
+
+Started GET "/users/login" for 127.0.0.1 at 2015-04-03 11:56:43 -0400
+Processing by UsersController#login as HTML
+  Rendered users/login.html.haml within layouts/application (4.0ms)
+Completed 200 OK in 73ms (Views: 73.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-2a1d517c9b0418e62735f9a4a6eb6998.css?body=1" for 127.0.0.1 at 2015-04-03 11:56:43 -0400
+
+
+Started GET "/assets/application-d727d9d08688c7bf93b956a43dd9ec02.css?body=1" for 127.0.0.1 at 2015-04-03 11:56:43 -0400
+
+
+Started GET "/assets/users-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-04-03 11:56:43 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-03 11:56:43 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-03 11:56:43 -0400
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 11:56:43 -0400
+
+
+Started GET "/assets/application-110154e6a06efeee4a01b13a39295ae0.js?body=1" for 127.0.0.1 at 2015-04-03 11:56:43 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 11:56:44 -0400
+
+
+Started GET "/users/register" for 127.0.0.1 at 2015-04-03 11:56:48 -0400
+Processing by UsersController#register as HTML
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'ttester@colgate.edu' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Completed 422 Unprocessable Entity in 129ms
+
+ActiveRecord::RecordInvalid (Validation failed: Email has already been taken):
+  app/controllers/users_controller.rb:13:in `register'
+
+
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (9.8ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (5.3ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (2.6ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (57.9ms)
+
+
+Started GET "/users/register" for 127.0.0.1 at 2015-04-03 11:57:09 -0400
+Processing by UsersController#register as HTML
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'ttester@colgate.edu' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Completed 422 Unprocessable Entity in 134ms
+
+ActiveRecord::RecordInvalid (Validation failed: Email has already been taken):
+  app/controllers/users_controller.rb:13:in `register'
+
+
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (8.4ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (6.3ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.1ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (52.3ms)
+
+
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2015-04-03 11:57:35 -0400
+
+
+Started GET "/users/auth/google_oauth2/callback?state=38989280b95a879228c3693ae79cd73a627e49418cef2778&code=4/VlfoeCpQCGRMQ6PCwVOg0wEDC4-hxqfVE3IDw-rtru0.8nEEZNGN_BgXJvIeHux6iLaj5wAAmQI" for 127.0.0.1 at 2015-04-03 11:57:35 -0400
+Processing by OmniauthCallbacksController#failure as HTML
+  Parameters: {"state"=>"38989280b95a879228c3693ae79cd73a627e49418cef2778", "code"=>"4/VlfoeCpQCGRMQ6PCwVOg0wEDC4-hxqfVE3IDw-rtru0.8nEEZNGN_BgXJvIeHux6iLaj5wAAmQI"}
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 9ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-04-03 11:57:36 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/devise-3.4.1/app/views/devise/shared/_links.html.erb (19.5ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/devise-3.4.1/app/views/devise/sessions/new.html.erb within layouts/application (44.5ms)
+Completed 200 OK in 170ms (Views: 148.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-2a1d517c9b0418e62735f9a4a6eb6998.css?body=1" for 127.0.0.1 at 2015-04-03 11:57:36 -0400
+
+
+Started GET "/assets/users-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-04-03 11:57:36 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-03 11:57:36 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-03 11:57:36 -0400
+
+
+Started GET "/assets/application-d727d9d08688c7bf93b956a43dd9ec02.css?body=1" for 127.0.0.1 at 2015-04-03 11:57:36 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 11:57:36 -0400
+
+
+Started GET "/assets/application-110154e6a06efeee4a01b13a39295ae0.js?body=1" for 127.0.0.1 at 2015-04-03 11:57:36 -0400
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 11:57:36 -0400
+
+
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2015-04-03 11:57:50 -0400
+
+
+Started GET "/users/auth/google_oauth2/callback?state=225d3c8a69be147dc4f72a3879840b0d4e2ba6cb94bc52b5&code=4/_TYW9Sit7cTMwWPBVgyBKCGHnp-jo0D9sGIbi67NMYQ.Uqm7jFQXir0WJvIeHux6iLYnWAEAmQI" for 127.0.0.1 at 2015-04-03 11:57:50 -0400
+Processing by OmniauthCallbacksController#failure as HTML
+  Parameters: {"state"=>"225d3c8a69be147dc4f72a3879840b0d4e2ba6cb94bc52b5", "code"=>"4/_TYW9Sit7cTMwWPBVgyBKCGHnp-jo0D9sGIbi67NMYQ.Uqm7jFQXir0WJvIeHux6iLYnWAEAmQI"}
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-04-03 11:57:50 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/devise-3.4.1/app/views/devise/shared/_links.html.erb (12.2ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/devise-3.4.1/app/views/devise/sessions/new.html.erb within layouts/application (21.2ms)
+Completed 200 OK in 104ms (Views: 102.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-2a1d517c9b0418e62735f9a4a6eb6998.css?body=1" for 127.0.0.1 at 2015-04-03 11:57:50 -0400
+
+
+Started GET "/assets/users-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-04-03 11:57:50 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-03 11:57:50 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-03 11:57:50 -0400
+
+
+Started GET "/assets/application-d727d9d08688c7bf93b956a43dd9ec02.css?body=1" for 127.0.0.1 at 2015-04-03 11:57:50 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 11:57:50 -0400
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 11:57:50 -0400
+
+
+Started GET "/assets/application-110154e6a06efeee4a01b13a39295ae0.js?body=1" for 127.0.0.1 at 2015-04-03 11:57:50 -0400
+
+
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2015-04-03 11:58:02 -0400
+
+
+Started GET "/users/auth/google_oauth2/callback?state=b776eddb7f5b8b9e158445df59e2e049847b0bf349e49d54&code=4/xXfDPl_n0_mcjtLcM8n2ueA9Z7famvaLv20yqRXb3e8.UvrbstVOUysVJvIeHux6iLaTtgEAmQI" for 127.0.0.1 at 2015-04-03 11:58:02 -0400
+Processing by OmniauthCallbacksController#failure as HTML
+  Parameters: {"state"=>"b776eddb7f5b8b9e158445df59e2e049847b0bf349e49d54", "code"=>"4/xXfDPl_n0_mcjtLcM8n2ueA9Z7famvaLv20yqRXb3e8.UvrbstVOUysVJvIeHux6iLaTtgEAmQI"}
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-04-03 11:58:02 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/devise-3.4.1/app/views/devise/shared/_links.html.erb (14.2ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/devise-3.4.1/app/views/devise/sessions/new.html.erb within layouts/application (22.6ms)
+Completed 200 OK in 123ms (Views: 121.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-2a1d517c9b0418e62735f9a4a6eb6998.css?body=1" for 127.0.0.1 at 2015-04-03 11:58:03 -0400
+
+
+Started GET "/assets/users-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-04-03 11:58:03 -0400
+
+
+Started GET "/assets/application-d727d9d08688c7bf93b956a43dd9ec02.css?body=1" for 127.0.0.1 at 2015-04-03 11:58:03 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-03 11:58:03 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-03 11:58:03 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 11:58:03 -0400
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 11:58:03 -0400
+
+
+Started GET "/assets/application-110154e6a06efeee4a01b13a39295ae0.js?body=1" for 127.0.0.1 at 2015-04-03 11:58:03 -0400
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2015-04-03 11:58:05 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/devise-3.4.1/app/views/devise/shared/_links.html.erb (5.0ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/devise-3.4.1/app/views/devise/registrations/new.html.erb within layouts/application (30.6ms)
+Completed 200 OK in 126ms (Views: 120.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-2a1d517c9b0418e62735f9a4a6eb6998.css?body=1" for 127.0.0.1 at 2015-04-03 11:58:05 -0400
+
+
+Started GET "/assets/users-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-04-03 11:58:05 -0400
+
+
+Started GET "/assets/application-d727d9d08688c7bf93b956a43dd9ec02.css?body=1" for 127.0.0.1 at 2015-04-03 11:58:05 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-03 11:58:05 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-03 11:58:05 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 11:58:05 -0400
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 11:58:06 -0400
+
+
+Started GET "/assets/application-110154e6a06efeee4a01b13a39295ae0.js?body=1" for 127.0.0.1 at 2015-04-03 11:58:06 -0400
+
+
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2015-04-03 11:58:16 -0400
+
+
+Started GET "/users/auth/google_oauth2/callback?state=a6e3e551120e14353cb4e16e85f984b4426f2cf939a5ad37&code=4/HiHwXph3Izm_vnjKGj7dB0MFrGLstKg4EJSAgqBdeDw.QryY9AOup_QTgtL038sCVnt9IwIAmQI" for 127.0.0.1 at 2015-04-03 11:58:16 -0400
+Processing by OmniauthCallbacksController#failure as HTML
+  Parameters: {"state"=>"a6e3e551120e14353cb4e16e85f984b4426f2cf939a5ad37", "code"=>"4/HiHwXph3Izm_vnjKGj7dB0MFrGLstKg4EJSAgqBdeDw.QryY9AOup_QTgtL038sCVnt9IwIAmQI"}
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 11ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-04-03 11:58:16 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/devise-3.4.1/app/views/devise/shared/_links.html.erb (6.5ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/devise-3.4.1/app/views/devise/sessions/new.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 86ms (Views: 84.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-2a1d517c9b0418e62735f9a4a6eb6998.css?body=1" for 127.0.0.1 at 2015-04-03 11:58:16 -0400
+
+
+Started GET "/assets/users-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-04-03 11:58:16 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-03 11:58:16 -0400
+
+
+Started GET "/assets/application-d727d9d08688c7bf93b956a43dd9ec02.css?body=1" for 127.0.0.1 at 2015-04-03 11:58:16 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-03 11:58:16 -0400
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 11:58:16 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 11:58:16 -0400
+
+
+Started GET "/assets/application-110154e6a06efeee4a01b13a39295ae0.js?body=1" for 127.0.0.1 at 2015-04-03 11:58:16 -0400
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2015-04-03 11:58:20 -0400
+Processing by Devise::PasswordsController#new as HTML
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/devise-3.4.1/app/views/devise/shared/_links.html.erb (17.2ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/devise-3.4.1/app/views/devise/passwords/new.html.erb within layouts/application (28.1ms)
+Completed 200 OK in 134ms (Views: 133.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-2a1d517c9b0418e62735f9a4a6eb6998.css?body=1" for 127.0.0.1 at 2015-04-03 11:58:20 -0400
+
+
+Started GET "/assets/users-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-04-03 11:58:20 -0400
+
+
+Started GET "/assets/application-d727d9d08688c7bf93b956a43dd9ec02.css?body=1" for 127.0.0.1 at 2015-04-03 11:58:20 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-03 11:58:20 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-03 11:58:20 -0400
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 11:58:20 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 11:58:20 -0400
+
+
+Started GET "/assets/application-110154e6a06efeee4a01b13a39295ae0.js?body=1" for 127.0.0.1 at 2015-04-03 11:58:20 -0400
+
+
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2015-04-03 11:58:35 -0400
+
+
+Started GET "/users/auth/google_oauth2/callback?state=6f43dddad4553d38a1a368bc4d1ececc94c8effdd7a44c58&code=4/K_JqXVzj74wV_wz8V40YUMlRWIwr4Wk3u6Tn-t5aczU.Qia50foiNwsVgtL038sCVnvhvQIAmQI" for 127.0.0.1 at 2015-04-03 11:58:36 -0400
+Processing by OmniauthCallbacksController#failure as HTML
+  Parameters: {"state"=>"6f43dddad4553d38a1a368bc4d1ececc94c8effdd7a44c58", "code"=>"4/K_JqXVzj74wV_wz8V40YUMlRWIwr4Wk3u6Tn-t5aczU.Qia50foiNwsVgtL038sCVnvhvQIAmQI"}
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-04-03 11:58:36 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/devise-3.4.1/app/views/devise/shared/_links.html.erb (16.9ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/devise-3.4.1/app/views/devise/sessions/new.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 100ms (Views: 94.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-2a1d517c9b0418e62735f9a4a6eb6998.css?body=1" for 127.0.0.1 at 2015-04-03 11:58:36 -0400
+
+
+Started GET "/assets/users-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-04-03 11:58:36 -0400
+
+
+Started GET "/assets/application-d727d9d08688c7bf93b956a43dd9ec02.css?body=1" for 127.0.0.1 at 2015-04-03 11:58:36 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-03 11:58:36 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-03 11:58:36 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 11:58:36 -0400
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 11:58:36 -0400
+
+
+Started GET "/assets/application-110154e6a06efeee4a01b13a39295ae0.js?body=1" for 127.0.0.1 at 2015-04-03 11:58:36 -0400
+
+
+Started GET "/users/register" for 127.0.0.1 at 2015-04-03 11:58:48 -0400
+Processing by UsersController#register as HTML
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'ttester@colgate.edu' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Completed 422 Unprocessable Entity in 129ms
+
+ActiveRecord::RecordInvalid (Validation failed: Email has already been taken):
+  app/controllers/users_controller.rb:13:in `register'
+
+
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (8.0ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (5.5ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (2.7ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.1ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (55.8ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2015-04-03 12:03:14 -0400
+
+ActionController::RoutingError (No route matches [GET] "/users"):
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /home/csvm/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/csvm/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/csvm/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (7.0ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_route.html.erb (2.4ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_table.html.erb (16.4ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (4.1ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.2ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (169.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-03 12:03:15 -0400
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.4ms)
+Completed 200 OK in 165ms (Views: 164.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-2a1d517c9b0418e62735f9a4a6eb6998.css?body=1" for 127.0.0.1 at 2015-04-03 12:03:15 -0400
+
+
+Started GET "/assets/application-d727d9d08688c7bf93b956a43dd9ec02.css?body=1" for 127.0.0.1 at 2015-04-03 12:03:15 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-03 12:03:15 -0400
+
+
+Started GET "/assets/users-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-04-03 12:03:15 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-03 12:03:15 -0400
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 12:03:15 -0400
+
+
+Started GET "/assets/application-110154e6a06efeee4a01b13a39295ae0.js?body=1" for 127.0.0.1 at 2015-04-03 12:03:15 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 12:03:15 -0400
+
+
+Started GET "/users/login" for 127.0.0.1 at 2015-04-03 12:03:24 -0400
+Processing by UsersController#login as HTML
+  Rendered users/login.html.haml within layouts/application (3.1ms)
+Completed 200 OK in 127ms (Views: 126.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-2a1d517c9b0418e62735f9a4a6eb6998.css?body=1" for 127.0.0.1 at 2015-04-03 12:03:24 -0400
+
+
+Started GET "/assets/application-d727d9d08688c7bf93b956a43dd9ec02.css?body=1" for 127.0.0.1 at 2015-04-03 12:03:24 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-03 12:03:24 -0400
+
+
+Started GET "/assets/users-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-04-03 12:03:24 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-03 12:03:24 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 12:03:24 -0400
+
+
+Started GET "/assets/application-110154e6a06efeee4a01b13a39295ae0.js?body=1" for 127.0.0.1 at 2015-04-03 12:03:24 -0400
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 12:03:24 -0400
+
+
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2015-04-03 12:04:03 -0400
+
+
+Started GET "/users/auth/google_oauth2/callback?state=ae066e5c054a635a42f168e0c46b922bf36dd07d9513f5fa&code=4/Kxm0WlDYXD-uWWj3g-jrCVI-7xDSPbSqgsYFzlT7aVs.QpcwEV9uLA4SJvIeHux6iLZTvwwAmQI" for 127.0.0.1 at 2015-04-03 12:04:04 -0400
+Processing by OmniauthCallbacksController#failure as HTML
+  Parameters: {"state"=>"ae066e5c054a635a42f168e0c46b922bf36dd07d9513f5fa", "code"=>"4/Kxm0WlDYXD-uWWj3g-jrCVI-7xDSPbSqgsYFzlT7aVs.QpcwEV9uLA4SJvIeHux6iLZTvwwAmQI"}
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-04-03 12:04:04 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/devise-3.4.1/app/views/devise/shared/_links.html.erb (13.1ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/devise-3.4.1/app/views/devise/sessions/new.html.erb within layouts/application (28.1ms)
+Completed 200 OK in 108ms (Views: 107.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-2a1d517c9b0418e62735f9a4a6eb6998.css?body=1" for 127.0.0.1 at 2015-04-03 12:04:04 -0400
+
+
+Started GET "/assets/users-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-04-03 12:04:04 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-03 12:04:04 -0400
+
+
+Started GET "/assets/application-d727d9d08688c7bf93b956a43dd9ec02.css?body=1" for 127.0.0.1 at 2015-04-03 12:04:04 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-03 12:04:04 -0400
+
+
+Started GET "/assets/application-110154e6a06efeee4a01b13a39295ae0.js?body=1" for 127.0.0.1 at 2015-04-03 12:04:05 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 12:04:05 -0400
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 12:04:05 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-03 12:07:30 -0400
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.6ms)
+Completed 200 OK in 114ms (Views: 114.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-2a1d517c9b0418e62735f9a4a6eb6998.css?body=1" for 127.0.0.1 at 2015-04-03 12:07:31 -0400
+
+
+Started GET "/assets/users-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-04-03 12:07:31 -0400
+
+
+Started GET "/assets/application-d727d9d08688c7bf93b956a43dd9ec02.css?body=1" for 127.0.0.1 at 2015-04-03 12:07:31 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-03 12:07:31 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-03 12:07:31 -0400
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 12:07:31 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 12:07:31 -0400
+
+
+Started GET "/assets/application-110154e6a06efeee4a01b13a39295ae0.js?body=1" for 127.0.0.1 at 2015-04-03 12:07:31 -0400
+
+
+Started GET "/users/login" for 127.0.0.1 at 2015-04-03 12:07:33 -0400
+Processing by UsersController#login as HTML
+  Rendered users/login.html.haml within layouts/application (5.5ms)
+Completed 200 OK in 98ms (Views: 98.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-2a1d517c9b0418e62735f9a4a6eb6998.css?body=1" for 127.0.0.1 at 2015-04-03 12:07:33 -0400
+
+
+Started GET "/assets/application-d727d9d08688c7bf93b956a43dd9ec02.css?body=1" for 127.0.0.1 at 2015-04-03 12:07:33 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-03 12:07:33 -0400
+
+
+Started GET "/assets/users-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-04-03 12:07:33 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 12:07:34 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-03 12:07:34 -0400
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 12:07:34 -0400
+
+
+Started GET "/assets/application-110154e6a06efeee4a01b13a39295ae0.js?body=1" for 127.0.0.1 at 2015-04-03 12:07:34 -0400
+
+
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2015-04-03 12:07:35 -0400
+
+
+Started GET "/users/auth/google_oauth2/callback?state=e8d997528a01855daf6e110df796d4d758fe454266ee3803&code=4/DZPxNnq5VSC0yaCFExeUvD3oNDVubhbCWa4MLs9N2ew.cqo516gcWWkUJvIeHux6iLZT1RoAmQI" for 127.0.0.1 at 2015-04-03 12:07:35 -0400
+Processing by OmniauthCallbacksController#google_oauth2 as HTML
+  Parameters: {"state"=>"e8d997528a01855daf6e110df796d4d758fe454266ee3803", "code"=>"4/DZPxNnq5VSC0yaCFExeUvD3oNDVubhbCWa4MLs9N2ew.cqo516gcWWkUJvIeHux6iLZT1RoAmQI"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "ffouladi@colgate.edu"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'ffouladi@colgate.edu' LIMIT 1[0m
+  [1m[35mSQL (5.1ms)[0m  INSERT INTO "users" ("name", "email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Farah Fouladi '15"], ["email", "ffouladi@colgate.edu"], ["encrypted_password", "$2a$10$QitqOO0gQ.xifPOu9pk8ruBw9SWFlNXACEg6oyscB9HDKJGCO24K2"], ["created_at", "2015-04-03 16:07:36.011901"], ["updated_at", "2015-04-03 16:07:36.011901"]]
+  [1m[36m (11.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["last_sign_in_at", "2015-04-03 16:07:36.033346"], ["current_sign_in_at", "2015-04-03 16:07:36.033346"], ["last_sign_in_ip", "127.0.0.1"], ["current_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", "2015-04-03 16:07:36.034911"], ["id", 2]]
+  [1m[35m (7.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 181ms (ActiveRecord: 25.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-03 12:07:36 -0400
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.5ms)
+Completed 200 OK in 82ms (Views: 81.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-2a1d517c9b0418e62735f9a4a6eb6998.css?body=1" for 127.0.0.1 at 2015-04-03 12:07:36 -0400
+
+
+Started GET "/assets/application-d727d9d08688c7bf93b956a43dd9ec02.css?body=1" for 127.0.0.1 at 2015-04-03 12:07:36 -0400
+
+
+Started GET "/assets/users-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-04-03 12:07:36 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-03 12:07:36 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-03 12:07:36 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 12:07:36 -0400
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 12:07:36 -0400
+
+
+Started GET "/assets/application-110154e6a06efeee4a01b13a39295ae0.js?body=1" for 127.0.0.1 at 2015-04-03 12:07:36 -0400
+
+
+Started GET "/users/login" for 127.0.0.1 at 2015-04-03 12:08:28 -0400
+Processing by UsersController#login as HTML
+  Rendered users/login.html.haml within layouts/application (6.5ms)
+Completed 200 OK in 94ms (Views: 94.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-2a1d517c9b0418e62735f9a4a6eb6998.css?body=1" for 127.0.0.1 at 2015-04-03 12:08:29 -0400
+
+
+Started GET "/assets/application-d727d9d08688c7bf93b956a43dd9ec02.css?body=1" for 127.0.0.1 at 2015-04-03 12:08:29 -0400
+
+
+Started GET "/assets/users-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-04-03 12:08:29 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-03 12:08:29 -0400
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 12:08:29 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-03 12:08:29 -0400
+
+
+Started GET "/assets/application-110154e6a06efeee4a01b13a39295ae0.js?body=1" for 127.0.0.1 at 2015-04-03 12:08:29 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 12:08:29 -0400
+
+
+Started GET "/users/login" for 127.0.0.1 at 2015-04-03 12:08:36 -0400
+Processing by UsersController#login as HTML
+  Rendered users/login.html.haml within layouts/application (7.2ms)
+Completed 200 OK in 83ms (Views: 82.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-2a1d517c9b0418e62735f9a4a6eb6998.css?body=1" for 127.0.0.1 at 2015-04-03 12:08:36 -0400
+
+
+Started GET "/assets/users-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-04-03 12:08:36 -0400
+
+
+Started GET "/assets/application-d727d9d08688c7bf93b956a43dd9ec02.css?body=1" for 127.0.0.1 at 2015-04-03 12:08:36 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-03 12:08:36 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-03 12:08:36 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 12:08:36 -0400
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 12:08:36 -0400
+
+
+Started GET "/assets/application-110154e6a06efeee4a01b13a39295ae0.js?body=1" for 127.0.0.1 at 2015-04-03 12:08:36 -0400
+
+
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2015-04-03 12:08:38 -0400
+
+
+Started GET "/users/auth/google_oauth2/callback?state=df1e91d01208420b2da0dbf0a443a51c03c33ee3fc8f40e3&code=4/W-XfD9T0Q8yurJadhkQ45cw14R8Zt6GrZwQ0v0d5pt8.MkZFQvhxjE0dJvIeHux6iLZF4BoAmQI" for 127.0.0.1 at 2015-04-03 12:08:38 -0400
+Processing by OmniauthCallbacksController#google_oauth2 as HTML
+  Parameters: {"state"=>"df1e91d01208420b2da0dbf0a443a51c03c33ee3fc8f40e3", "code"=>"4/W-XfD9T0Q8yurJadhkQ45cw14R8Zt6GrZwQ0v0d5pt8.MkZFQvhxjE0dJvIeHux6iLZF4BoAmQI"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "ffouladi@colgate.edu"]]
+Completed 500 Internal Server Error in 8ms
+
+NoMethodError (undefined method `persisted?' for nil:NilClass):
+  app/controllers/omniauth_callbacks_controller.rb:6:in `google_oauth2'
+
+
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (11.3ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (10.5ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (2.1ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (73.3ms)
+
+
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2015-04-03 12:09:15 -0400
+
+
+Started GET "/users/auth/google_oauth2/callback?state=ced55ae2afad485d583077975188e05bfc71085c3801ac68&code=4/pmxpiKUHud9ZrWjuDZ86k2OY49uSRjXgHpbRuFKE5iw.Mpt6IIRPZ-cSJvIeHux6iLa_5hoAmQI" for 127.0.0.1 at 2015-04-03 12:09:15 -0400
+Processing by OmniauthCallbacksController#google_oauth2 as HTML
+  Parameters: {"state"=>"ced55ae2afad485d583077975188e05bfc71085c3801ac68", "code"=>"4/pmxpiKUHud9ZrWjuDZ86k2OY49uSRjXgHpbRuFKE5iw.Mpt6IIRPZ-cSJvIeHux6iLa_5hoAmQI"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "ffouladi@colgate.edu"]]
+Completed 500 Internal Server Error in 4ms
+
+NoMethodError (undefined method `persisted?' for nil:NilClass):
+  app/controllers/omniauth_callbacks_controller.rb:6:in `google_oauth2'
+
+
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (57.1ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (5.9ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (3.4ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (115.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-03 12:10:19 -0400
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 68ms (Views: 67.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-2a1d517c9b0418e62735f9a4a6eb6998.css?body=1" for 127.0.0.1 at 2015-04-03 12:10:19 -0400
+
+
+Started GET "/assets/users-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-04-03 12:10:19 -0400
+
+
+Started GET "/assets/application-d727d9d08688c7bf93b956a43dd9ec02.css?body=1" for 127.0.0.1 at 2015-04-03 12:10:19 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-03 12:10:19 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-03 12:10:19 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 12:10:19 -0400
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 12:10:19 -0400
+
+
+Started GET "/assets/application-110154e6a06efeee4a01b13a39295ae0.js?body=1" for 127.0.0.1 at 2015-04-03 12:10:19 -0400
+
+
+Started GET "/users/login" for 127.0.0.1 at 2015-04-03 12:10:22 -0400
+Processing by UsersController#login as HTML
+  Rendered users/login.html.haml within layouts/application (1.4ms)
+Completed 200 OK in 94ms (Views: 94.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-2a1d517c9b0418e62735f9a4a6eb6998.css?body=1" for 127.0.0.1 at 2015-04-03 12:10:23 -0400
+
+
+Started GET "/assets/users-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-04-03 12:10:23 -0400
+
+
+Started GET "/assets/application-d727d9d08688c7bf93b956a43dd9ec02.css?body=1" for 127.0.0.1 at 2015-04-03 12:10:23 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-03 12:10:23 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-03 12:10:23 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 12:10:23 -0400
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 12:10:23 -0400
+
+
+Started GET "/assets/application-110154e6a06efeee4a01b13a39295ae0.js?body=1" for 127.0.0.1 at 2015-04-03 12:10:23 -0400
+
+
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2015-04-03 12:10:24 -0400
+
+
+Started GET "/users/auth/google_oauth2/callback?state=ddb587284b19c135572eae6086d81a274555ce4ac41ff02e&code=4/oWJlkn-j7q6b_5PchM2gm8pFK6-5FhQDbg33g7Tza48.ck0iG2v0VPcTJvIeHux6iLbB8hoAmQI" for 127.0.0.1 at 2015-04-03 12:10:24 -0400
+Processing by OmniauthCallbacksController#google_oauth2 as HTML
+  Parameters: {"state"=>"ddb587284b19c135572eae6086d81a274555ce4ac41ff02e", "code"=>"4/oWJlkn-j7q6b_5PchM2gm8pFK6-5FhQDbg33g7Tza48.ck0iG2v0VPcTJvIeHux6iLbB8hoAmQI"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "ffouladi@colgate.edu"]]
+Completed 500 Internal Server Error in 23ms
+
+NoMethodError (undefined method `persisted?' for nil:NilClass):
+  app/controllers/omniauth_callbacks_controller.rb:5:in `google_oauth2'
+
+
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (14.2ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (12.4ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.9ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (67.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-03 12:11:11 -0400
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (8.3ms)
+Completed 200 OK in 122ms (Views: 121.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-2a1d517c9b0418e62735f9a4a6eb6998.css?body=1" for 127.0.0.1 at 2015-04-03 12:11:12 -0400
+
+
+Started GET "/assets/users-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-04-03 12:11:12 -0400
+
+
+Started GET "/assets/application-d727d9d08688c7bf93b956a43dd9ec02.css?body=1" for 127.0.0.1 at 2015-04-03 12:11:12 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-03 12:11:12 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-03 12:11:12 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 12:11:12 -0400
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 12:11:12 -0400
+
+
+Started GET "/assets/application-110154e6a06efeee4a01b13a39295ae0.js?body=1" for 127.0.0.1 at 2015-04-03 12:11:12 -0400
+
+
+Started GET "/users/login" for 127.0.0.1 at 2015-04-03 12:11:14 -0400
+Processing by UsersController#login as HTML
+  Rendered users/login.html.haml within layouts/application (6.9ms)
+Completed 200 OK in 80ms (Views: 79.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-2a1d517c9b0418e62735f9a4a6eb6998.css?body=1" for 127.0.0.1 at 2015-04-03 12:11:14 -0400
+
+
+Started GET "/assets/users-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-04-03 12:11:14 -0400
+
+
+Started GET "/assets/application-d727d9d08688c7bf93b956a43dd9ec02.css?body=1" for 127.0.0.1 at 2015-04-03 12:11:14 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-03 12:11:14 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-03 12:11:14 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 12:11:14 -0400
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 12:11:14 -0400
+
+
+Started GET "/assets/application-110154e6a06efeee4a01b13a39295ae0.js?body=1" for 127.0.0.1 at 2015-04-03 12:11:14 -0400
+
+
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2015-04-03 12:11:15 -0400
+
+
+Started GET "/users/auth/google_oauth2/callback?state=169d143406c6e0009e284f51c2bd0de7c9cb94f18d5c8a9a&code=4/Dqa5W1gHQ7OTr-gSbuRhCNZGc5M3j_BrOQBUJ362PJc.IttYsbQrpB0UJvIeHux6iLaL-xoAmQI" for 127.0.0.1 at 2015-04-03 12:11:15 -0400
+Processing by OmniauthCallbacksController#google_oauth2 as HTML
+  Parameters: {"state"=>"169d143406c6e0009e284f51c2bd0de7c9cb94f18d5c8a9a", "code"=>"4/Dqa5W1gHQ7OTr-gSbuRhCNZGc5M3j_BrOQBUJ362PJc.IttYsbQrpB0UJvIeHux6iLaL-xoAmQI"}
+  [1m[36mUser Load (5.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (1.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "ffouladi@colgate.edu"]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "ffouladi@colgate.edu"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "ffouladi@colgate.edu"]]
+Completed 500 Internal Server Error in 564828ms
+
+NoMethodError (undefined method `persisted?' for nil:NilClass):
+  app/controllers/omniauth_callbacks_controller.rb:6:in `google_oauth2'
+
+
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (161.5ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (51.9ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (5.2ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (10.2ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (287.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-03 12:20:56 -0400
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (4.6ms)
+Completed 200 OK in 492ms (Views: 490.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-03 12:20:57 -0400
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (4.6ms)
+Completed 200 OK in 535ms (Views: 533.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-2a1d517c9b0418e62735f9a4a6eb6998.css?body=1" for 127.0.0.1 at 2015-04-03 12:20:58 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-03 12:20:58 -0400
+
+
+Started GET "/assets/users-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-04-03 12:20:58 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-03 12:20:58 -0400
+
+
+Started GET "/assets/application-d727d9d08688c7bf93b956a43dd9ec02.css?body=1" for 127.0.0.1 at 2015-04-03 12:20:58 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 12:20:58 -0400
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 12:20:58 -0400
+
+
+Started GET "/assets/application-110154e6a06efeee4a01b13a39295ae0.js?body=1" for 127.0.0.1 at 2015-04-03 12:20:58 -0400
+
+
+Started GET "/users/login" for 127.0.0.1 at 2015-04-03 12:21:00 -0400
+Processing by UsersController#login as HTML
+  Rendered users/login.html.haml within layouts/application (15.7ms)
+Completed 200 OK in 553ms (Views: 551.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 12:21:01 -0400
+
+
+Started GET "/assets/application-d727d9d08688c7bf93b956a43dd9ec02.css?body=1" for 127.0.0.1 at 2015-04-03 12:21:01 -0400
+
+
+Started GET "/assets/products-2a1d517c9b0418e62735f9a4a6eb6998.css?body=1" for 127.0.0.1 at 2015-04-03 12:21:01 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-03 12:21:01 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-03 12:21:01 -0400
+
+
+Started GET "/assets/users-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-04-03 12:21:01 -0400
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 12:21:01 -0400
+
+
+Started GET "/assets/application-110154e6a06efeee4a01b13a39295ae0.js?body=1" for 127.0.0.1 at 2015-04-03 12:21:01 -0400
+
+
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2015-04-03 12:21:03 -0400
+
+
+Started GET "/users/auth/google_oauth2/callback?state=de489a78b63d41cb92b5a94ada61e2d83f6993018ba6bdd3&code=4/-EKM2jJ3FYj1-5tm9DSSmq6h_BEZtJk1lO_qEyHxIIM.QuQowtj-qT4bJvIeHux6iLaT2ysAmQI" for 127.0.0.1 at 2015-04-03 12:21:04 -0400
+Processing by OmniauthCallbacksController#google_oauth2 as HTML
+  Parameters: {"state"=>"de489a78b63d41cb92b5a94ada61e2d83f6993018ba6bdd3", "code"=>"4/-EKM2jJ3FYj1-5tm9DSSmq6h_BEZtJk1lO_qEyHxIIM.QuQowtj-qT4bJvIeHux6iLaT2ysAmQI"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (1.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "ffouladi@colgate.edu"]]
+Completed 500 Internal Server Error in 154266ms
+
+NoMethodError (undefined method `persisted?' for nil:NilClass):
+  app/controllers/omniauth_callbacks_controller.rb:6:in `google_oauth2'
+
+
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (252.1ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (73.6ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (5.5ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (7.2ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (402.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-03 12:24:20 -0400
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (6.9ms)
+Completed 200 OK in 478ms (Views: 475.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-03 12:24:21 -0400
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (2.6ms)
+Completed 200 OK in 469ms (Views: 466.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-2a1d517c9b0418e62735f9a4a6eb6998.css?body=1" for 127.0.0.1 at 2015-04-03 12:24:22 -0400
+
+
+Started GET "/assets/users-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-04-03 12:24:22 -0400
+
+
+Started GET "/assets/application-d727d9d08688c7bf93b956a43dd9ec02.css?body=1" for 127.0.0.1 at 2015-04-03 12:24:22 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-03 12:24:22 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-03 12:24:22 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 12:24:22 -0400
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 12:24:22 -0400
+
+
+Started GET "/assets/application-110154e6a06efeee4a01b13a39295ae0.js?body=1" for 127.0.0.1 at 2015-04-03 12:24:22 -0400
+
+
+Started GET "/users/login" for 127.0.0.1 at 2015-04-03 12:24:25 -0400
+Processing by UsersController#login as HTML
+  Rendered users/login.html.haml within layouts/application (28.0ms)
+Completed 200 OK in 516ms (Views: 514.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-2a1d517c9b0418e62735f9a4a6eb6998.css?body=1" for 127.0.0.1 at 2015-04-03 12:24:26 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-03 12:24:26 -0400
+
+
+Started GET "/assets/application-d727d9d08688c7bf93b956a43dd9ec02.css?body=1" for 127.0.0.1 at 2015-04-03 12:24:26 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-03 12:24:26 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 12:24:26 -0400
+
+
+Started GET "/assets/users-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-04-03 12:24:26 -0400
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 12:24:26 -0400
+
+
+Started GET "/assets/application-110154e6a06efeee4a01b13a39295ae0.js?body=1" for 127.0.0.1 at 2015-04-03 12:24:27 -0400
+
+
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2015-04-03 12:24:28 -0400
+
+
+Started GET "/users/auth/google_oauth2/callback?state=c4e41cde86b4a37f66c125df6447945ffc94d9362bdcbab7&code=4/8p8DLxYyxM_k7aDknCC15rbWiVvRwfqBdGdyeKQ893o.cie7_mIn1nYaJvIeHux6iLZFGDIAmQI" for 127.0.0.1 at 2015-04-03 12:24:28 -0400
+Processing by OmniauthCallbacksController#google_oauth2 as HTML
+  Parameters: {"state"=>"c4e41cde86b4a37f66c125df6447945ffc94d9362bdcbab7", "code"=>"4/8p8DLxYyxM_k7aDknCC15rbWiVvRwfqBdGdyeKQ893o.cie7_mIn1nYaJvIeHux6iLZFGDIAmQI"}
+  [1m[35mUser Load (1.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (1.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "ffouladi@colgate.edu"]]
+Completed 500 Internal Server Error in 164ms
+
+NoMethodError (undefined method `persisted?' for "hi":String):
+  app/controllers/omniauth_callbacks_controller.rb:5:in `google_oauth2'
+
+
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (221.9ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (67.4ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (8.6ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (7.2ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (367.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-03 12:30:21 -0400
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (6.3ms)
+Completed 200 OK in 554ms (Views: 552.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-03 12:30:22 -0400
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (3.2ms)
+Completed 200 OK in 447ms (Views: 444.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-03 12:30:23 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 12:30:23 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-03 12:30:23 -0400
+
+
+Started GET "/assets/products-2a1d517c9b0418e62735f9a4a6eb6998.css?body=1" for 127.0.0.1 at 2015-04-03 12:30:23 -0400
+
+
+Started GET "/assets/application-d727d9d08688c7bf93b956a43dd9ec02.css?body=1" for 127.0.0.1 at 2015-04-03 12:30:23 -0400
+
+
+Started GET "/assets/users-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-04-03 12:30:23 -0400
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 12:30:23 -0400
+
+
+Started GET "/assets/application-110154e6a06efeee4a01b13a39295ae0.js?body=1" for 127.0.0.1 at 2015-04-03 12:30:23 -0400
+
+
+Started GET "/users/login" for 127.0.0.1 at 2015-04-03 12:30:25 -0400
+Processing by UsersController#login as HTML
+  Rendered users/login.html.haml within layouts/application (17.8ms)
+Completed 200 OK in 486ms (Views: 483.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-d727d9d08688c7bf93b956a43dd9ec02.css?body=1" for 127.0.0.1 at 2015-04-03 12:30:26 -0400
+
+
+Started GET "/assets/users-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-04-03 12:30:26 -0400
+
+
+Started GET "/assets/products-2a1d517c9b0418e62735f9a4a6eb6998.css?body=1" for 127.0.0.1 at 2015-04-03 12:30:26 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-03 12:30:26 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-03 12:30:26 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 12:30:26 -0400
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 12:30:26 -0400
+
+
+Started GET "/assets/application-110154e6a06efeee4a01b13a39295ae0.js?body=1" for 127.0.0.1 at 2015-04-03 12:30:26 -0400
+
+
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2015-04-03 12:30:28 -0400
+
+
+Started GET "/users/auth/google_oauth2/callback?state=5e94bd30182c2b1f296ed67005638842384c5c9da6cc03ad&code=4/Wx8rY-uKU5JrJ1vd98UwT2F2wvLl2g5WBQpBE85R3zE.su53vtr6S_ETJvIeHux6iLYnEj0AmQI" for 127.0.0.1 at 2015-04-03 12:30:28 -0400
+Processing by OmniauthCallbacksController#google_oauth2 as HTML
+  Parameters: {"state"=>"5e94bd30182c2b1f296ed67005638842384c5c9da6cc03ad", "code"=>"4/Wx8rY-uKU5JrJ1vd98UwT2F2wvLl2g5WBQpBE85R3zE.su53vtr6S_ETJvIeHux6iLYnEj0AmQI"}
+  [1m[35mUser Load (1.9ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (3.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "ffouladi@colgate.edu"]]
+Completed 500 Internal Server Error in 174ms
+
+NoMethodError (undefined method `new_record?' for nil:NilClass):
+  app/controllers/omniauth_callbacks_controller.rb:5:in `google_oauth2'
+
+
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (283.1ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (69.1ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (18.1ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (5.8ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (444.6ms)
+  [1m[36mUser Load (2.8ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'bob@colgate.edu' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("name", "email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Bob"], ["email", "bob@colgate.edu"], ["encrypted_password", "$2a$10$phRVds1.evxgZNmSHLnjxu1OmMaFvc8PBl3VHDfkYbgbAnpEwAIQe"], ["created_at", "2015-04-03 16:35:02.367602"], ["updated_at", "2015-04-03 16:35:02.367602"]]
+  [1m[36m (10.3ms)[0m  [1mcommit transaction[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users"
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-03 12:37:04 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (13.3ms)
+Completed 200 OK in 171ms (Views: 171.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-2a1d517c9b0418e62735f9a4a6eb6998.css?body=1" for 127.0.0.1 at 2015-04-03 12:37:05 -0400
+
+
+Started GET "/assets/users-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-04-03 12:37:05 -0400
+
+
+Started GET "/assets/application-d727d9d08688c7bf93b956a43dd9ec02.css?body=1" for 127.0.0.1 at 2015-04-03 12:37:05 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-03 12:37:05 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-03 12:37:05 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 12:37:05 -0400
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 12:37:05 -0400
+
+
+Started GET "/assets/application-110154e6a06efeee4a01b13a39295ae0.js?body=1" for 127.0.0.1 at 2015-04-03 12:37:05 -0400
+
+
+Started GET "/users/login" for 127.0.0.1 at 2015-04-03 12:37:08 -0400
+Processing by UsersController#login as HTML
+  Rendered users/login.html.haml within layouts/application (35.7ms)
+Completed 200 OK in 116ms (Views: 116.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-2a1d517c9b0418e62735f9a4a6eb6998.css?body=1" for 127.0.0.1 at 2015-04-03 12:37:08 -0400
+
+
+Started GET "/assets/application-d727d9d08688c7bf93b956a43dd9ec02.css?body=1" for 127.0.0.1 at 2015-04-03 12:37:08 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-03 12:37:08 -0400
+
+
+Started GET "/assets/users-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-04-03 12:37:08 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-03 12:37:08 -0400
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 12:37:08 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 12:37:08 -0400
+
+
+Started GET "/assets/application-110154e6a06efeee4a01b13a39295ae0.js?body=1" for 127.0.0.1 at 2015-04-03 12:37:08 -0400
+
+
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2015-04-03 12:37:10 -0400
+
+
+Started GET "/users/auth/google_oauth2/callback?state=f76585f199bdc8a115dec0c09a3277f4f0692488eb261997&code=4/GD62TZiSjqE31v6bRHgo0bxbnLQSSCSLNCfex_tI1xk.gpqRkpbJQY8egtL038sCVnvj40oAmQI" for 127.0.0.1 at 2015-04-03 12:37:10 -0400
+Processing by OmniauthCallbacksController#google_oauth2 as HTML
+  Parameters: {"state"=>"f76585f199bdc8a115dec0c09a3277f4f0692488eb261997", "code"=>"4/GD62TZiSjqE31v6bRHgo0bxbnLQSSCSLNCfex_tI1xk.gpqRkpbJQY8egtL038sCVnvj40oAmQI"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+Completed 500 Internal Server Error in 55ms
+
+NameError (undefined local variable or method `data' for #<Class:0xb0823c4>):
+  app/models/user.rb:12:in `find_for_google_oauth2'
+  app/controllers/omniauth_callbacks_controller.rb:3:in `google_oauth2'
+
+
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (12.2ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (10.6ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (3.7ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (73.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-03 12:37:46 -0400
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.4ms)
+Completed 200 OK in 89ms (Views: 88.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-2a1d517c9b0418e62735f9a4a6eb6998.css?body=1" for 127.0.0.1 at 2015-04-03 12:37:46 -0400
+
+
+Started GET "/assets/application-d727d9d08688c7bf93b956a43dd9ec02.css?body=1" for 127.0.0.1 at 2015-04-03 12:37:46 -0400
+
+
+Started GET "/assets/users-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-04-03 12:37:46 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-03 12:37:46 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-03 12:37:46 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 12:37:46 -0400
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 12:37:46 -0400
+
+
+Started GET "/assets/application-110154e6a06efeee4a01b13a39295ae0.js?body=1" for 127.0.0.1 at 2015-04-03 12:37:46 -0400
+
+
+Started GET "/users/login" for 127.0.0.1 at 2015-04-03 12:37:49 -0400
+Processing by UsersController#login as HTML
+  Rendered users/login.html.haml within layouts/application (12.1ms)
+Completed 200 OK in 93ms (Views: 93.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-2a1d517c9b0418e62735f9a4a6eb6998.css?body=1" for 127.0.0.1 at 2015-04-03 12:37:49 -0400
+
+
+Started GET "/assets/users-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-04-03 12:37:49 -0400
+
+
+Started GET "/assets/application-d727d9d08688c7bf93b956a43dd9ec02.css?body=1" for 127.0.0.1 at 2015-04-03 12:37:49 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-03 12:37:49 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 12:37:49 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-03 12:37:49 -0400
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 12:37:49 -0400
+
+
+Started GET "/assets/application-110154e6a06efeee4a01b13a39295ae0.js?body=1" for 127.0.0.1 at 2015-04-03 12:37:49 -0400
+
+
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2015-04-03 12:37:51 -0400
+
+
+Started GET "/users/auth/google_oauth2/callback?state=44933f85052fafc3d99ef1deabd24d1f366feb6d3f4d543f&code=4/X7jmGSDEAEA2KWgtMMfSJAatzSLNAUbvhx5ZT13x614.svTXQHeLfNQeJvIeHux6iLa16koAmQI" for 127.0.0.1 at 2015-04-03 12:37:51 -0400
+Processing by OmniauthCallbacksController#google_oauth2 as HTML
+  Parameters: {"state"=>"44933f85052fafc3d99ef1deabd24d1f366feb6d3f4d543f", "code"=>"4/X7jmGSDEAEA2KWgtMMfSJAatzSLNAUbvhx5ZT13x614.svTXQHeLfNQeJvIeHux6iLa16koAmQI"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'ffouladi@colgate.edu' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+Completed 422 Unprocessable Entity in 200ms
+
+ActiveRecord::RecordInvalid (Validation failed: Email has already been taken):
+  app/models/user.rb:12:in `find_for_google_oauth2'
+  app/controllers/omniauth_callbacks_controller.rb:3:in `google_oauth2'
+
+
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (7.9ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (8.0ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.2ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (61.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-03 12:38:52 -0400
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.5ms)
+Completed 200 OK in 100ms (Views: 99.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-2a1d517c9b0418e62735f9a4a6eb6998.css?body=1" for 127.0.0.1 at 2015-04-03 12:38:53 -0400
+
+
+Started GET "/assets/users-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-04-03 12:38:53 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-03 12:38:53 -0400
+
+
+Started GET "/assets/application-d727d9d08688c7bf93b956a43dd9ec02.css?body=1" for 127.0.0.1 at 2015-04-03 12:38:53 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-03 12:38:53 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 12:38:53 -0400
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 12:38:53 -0400
+
+
+Started GET "/assets/application-110154e6a06efeee4a01b13a39295ae0.js?body=1" for 127.0.0.1 at 2015-04-03 12:38:53 -0400
+
+
+Started GET "/users/login" for 127.0.0.1 at 2015-04-03 12:38:55 -0400
+Processing by UsersController#login as HTML
+  Rendered users/login.html.haml within layouts/application (4.2ms)
+Completed 200 OK in 113ms (Views: 112.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-2a1d517c9b0418e62735f9a4a6eb6998.css?body=1" for 127.0.0.1 at 2015-04-03 12:38:55 -0400
+
+
+Started GET "/assets/users-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-04-03 12:38:55 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-03 12:38:55 -0400
+
+
+Started GET "/assets/application-110154e6a06efeee4a01b13a39295ae0.js?body=1" for 127.0.0.1 at 2015-04-03 12:38:55 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-03 12:38:55 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 12:38:55 -0400
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 12:38:55 -0400
+
+
+Started GET "/assets/application-d727d9d08688c7bf93b956a43dd9ec02.css?body=1" for 127.0.0.1 at 2015-04-03 12:38:55 -0400
+
+
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2015-04-03 12:38:56 -0400
+
+
+Started GET "/users/auth/google_oauth2/callback?state=1404d08e0bbc37622b343d955ca931e0c4dc6820a8787719&code=4/OrWCizP2xG7ZGqZk8K_ybZCODkThgY481eQJtlJZokA.Yi3kXE2LcSwZJvIeHux6iLZZlUwAmQI" for 127.0.0.1 at 2015-04-03 12:38:57 -0400
+Processing by OmniauthCallbacksController#google_oauth2 as HTML
+  Parameters: {"state"=>"1404d08e0bbc37622b343d955ca931e0c4dc6820a8787719", "code"=>"4/OrWCizP2xG7ZGqZk8K_ybZCODkThgY481eQJtlJZokA.Yi3kXE2LcSwZJvIeHux6iLZZlUwAmQI"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "ffouladi@colgate.edu"]]
+Completed 500 Internal Server Error in 33ms
+
+NoMethodError (undefined method `persisted?' for nil:NilClass):
+  app/controllers/omniauth_callbacks_controller.rb:5:in `google_oauth2'
+
+
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (12.0ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (8.5ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.3ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (64.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-03 12:40:22 -0400
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.6ms)
+Completed 200 OK in 118ms (Views: 117.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-2a1d517c9b0418e62735f9a4a6eb6998.css?body=1" for 127.0.0.1 at 2015-04-03 12:40:22 -0400
+
+
+Started GET "/assets/users-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-04-03 12:40:22 -0400
+
+
+Started GET "/assets/application-d727d9d08688c7bf93b956a43dd9ec02.css?body=1" for 127.0.0.1 at 2015-04-03 12:40:22 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-03 12:40:22 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-03 12:40:22 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 12:40:22 -0400
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 12:40:22 -0400
+
+
+Started GET "/assets/application-110154e6a06efeee4a01b13a39295ae0.js?body=1" for 127.0.0.1 at 2015-04-03 12:40:22 -0400
+
+
+Started GET "/users/login" for 127.0.0.1 at 2015-04-03 12:40:24 -0400
+Processing by UsersController#login as HTML
+  Rendered users/login.html.haml within layouts/application (1.8ms)
+Completed 200 OK in 88ms (Views: 88.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-2a1d517c9b0418e62735f9a4a6eb6998.css?body=1" for 127.0.0.1 at 2015-04-03 12:40:24 -0400
+
+
+Started GET "/assets/users-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-04-03 12:40:24 -0400
+
+
+Started GET "/assets/application-d727d9d08688c7bf93b956a43dd9ec02.css?body=1" for 127.0.0.1 at 2015-04-03 12:40:24 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-03 12:40:24 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-03 12:40:24 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 12:40:24 -0400
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 12:40:24 -0400
+
+
+Started GET "/assets/application-110154e6a06efeee4a01b13a39295ae0.js?body=1" for 127.0.0.1 at 2015-04-03 12:40:24 -0400
+
+
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2015-04-03 12:40:26 -0400
+
+
+Started GET "/users/auth/google_oauth2/callback?state=631621b5eae03f983b7a2b1dce45f455e28c686b7597c400&code=4/c3zc_VPiW7qOWpxZ3a313TeS8Vv3ZW_9ws0nGz1iUzU.Alt2Hu-jWs0aJvIeHux6iLafUE8AmQI" for 127.0.0.1 at 2015-04-03 12:40:26 -0400
+Processing by OmniauthCallbacksController#google_oauth2 as HTML
+  Parameters: {"state"=>"631621b5eae03f983b7a2b1dce45f455e28c686b7597c400", "code"=>"4/c3zc_VPiW7qOWpxZ3a313TeS8Vv3ZW_9ws0nGz1iUzU.Alt2Hu-jWs0aJvIeHux6iLafUE8AmQI"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = ?  [["email", "ffouladi@colgate.edu"]]
+Completed 500 Internal Server Error in 25ms
+
+NoMethodError (undefined method `persisted?' for #<User::ActiveRecord_Relation:0xb4cee78>):
+  app/controllers/omniauth_callbacks_controller.rb:5:in `google_oauth2'
+
+
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (12.1ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (5.6ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (5.5ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (7.4ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (72.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-03 12:42:00 -0400
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.4ms)
+Completed 200 OK in 96ms (Views: 95.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-2a1d517c9b0418e62735f9a4a6eb6998.css?body=1" for 127.0.0.1 at 2015-04-03 12:42:01 -0400
+
+
+Started GET "/assets/users-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-04-03 12:42:01 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-03 12:42:01 -0400
+
+
+Started GET "/assets/application-d727d9d08688c7bf93b956a43dd9ec02.css?body=1" for 127.0.0.1 at 2015-04-03 12:42:01 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-03 12:42:01 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 12:42:01 -0400
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 12:42:01 -0400
+
+
+Started GET "/assets/application-110154e6a06efeee4a01b13a39295ae0.js?body=1" for 127.0.0.1 at 2015-04-03 12:42:01 -0400
+
+
+Started GET "/users/login" for 127.0.0.1 at 2015-04-03 12:42:03 -0400
+Processing by UsersController#login as HTML
+  Rendered users/login.html.haml within layouts/application (2.1ms)
+Completed 200 OK in 107ms (Views: 107.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-04-03 12:42:03 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-03 12:42:03 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-03 12:42:03 -0400
+
+
+Started GET "/assets/products-2a1d517c9b0418e62735f9a4a6eb6998.css?body=1" for 127.0.0.1 at 2015-04-03 12:42:03 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 12:42:03 -0400
+
+
+Started GET "/assets/application-d727d9d08688c7bf93b956a43dd9ec02.css?body=1" for 127.0.0.1 at 2015-04-03 12:42:03 -0400
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 12:42:03 -0400
+
+
+Started GET "/assets/application-110154e6a06efeee4a01b13a39295ae0.js?body=1" for 127.0.0.1 at 2015-04-03 12:42:03 -0400
+
+
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2015-04-03 12:42:05 -0400
+
+
+Started GET "/users/auth/google_oauth2/callback?state=1dd670417a4de943dd640772da16a2af03bab97f720162be&code=4/G1Nblrl8y0qq-FloYTbFT9j7_KByRO8hF3gv51Y-AM0.Mkbz_J4_EeYUJvIeHux6iLZ7UlIAmQI" for 127.0.0.1 at 2015-04-03 12:42:05 -0400
+Processing by OmniauthCallbacksController#google_oauth2 as HTML
+  Parameters: {"state"=>"1dd670417a4de943dd640772da16a2af03bab97f720162be", "code"=>"4/G1Nblrl8y0qq-FloYTbFT9j7_KByRO8hF3gv51Y-AM0.Mkbz_J4_EeYUJvIeHux6iLZ7UlIAmQI"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = ?  [["email", "ffouladi@colgate.edu"]]
+Completed 500 Internal Server Error in 419391ms
+
+NoMethodError (undefined method `persisted?' for #<User::ActiveRecord_Relation:0xb5b523a8>):
+  app/controllers/omniauth_callbacks_controller.rb:5:in `google_oauth2'
+
+
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (138.2ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (56.5ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (9.3ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (4.7ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (281.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-03 12:49:24 -0400
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (12.5ms)
+Completed 200 OK in 521ms (Views: 516.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-03 12:49:26 -0400
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (12.4ms)
+Completed 200 OK in 470ms (Views: 468.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-2a1d517c9b0418e62735f9a4a6eb6998.css?body=1" for 127.0.0.1 at 2015-04-03 12:49:26 -0400
+
+
+Started GET "/assets/users-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-04-03 12:49:27 -0400
+
+
+Started GET "/assets/application-d727d9d08688c7bf93b956a43dd9ec02.css?body=1" for 127.0.0.1 at 2015-04-03 12:49:27 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 12:49:27 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-03 12:49:27 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-03 12:49:27 -0400
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 12:49:27 -0400
+
+
+Started GET "/assets/application-110154e6a06efeee4a01b13a39295ae0.js?body=1" for 127.0.0.1 at 2015-04-03 12:49:27 -0400
+
+
+Started GET "/users/login" for 127.0.0.1 at 2015-04-03 12:49:28 -0400
+Processing by UsersController#login as HTML
+  Rendered users/login.html.haml within layouts/application (27.5ms)
+Completed 200 OK in 461ms (Views: 459.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-d727d9d08688c7bf93b956a43dd9ec02.css?body=1" for 127.0.0.1 at 2015-04-03 12:49:29 -0400
+
+
+Started GET "/assets/users-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-04-03 12:49:29 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 12:49:29 -0400
+
+
+Started GET "/assets/products-2a1d517c9b0418e62735f9a4a6eb6998.css?body=1" for 127.0.0.1 at 2015-04-03 12:49:29 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-03 12:49:29 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-03 12:49:29 -0400
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 12:49:29 -0400
+
+
+Started GET "/assets/application-110154e6a06efeee4a01b13a39295ae0.js?body=1" for 127.0.0.1 at 2015-04-03 12:49:29 -0400
+
+
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2015-04-03 12:49:30 -0400
+
+
+Started GET "/users/auth/google_oauth2/callback?state=62f87d3d54fa73a5f7c812ab1b9ac6db4764e5c898b73198&code=4/UU-8k2rBxrUXEpiCwkOZg3EDMyXWw769hIZxFmIWAus.4hvJKEKqsEocJvIeHux6iLYd-WQAmQI" for 127.0.0.1 at 2015-04-03 12:49:31 -0400
+Processing by OmniauthCallbacksController#google_oauth2 as HTML
+  Parameters: {"state"=>"62f87d3d54fa73a5f7c812ab1b9ac6db4764e5c898b73198", "code"=>"4/UU-8k2rBxrUXEpiCwkOZg3EDMyXWw769hIZxFmIWAus.4hvJKEKqsEocJvIeHux6iLYd-WQAmQI"}
+  [1m[36mUser Load (1.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (1.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "ffouladi@colgate.edu"]]
+  [1m[36mUser Load (1.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = ?[0m  [["email", "ffouladi@colgate.edu"]]
+Completed 500 Internal Server Error in 12667ms
+
+RuntimeError (Could not find a valid mapping for #<ActiveRecord::Relation [#<User id: 2, email: "ffouladi@colgate.edu", encrypted_password: "$2a$10$QitqOO0gQ.xifPOu9pk8ruBw9SWFlNXACEg6oyscB9H...", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil, sign_in_count: 1, current_sign_in_at: "2015-04-03 16:07:36", last_sign_in_at: "2015-04-03 16:07:36", current_sign_in_ip: "127.0.0.1", last_sign_in_ip: "127.0.0.1", created_at: "2015-04-03 16:07:36", updated_at: "2015-04-03 16:07:36", provider: nil, uid: nil, name: "Farah Fouladi '15", birthday: nil, driver: nil>]>):
+  app/controllers/omniauth_callbacks_controller.rb:7:in `google_oauth2'
+
+
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (233.2ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (62.6ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (9.2ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (10.6ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (382.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-03 12:54:32 -0400
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (36.1ms)
+Completed 200 OK in 4397ms (Views: 4290.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-03 12:54:44 -0400
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (112.6ms)
+Completed 200 OK in 4921ms (Views: 4867.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-03 12:54:49 -0400
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (25.1ms)
+Completed 200 OK in 5876ms (Views: 5857.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-2a1d517c9b0418e62735f9a4a6eb6998.css?body=1" for 127.0.0.1 at 2015-04-03 12:54:57 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-03 12:54:57 -0400
+
+
+Started GET "/assets/users-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-04-03 12:54:58 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-03 12:54:58 -0400
+
+
+Started GET "/assets/application-d727d9d08688c7bf93b956a43dd9ec02.css?body=1" for 127.0.0.1 at 2015-04-03 12:54:58 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 12:54:59 -0400
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 12:54:59 -0400
+
+
+Started GET "/assets/application-110154e6a06efeee4a01b13a39295ae0.js?body=1" for 127.0.0.1 at 2015-04-03 12:55:00 -0400
+
+
+Started GET "/users/login" for 127.0.0.1 at 2015-04-03 12:55:04 -0400
+Processing by UsersController#login as HTML
+  Rendered users/login.html.haml within layouts/application (142.6ms)
+Completed 200 OK in 5277ms (Views: 5265.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-2a1d517c9b0418e62735f9a4a6eb6998.css?body=1" for 127.0.0.1 at 2015-04-03 12:55:10 -0400
+
+
+Started GET "/assets/users-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-04-03 12:55:11 -0400
+
+
+Started GET "/assets/application-d727d9d08688c7bf93b956a43dd9ec02.css?body=1" for 127.0.0.1 at 2015-04-03 12:55:11 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-03 12:55:11 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 12:55:12 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-03 12:55:12 -0400
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 12:55:12 -0400
+
+
+Started GET "/assets/application-110154e6a06efeee4a01b13a39295ae0.js?body=1" for 127.0.0.1 at 2015-04-03 12:55:13 -0400
+
+
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2015-04-03 12:55:20 -0400
+
+
+Started GET "/users/auth/google_oauth2/callback?state=febae6948a55bbdd32164b3b23376ff928b1eae56cc1e85f&code=4/r2iR2Tywnf_wJIQErcWRGbFofrEs-RwhWmFqsj1ScCo.wu3D9PzJNvEYJvIeHux6iLbRl2oAmQI" for 127.0.0.1 at 2015-04-03 12:55:21 -0400
+
+SyntaxError (/home/csvm/TBD-App/app/controllers/omniauth_callbacks_controller.rb:7: syntax error, unexpected ':', expecting keyword_end
+...ome_user_path(@user.first.id) :event => :authentication
+...                               ^):
+  app/controllers/omniauth_callbacks_controller.rb:7: syntax error, unexpected ':', expecting keyword_end
+
+
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (1185.4ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (289.8ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (68.5ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (26.5ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (2225.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-03 12:57:27 -0400
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (28.3ms)
+Completed 200 OK in 4505ms (Views: 4475.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-03 12:57:39 -0400
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (104.7ms)
+Completed 200 OK in 5248ms (Views: 5145.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-03 12:57:45 -0400
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (33.3ms)
+Completed 200 OK in 4875ms (Views: 4825.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-04-03 12:57:50 -0400
+
+
+Started GET "/assets/products-2a1d517c9b0418e62735f9a4a6eb6998.css?body=1" for 127.0.0.1 at 2015-04-03 12:57:51 -0400
+
+
+Started GET "/assets/application-d727d9d08688c7bf93b956a43dd9ec02.css?body=1" for 127.0.0.1 at 2015-04-03 12:57:52 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-03 12:57:52 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-03 12:57:53 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 12:57:53 -0400
+
+
+Started GET "/assets/application-110154e6a06efeee4a01b13a39295ae0.js?body=1" for 127.0.0.1 at 2015-04-03 12:57:54 -0400
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 12:57:54 -0400
+
+
+Started GET "/users/login" for 127.0.0.1 at 2015-04-03 12:58:07 -0400
+Processing by UsersController#login as HTML
+  Rendered users/login.html.haml within layouts/application (136.3ms)
+Completed 200 OK in 4460ms (Views: 4441.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-2a1d517c9b0418e62735f9a4a6eb6998.css?body=1" for 127.0.0.1 at 2015-04-03 12:58:13 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-03 12:58:14 -0400
+
+
+Started GET "/assets/application-d727d9d08688c7bf93b956a43dd9ec02.css?body=1" for 127.0.0.1 at 2015-04-03 12:58:14 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-03 12:58:15 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 12:58:15 -0400
+
+
+Started GET "/assets/users-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-04-03 12:58:15 -0400
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 12:58:16 -0400
+
+
+Started GET "/assets/application-110154e6a06efeee4a01b13a39295ae0.js?body=1" for 127.0.0.1 at 2015-04-03 12:58:16 -0400
+
+
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2015-04-03 12:58:19 -0400
+
+
+Started GET "/users/auth/google_oauth2/callback?state=8f173abfb7aff9a5f50a6beda53a2d6e05483b00aa5a6399&code=4/I14sEvIgDrpySI6VE-AkoGltLA2Oa4AUbrGdgG9XPpQ.Eku1wx68JDIdJvIeHux6iLYt9m8AmQI" for 127.0.0.1 at 2015-04-03 12:58:20 -0400
+Processing by OmniauthCallbacksController#google_oauth2 as HTML
+  Parameters: {"state"=>"8f173abfb7aff9a5f50a6beda53a2d6e05483b00aa5a6399", "code"=>"4/I14sEvIgDrpySI6VE-AkoGltLA2Oa4AUbrGdgG9XPpQ.Eku1wx68JDIdJvIeHux6iLYt9m8AmQI"}
+  [1m[35mUser Load (33.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (4.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "ffouladi@colgate.edu"]]
+Redirected to http://localhost:3000/users/welcome/2
+Completed 302 Found in 17513ms (ActiveRecord: 80.2ms)
+
+
+Started GET "/users/welcome/2" for 127.0.0.1 at 2015-04-03 12:58:40 -0400
+Processing by UsersController#welcome as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (9.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered users/welcome.html.haml within layouts/application (98.4ms)
+Completed 200 OK in 5507ms (Views: 5210.6ms | ActiveRecord: 9.0ms)
+
+
+Started GET "/assets/users-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-04-03 12:58:47 -0400
+
+
+Started GET "/assets/products-2a1d517c9b0418e62735f9a4a6eb6998.css?body=1" for 127.0.0.1 at 2015-04-03 12:58:47 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-03 12:58:48 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-03 12:58:48 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 12:58:48 -0400
+
+
+Started GET "/assets/application-d727d9d08688c7bf93b956a43dd9ec02.css?body=1" for 127.0.0.1 at 2015-04-03 12:58:48 -0400
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 12:58:49 -0400
+
+
+Started GET "/assets/application-110154e6a06efeee4a01b13a39295ae0.js?body=1" for 127.0.0.1 at 2015-04-03 12:58:49 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-03 13:01:19 -0400
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (16.2ms)
+Completed 200 OK in 4056ms (Views: 4037.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-03 13:01:23 -0400
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (15.7ms)
+Completed 200 OK in 3751ms (Views: 3699.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-03 13:01:28 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 13:01:29 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-03 13:01:29 -0400
+
+
+Started GET "/assets/users-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-04-03 13:01:29 -0400
+
+
+Started GET "/assets/application-d727d9d08688c7bf93b956a43dd9ec02.css?body=1" for 127.0.0.1 at 2015-04-03 13:01:30 -0400
+
+
+Started GET "/assets/products-2a1d517c9b0418e62735f9a4a6eb6998.css?body=1" for 127.0.0.1 at 2015-04-03 13:01:30 -0400
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 13:01:30 -0400
+
+
+Started GET "/assets/application-110154e6a06efeee4a01b13a39295ae0.js?body=1" for 127.0.0.1 at 2015-04-03 13:01:31 -0400
+
+
+Started GET "/users/login" for 127.0.0.1 at 2015-04-03 13:02:37 -0400
+Processing by UsersController#login as HTML
+  Rendered users/login.html.haml within layouts/application (105.0ms)
+Completed 200 OK in 3538ms (Views: 3509.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-2a1d517c9b0418e62735f9a4a6eb6998.css?body=1" for 127.0.0.1 at 2015-04-03 13:02:42 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 13:02:43 -0400
+
+
+Started GET "/assets/users-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-04-03 13:02:43 -0400
+
+
+Started GET "/assets/application-d727d9d08688c7bf93b956a43dd9ec02.css?body=1" for 127.0.0.1 at 2015-04-03 13:02:44 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-03 13:02:44 -0400
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 13:02:44 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-03 13:02:44 -0400
+
+
+Started GET "/assets/application-110154e6a06efeee4a01b13a39295ae0.js?body=1" for 127.0.0.1 at 2015-04-03 13:02:45 -0400
+
+
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2015-04-03 13:02:57 -0400
+
+
+Started GET "/users/auth/google_oauth2/callback?state=ec192118adef7192654f3c9bf415651cb803a47c94ff7f28&code=4/-Tbu4Ra9vBxu9ibnPKMz81EZ0v0yHHhPD8zj-ZUWR3Y.8hnuBnlU6ngUJvIeHux6iLYfcXgAmQI" for 127.0.0.1 at 2015-04-03 13:02:58 -0400
+Processing by OmniauthCallbacksController#google_oauth2 as HTML
+  Parameters: {"state"=>"ec192118adef7192654f3c9bf415651cb803a47c94ff7f28", "code"=>"4/-Tbu4Ra9vBxu9ibnPKMz81EZ0v0yHHhPD8zj-ZUWR3Y.8hnuBnlU6ngUJvIeHux6iLYfcXgAmQI"}
+  [1m[36mUser Load (2.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "ffouladi@colgate.edu"]]
+Redirected to http://localhost:3000/users/welcome/2
+Completed 302 Found in 290346ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-03 13:07:49 -0400
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (2.4ms)
+Completed 200 OK in 430ms (Views: 428.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-03 13:07:50 -0400
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (8.4ms)
+Completed 200 OK in 409ms (Views: 402.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-03 13:07:50 -0400
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (2.9ms)
+Completed 200 OK in 426ms (Views: 424.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-2a1d517c9b0418e62735f9a4a6eb6998.css?body=1" for 127.0.0.1 at 2015-04-03 13:07:51 -0400
+
+
+Started GET "/assets/application-d727d9d08688c7bf93b956a43dd9ec02.css?body=1" for 127.0.0.1 at 2015-04-03 13:07:51 -0400
+
+
+Started GET "/assets/users-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-04-03 13:07:51 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 13:07:51 -0400
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 13:07:51 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-03 13:07:51 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-03 13:07:51 -0400
+
+
+Started GET "/assets/application-110154e6a06efeee4a01b13a39295ae0.js?body=1" for 127.0.0.1 at 2015-04-03 13:07:51 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-03 13:08:30 -0400
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (2.0ms)
+Completed 200 OK in 376ms (Views: 374.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-2a1d517c9b0418e62735f9a4a6eb6998.css?body=1" for 127.0.0.1 at 2015-04-03 13:08:31 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 13:08:31 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-03 13:08:31 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-03 13:08:32 -0400
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 13:08:32 -0400
+
+
+Started GET "/assets/users-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-04-03 13:08:32 -0400
+
+
+Started GET "/assets/application-d727d9d08688c7bf93b956a43dd9ec02.css?body=1" for 127.0.0.1 at 2015-04-03 13:08:32 -0400
+
+
+Started GET "/assets/application-110154e6a06efeee4a01b13a39295ae0.js?body=1" for 127.0.0.1 at 2015-04-03 13:08:32 -0400
+
+
+Started GET "/users/login" for 127.0.0.1 at 2015-04-03 13:08:34 -0400
+Processing by UsersController#login as HTML
+  Rendered users/login.html.haml within layouts/application (22.2ms)
+Completed 200 OK in 497ms (Views: 494.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-04-03 13:08:34 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 13:08:35 -0400
+
+
+Started GET "/assets/products-2a1d517c9b0418e62735f9a4a6eb6998.css?body=1" for 127.0.0.1 at 2015-04-03 13:08:35 -0400
+
+
+Started GET "/assets/application-d727d9d08688c7bf93b956a43dd9ec02.css?body=1" for 127.0.0.1 at 2015-04-03 13:08:35 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-03 13:08:35 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-03 13:08:35 -0400
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 13:08:35 -0400
+
+
+Started GET "/assets/application-110154e6a06efeee4a01b13a39295ae0.js?body=1" for 127.0.0.1 at 2015-04-03 13:08:35 -0400
+
+
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2015-04-03 13:08:36 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-03 13:09:41 -0400
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (12.2ms)
+Completed 200 OK in 468ms (Views: 465.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-2a1d517c9b0418e62735f9a4a6eb6998.css?body=1" for 127.0.0.1 at 2015-04-03 13:09:42 -0400
+
+
+Started GET "/assets/users-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-04-03 13:09:42 -0400
+
+
+Started GET "/assets/application-d727d9d08688c7bf93b956a43dd9ec02.css?body=1" for 127.0.0.1 at 2015-04-03 13:09:42 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 13:09:42 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-03 13:09:42 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-03 13:09:42 -0400
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 13:09:42 -0400
+
+
+Started GET "/assets/application-110154e6a06efeee4a01b13a39295ae0.js?body=1" for 127.0.0.1 at 2015-04-03 13:09:42 -0400
+
+
+Started GET "/users/login" for 127.0.0.1 at 2015-04-03 13:09:56 -0400
+Processing by UsersController#login as HTML
+  Rendered users/login.html.haml within layouts/application (125.8ms)
+Completed 200 OK in 4690ms (Views: 4675.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-2a1d517c9b0418e62735f9a4a6eb6998.css?body=1" for 127.0.0.1 at 2015-04-03 13:10:02 -0400
+
+
+Started GET "/assets/users-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-04-03 13:10:03 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-03 13:10:03 -0400
+
+
+Started GET "/assets/application-d727d9d08688c7bf93b956a43dd9ec02.css?body=1" for 127.0.0.1 at 2015-04-03 13:10:04 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-03 13:10:04 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 13:10:04 -0400
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 13:10:05 -0400
+
+
+Started GET "/assets/application-110154e6a06efeee4a01b13a39295ae0.js?body=1" for 127.0.0.1 at 2015-04-03 13:10:05 -0400
+
+
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2015-04-03 13:10:14 -0400
+
+
+Started GET "/users/auth/google_oauth2/callback?state=f9f01c5664c56462374beb80183e48fde264d4853afc5cf4&code=4/EYXSJjTD2l0lbEgQz90WYGlVTUQT1ZEvJAalPkzlVzY.klR1p3TcSCQVJvIeHux6iLbFzo8AmQI" for 127.0.0.1 at 2015-04-03 13:11:19 -0400
+Processing by OmniauthCallbacksController#google_oauth2 as HTML
+  Parameters: {"state"=>"f9f01c5664c56462374beb80183e48fde264d4853afc5cf4", "code"=>"4/EYXSJjTD2l0lbEgQz90WYGlVTUQT1ZEvJAalPkzlVzY.klR1p3TcSCQVJvIeHux6iLbFzo8AmQI"}
+  [1m[36mUser Load (29.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (45.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "ffouladi@colgate.edu"]]
+Redirected to http://localhost:3000/users/welcome/2
+Completed 302 Found in 3121ms (ActiveRecord: 138.8ms)
+
+
+Started GET "/users/welcome/2" for 127.0.0.1 at 2015-04-03 13:11:27 -0400
+Processing by UsersController#welcome as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (43.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered users/welcome.html.haml within layouts/application (21.4ms)
+Completed 200 OK in 5425ms (Views: 5074.3ms | ActiveRecord: 43.0ms)
+
+
+Started GET "/assets/products-2a1d517c9b0418e62735f9a4a6eb6998.css?body=1" for 127.0.0.1 at 2015-04-03 13:11:33 -0400
+
+
+Started GET "/assets/application-d727d9d08688c7bf93b956a43dd9ec02.css?body=1" for 127.0.0.1 at 2015-04-03 13:11:34 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 13:11:35 -0400
+
+
+Started GET "/assets/users-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-04-03 13:11:35 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-03 13:11:36 -0400
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 13:11:36 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-03 13:11:36 -0400
+
+
+Started GET "/assets/application-110154e6a06efeee4a01b13a39295ae0.js?body=1" for 127.0.0.1 at 2015-04-03 13:11:37 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-03 13:14:37 -0400
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (80.2ms)
+Completed 200 OK in 6558ms (Views: 6549.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-03 13:14:44 -0400
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (53.4ms)
+Completed 200 OK in 4262ms (Views: 4232.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-d727d9d08688c7bf93b956a43dd9ec02.css?body=1" for 127.0.0.1 at 2015-04-03 13:14:50 -0400
+
+
+Started GET "/assets/users-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-04-03 13:14:50 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-03 13:14:51 -0400
+
+
+Started GET "/assets/products-2a1d517c9b0418e62735f9a4a6eb6998.css?body=1" for 127.0.0.1 at 2015-04-03 13:14:51 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-03 13:14:52 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 13:14:52 -0400
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 13:14:52 -0400
+
+
+Started GET "/assets/application-110154e6a06efeee4a01b13a39295ae0.js?body=1" for 127.0.0.1 at 2015-04-03 13:14:53 -0400
+
+
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2015-04-03 13:14:58 -0400
+
+
+Started GET "/users/auth/google_oauth2/callback?state=4475374bbc28ce01af0f5c1fc30ed27cc74b785fa9f96775&code=4/2QsvNCkrQzl97AdpUp6ZWR0-ugObhYzmpzte10G7yg0.Ej4bwiIxVxMXJvIeHux6iLaH748AmQI" for 127.0.0.1 at 2015-04-03 13:14:59 -0400
+Processing by OmniauthCallbacksController#google_oauth2 as HTML
+  Parameters: {"state"=>"4475374bbc28ce01af0f5c1fc30ed27cc74b785fa9f96775", "code"=>"4/2QsvNCkrQzl97AdpUp6ZWR0-ugObhYzmpzte10G7yg0.Ej4bwiIxVxMXJvIeHux6iLaH748AmQI"}
+  [1m[35mUser Load (1.9ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (4.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "ffouladi@colgate.edu"]]
+Redirected to http://localhost:3000/users/welcome/2
+Completed 302 Found in 422ms (ActiveRecord: 6.5ms)
+
+
+Started GET "/users/welcome/2" for 127.0.0.1 at 2015-04-03 13:15:02 -0400
+Processing by UsersController#welcome as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (2.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered users/welcome.html.haml within layouts/application (3.5ms)
+Completed 200 OK in 4566ms (Views: 4456.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/users-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-04-03 13:15:08 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 13:15:08 -0400
+
+
+Started GET "/assets/products-2a1d517c9b0418e62735f9a4a6eb6998.css?body=1" for 127.0.0.1 at 2015-04-03 13:15:09 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-03 13:15:09 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-03 13:15:10 -0400
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 13:15:10 -0400
+
+
+Started GET "/assets/application-d727d9d08688c7bf93b956a43dd9ec02.css?body=1" for 127.0.0.1 at 2015-04-03 13:15:10 -0400
+
+
+Started GET "/assets/application-110154e6a06efeee4a01b13a39295ae0.js?body=1" for 127.0.0.1 at 2015-04-03 13:15:11 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-03 13:15:17 -0400
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (24.0ms)
+Completed 200 OK in 4275ms (Views: 4257.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-03 13:15:21 -0400
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (28.3ms)
+Completed 200 OK in 4336ms (Views: 4311.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-04-03 13:15:27 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-03 13:15:27 -0400
+
+
+Started GET "/assets/products-2a1d517c9b0418e62735f9a4a6eb6998.css?body=1" for 127.0.0.1 at 2015-04-03 13:15:28 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 13:15:28 -0400
+
+
+Started GET "/assets/application-d727d9d08688c7bf93b956a43dd9ec02.css?body=1" for 127.0.0.1 at 2015-04-03 13:15:28 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-03 13:15:29 -0400
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 13:15:29 -0400
+
+
+Started GET "/assets/application-110154e6a06efeee4a01b13a39295ae0.js?body=1" for 127.0.0.1 at 2015-04-03 13:15:29 -0400
+
+
+Started GET "/users/register" for 127.0.0.1 at 2015-04-03 13:15:35 -0400
+Processing by UsersController#register as HTML
+  [1m[36m (15.9ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (5.5ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'ttester@colgate.edu' LIMIT 1
+  [1m[36m (3.0ms)[0m  [1mrollback transaction[0m
+Completed 422 Unprocessable Entity in 1850ms
+
+ActiveRecord::RecordInvalid (Validation failed: Email has already been taken):
+  app/controllers/users_controller.rb:13:in `register'
+
+
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (3132.0ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (927.5ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (96.6ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (54.9ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (5174.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-03 13:17:22 -0400
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (54.6ms)
+Completed 200 OK in 4060ms (Views: 4002.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-03 13:17:34 -0400
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (18.9ms)
+Completed 200 OK in 3257ms (Views: 3238.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products-2a1d517c9b0418e62735f9a4a6eb6998.css?body=1" for 127.0.0.1 at 2015-04-03 13:17:39 -0400
+
+
+Started GET "/assets/application-d727d9d08688c7bf93b956a43dd9ec02.css?body=1" for 127.0.0.1 at 2015-04-03 13:17:39 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 13:17:40 -0400
+
+
+Started GET "/assets/users-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-04-03 13:17:40 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-03 13:17:41 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-03 13:17:41 -0400
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-03 13:17:42 -0400
+
+
+Started GET "/assets/application-110154e6a06efeee4a01b13a39295ae0.js?body=1" for 127.0.0.1 at 2015-04-03 13:17:42 -0400
+
+
+Started GET "/users/register" for 127.0.0.1 at 2015-04-03 13:17:45 -0400
+Processing by UsersController#register as HTML
+  Rendered users/register.html.haml within layouts/application (65.1ms)
+Completed 500 Internal Server Error in 120ms
+
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"users", :id=>nil} missing required keys: [:id]):
+    4:     </br>
+    5:     Note: this non-Google sign up is only here temporarily (until Google sign-in is implemented)
+    6:     </br>
+    7:     =link_to "Jump to after signing in with Google", edit_user_path(@user)
+  app/views/users/register.html.haml:7:in `_app_views_users_register_html_haml__728665948__621429608'
+
+
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (436.6ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (124.5ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (22.7ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (10.0ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (681.5ms)

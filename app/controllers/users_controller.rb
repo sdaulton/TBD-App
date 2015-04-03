@@ -10,7 +10,7 @@ class UsersController < ApplicationController
     end
 
     def register
-        @user = User.create!(name: "Tony Tester", email: "ttester@colgate.edu", password: "easyguess")
+        #@user = User.create!(name: "Tony Tester", email: "ttester@colgate.edu", password: "easyguess")
     end
     
     def login
