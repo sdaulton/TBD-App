@@ -1,13 +1,5 @@
 #main
 %h3 Create a new user
 
-%tbody
-    =form_for empty_user do |f| 
-        = f.label :name
-        = f.text_field :name
-        </br>
-        =f.label :email
-        =f.text_field :email
-        </br>
-        =f.submit "Create user"
-= link_to "Back to home page", users_path
+
+= link_to "Please sign up using Google", user_omniauth_authorize_path(:google_oauth2)

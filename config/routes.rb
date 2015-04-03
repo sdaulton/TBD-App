@@ -8,6 +8,8 @@ Rails.application.routes.draw do
   get "/users/register"
   get "/users/login"
   get "/users/logging"
+  get "/users/new", to: 'users#new', as: "new_user"
+  post "/users/create", to: 'users#create', as: "create_user"
   get "/users/edit/:id", to: 'users#edit', as: "edit_user"
   put "/users/update/:id", to: 'users#update' 
   patch "/users/update/:id", to: 'users#update', as: "update_user"
