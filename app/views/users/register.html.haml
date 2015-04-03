@@ -1,0 +1,7 @@
+#main
+    %h1 Register
+    =link_to "Please sign up using Google", user_omniauth_authorize_path(:google_oauth2)
+    </br>
+    Note: this non-Google sign up is only here temporarily (until Google sign-in is implemented)
+    </br>
+    =link_to "Jump to after signing in with Google", edit_user_path(@user)

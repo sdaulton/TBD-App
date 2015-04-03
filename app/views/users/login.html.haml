@@ -1,0 +1,20 @@
+#main
+    %h1 Login
+
+    =link_to "Sign in with Google", user_omniauth_authorize_path(:google_oauth2)
+    </br>
+    Note: this non-Google sign in is only here temporarily (since Google sign-in funtionality has not been implemented)
+    </br>
+    =form_tag users_logging_path, method: "get" do 
+        =label :email, "Email"
+        =email_field_tag :email 
+        </br>
+        =label :password, "Password"
+        =password_field_tag :password
+        </br>
+        =submit_tag "Log in", class: 'btn btn-primary'
+
+    </br>
+    =link_to "Don't have an account?", users_register_path
+    </br>
+    =link_to "Return to home page", users_index_path
