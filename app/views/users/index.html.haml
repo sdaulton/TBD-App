@@ -1,6 +1,19 @@
-#main 
-    %h3 Home
-    </br>
-    =link_to "Register", users_register_path
-    </br>
-    =link_to "Login", user_omniauth_authorize_path(:google_oauth2)
+%head
+%link{:href => "http://fonts.googleapis.com/css?family=Varela+Round", :rel => "stylesheet", :type => "text/css"}
+%link{:href => "http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css", :rel => "stylesheet"}
+%script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"}
+%script{:src => "http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"}
+
+%body
+  .container-fluid
+    .content-box
+      .row
+        .title-text
+          %h1 App Name
+          %p.text-blurb This will be the app blurb -- what we do
+
+        .row 
+          =link_to "Sign In", user_omniauth_authorize_path(:google_oauth2), {:class=>"btn btn-default col-md-3 col-md-offset-2"}
+          =link_to "Sign Up", users_register_path, {:class=>"btn btn-default col-md-3 col-md-offset-1"}
+
+
