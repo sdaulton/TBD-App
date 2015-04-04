@@ -1,3 +1,26 @@
-#main
-    %h1 Welcome #{@user.name}!
-    =link_to "Edit Account Information", edit_user_path(@user)
+%head
+  %link{:href => "http://fonts.googleapis.com/css?family=Varela+Round", :rel => "stylesheet", :type => "text/css"}
+  %link{:href => "http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css", :rel => "stylesheet"}
+  %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"}
+  %script{:src => "http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"}
+
+%body
+  .container-fluid
+    .content-box
+      .row
+        .title-text
+          .welcome
+            -#TODO change this to just first name -- parse out first word
+            %h1 Welcome back, #{@user.name}!  
+        .row.spacing
+          .btn.btn-default.col-md-6.col-md-offset-3
+            =link_to "Ready to drive!", :class=>"main-btn"
+        .row.spacing
+          .btn.btn-default.col-md-6.col-md-offset-3
+            =link_to "Request a ride!", :class=>"main-btn"
+        .row.spacing
+          .btn.btn-default.col-md-6.col-md-offset-3
+            =link_to "Report a problem.", :class=>"main-btn"
+        .row.spacing
+          .btn.btn-default.col-md-6.col-md-offset-3
+            =link_to "View Account.", edit_user_path(@user), {:class=>"main-btn"}

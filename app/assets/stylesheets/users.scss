@@ -2,34 +2,37 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
+//**general user model styling**//
 #header {
     visibility: hidden;
 }
 body {
     background-image: url(/assets/background-img.jpg);
     background-size: cover;
+    font-family: 'Varela Round', sans-serif;
     //filter: blur(15px);
 }
 h1 {
     margin: 0;
 }
-#notice {
-    visibility: hidden;
+h2 {
+    margin-top: 0;
 }
 .content-box {
     background-color: rgba(226, 231, 241, 0.8);
     border: 2px solid #e2e7f1;
     border-radius: 25px;
-    width: 55%;
+    width: 45%;
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 7.5%;
-    padding: 3% 2% 4% 5%;
+    margin-top: 5.5%;
+    padding: 3% 4% 4% 4%;
 }
 .title-text {
     font-family: 'Varela Round', sans-serif;
-    font-size: 155%;
+    font-size: 155%;   
 }
 .text-blurb {
     font-size: 80%;
@@ -37,15 +40,60 @@ h1 {
     margin-bottom: 10%;
 }
 .main-btn {
-  text-decoration: none;
-  border: 2px solid transparent;
-  border-radius: 5px;
-  padding: 8px 12px;
-  margin-bottom: 0px;
-  text-size: 20px;
-  color: #5B5F68;
+    text-decoration: none;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    padding: 8px 12px;
+    margin-bottom: 0px;
+    text-size: 20px;
+    color: #5B5F68;
 }
 .main-btn:hover {
     text-decoration: none;
-    color: #494C53;
+    font-color: #494C53;
+}
+.spacing {
+    margin-bottom: 5px;
+}
+//**welcome page styling**//
+#notice {
+    visibility: hidden;
+}
+.welcome {
+    margin-bottom: 10%;
+}
+
+//**sign up for account page styling**//
+.field-text {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 100%;
+}
+.input-field {
+    line-height: 22px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+.create-account {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 155%;   
+}
+.form-spacing {
+    margin-left: 8%;
+    margin-top: 4%;
+}
+#user_birthday {
+    line-height: 22px;
+}
+.sign-up-google {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 100%;
+    text-decoration: none;
+    margin-top: 2%;
+    font-color: #5B5F68;
+    font-size: 75%;
+}
+.sign-up-google:hover {
+    //margin-top: 1%;
+    text-decoration: none;
+    font-color: #494C53;
 }

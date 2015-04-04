@@ -41,7 +41,6 @@ class UsersController < ApplicationController
     end
 
     def create
-		  byebug
         user = User.new(create_update_params)
 		  redirect_to user_omniauth_authorize_path(:google_oauth2)
         #if user.save
