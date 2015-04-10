@@ -57,11 +57,6 @@ RSpec.describe UsersController, type: :controller do
     end
     
     describe 'signing in' do
-        it 'should call the model method that performs the Google sign in' 
-            @fake_user = FactoryGirl.build(:user, :name "John Smith", :email "jsmith@colgate.edu", :password "johnspassword")
-            User.should_receive(:find_for_google_oauth2).with(request.env["omniauth.auth"],nil).and_return(fake_user)
-            post :
-        end
         context 'user account exists' do
             it 'should select welcome page for rendering'
             it 'should make the user available to the welcome template'
