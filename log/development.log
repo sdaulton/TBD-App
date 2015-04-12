@@ -6742,3 +6742,525 @@ Processing by UsersController#edit as HTML
   [1m[35mUser Load (1.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
   Rendered users/edit.html.haml within layouts/application (42.6ms)
 Completed 200 OK in 358ms (Views: 354.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-11 13:56:15 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (2.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (10.9ms)
+Completed 200 OK in 510ms (Views: 510.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/background-img.jpg" for 127.0.0.1 at 2015-04-11 13:56:16 -0400
+
+
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2015-04-11 13:56:19 -0400
+
+
+Started GET "/users/auth/google_oauth2/callback?state=0f86a391bf497aa8730f937f8a4e7a84fc0b026db6ffe88a&code=4/07zbZNKiPMxLk9wtM70TxPGCHRg7rYMbIE2Z3gUqma4.Eh3-sDr3XmccgtL038sCVntLDUBTmQI" for 127.0.0.1 at 2015-04-11 13:56:19 -0400
+Processing by OmniauthCallbacksController#google_oauth2 as HTML
+  Parameters: {"state"=>"0f86a391bf497aa8730f937f8a4e7a84fc0b026db6ffe88a", "code"=>"4/07zbZNKiPMxLk9wtM70TxPGCHRg7rYMbIE2Z3gUqma4.Eh3-sDr3XmccgtL038sCVntLDUBTmQI"}
+  [1m[35mUser Load (2.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "sdaulton8@gmail.com"]]
+Redirected to http://localhost:3000/users/welcome/2
+Completed 302 Found in 81ms (ActiveRecord: 10.0ms)
+
+
+Started GET "/users/welcome/2" for 127.0.0.1 at 2015-04-11 13:56:20 -0400
+Processing by UsersController#welcome as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (2.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered users/welcome.html.haml within layouts/application (5.8ms)
+Completed 200 OK in 317ms (Views: 308.6ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/users/edit/2" for 127.0.0.1 at 2015-04-11 13:56:24 -0400
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (1.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered users/edit.html.haml within layouts/application (56.2ms)
+Completed 200 OK in 374ms (Views: 371.7ms | ActiveRecord: 1.7ms)
+
+
+Started PATCH "/users/update/2" for 127.0.0.1 at 2015-04-11 13:56:31 -0400
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ITDtbunJ2wIaUsQ0dLMs2XSxyUsorXMgOdrwbGed9WOt5+DR8javF4yd4nhYLV6n1hCxY/m0XCfoahOc1IDqhw==", "user"=>{"name"=>"Samuel Daulton", "email"=>"sdaulton8@gmail.com", "birthday"=>"", "driver"=>"1"}, "commit"=>"Update user", "id"=>"2"}
+  [1m[36mUser Load (1.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+Unpermitted parameters: birthday, driver
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users/welcome/2
+Completed 302 Found in 9ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/users/welcome/2" for 127.0.0.1 at 2015-04-11 13:56:31 -0400
+Processing by UsersController#welcome as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (1.9ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered users/welcome.html.haml within layouts/application (0.9ms)
+Completed 200 OK in 320ms (Views: 316.8ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/users/edit/2" for 127.0.0.1 at 2015-04-11 13:56:36 -0400
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (1.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered users/edit.html.haml within layouts/application (2.8ms)
+Completed 200 OK in 312ms (Views: 309.3ms | ActiveRecord: 1.3ms)
+
+
+Started PATCH "/users/update/2" for 127.0.0.1 at 2015-04-11 13:56:47 -0400
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"A71ysqVHCSDTuyYe0yN+vLF3GAPrE2VSwBsY94sKIGCPan8Nvrh9NUV0AFL/vQzCE9ZgKzoKSlURq/sHOBc/hA==", "user"=>{"name"=>"Samuel Daulton", "email"=>"sdaulton8@gmail.com", "birthday"=>"1990-01-01", "driver"=>"1"}, "commit"=>"Update user", "id"=>"2"}
+  [1m[35mUser Load (2.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Unpermitted parameters: birthday, driver
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/users/welcome/2
+Completed 302 Found in 11ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/users/welcome/2" for 127.0.0.1 at 2015-04-11 13:56:48 -0400
+Processing by UsersController#welcome as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (1.9ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered users/welcome.html.haml within layouts/application (2.9ms)
+Completed 200 OK in 348ms (Views: 344.7ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/users/edit/2" for 127.0.0.1 at 2015-04-11 13:56:50 -0400
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (1.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered users/edit.html.haml within layouts/application (2.8ms)
+Completed 200 OK in 335ms (Views: 329.8ms | ActiveRecord: 1.6ms)
+
+
+Started PATCH "/users/update/2" for 127.0.0.1 at 2015-04-11 13:57:58 -0400
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"THmNsaZyr6PJS40DyB0fRu54IDpz72cWthlT1mdhFEbAroAOvY3btl+Eq0/kg204TNlYEqL2SBFnqbAm1HwLog==", "user"=>{"name"=>"Samuel Daulton", "email"=>"sdaulton8@gmail.com", "birthday"=>"", "driver"=>"1"}, "commit"=>"Update user", "id"=>"2"}
+  [1m[36mUser Load (1.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+Unpermitted parameters: birthday, driver
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users/welcome/2
+Completed 302 Found in 6ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/users/welcome/2" for 127.0.0.1 at 2015-04-11 13:57:58 -0400
+Processing by UsersController#welcome as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (1.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered users/welcome.html.haml within layouts/application (1.0ms)
+Completed 200 OK in 306ms (Views: 303.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/users/edit/2" for 127.0.0.1 at 2015-04-11 13:58:34 -0400
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (1.8ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered users/edit.html.haml within layouts/application (4.8ms)
+Completed 200 OK in 362ms (Views: 359.2ms | ActiveRecord: 1.8ms)
+
+
+Started PATCH "/users/update/2" for 127.0.0.1 at 2015-04-11 13:58:40 -0400
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bmH2JKLhLaPNkhhAvzrTlxe7oj6NKvce1559ZQgY/BDitvubuR5ZtltdPgyTpKHptRraFlwz2BkGLp6VuwXj9A==", "user"=>{"name"=>"Samuel Daulton", "email"=>"sdaulton8@gmail.com", "birthday"=>"1990-01-01", "driver"=>"1"}, "commit"=>"Update user", "id"=>"2"}
+  [1m[35mUser Load (5.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Unpermitted parameters: birthday, driver
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/users/welcome/2
+Completed 302 Found in 16ms (ActiveRecord: 5.3ms)
+
+
+Started GET "/users/welcome/2" for 127.0.0.1 at 2015-04-11 13:58:40 -0400
+Processing by UsersController#welcome as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (2.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered users/welcome.html.haml within layouts/application (1.1ms)
+Completed 200 OK in 348ms (Views: 345.5ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-11 19:46:45 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (2.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (15.2ms)
+Completed 200 OK in 582ms (Views: 581.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2015-04-11 19:46:47 -0400
+
+
+Started GET "/users/auth/google_oauth2/callback?state=57ab6e07e53d10f1e9bcd0a8b912706cde0c9ffa5a90483c&code=4/_pNWklYnZfSsG4LOGDq3tX5aC3LQ6D0vkSLkrjM-RWs.IhvOwR8OpyEQgtL038sCVnupy8FVmQI" for 127.0.0.1 at 2015-04-11 19:46:48 -0400
+Processing by OmniauthCallbacksController#google_oauth2 as HTML
+  Parameters: {"state"=>"57ab6e07e53d10f1e9bcd0a8b912706cde0c9ffa5a90483c", "code"=>"4/_pNWklYnZfSsG4LOGDq3tX5aC3LQ6D0vkSLkrjM-RWs.IhvOwR8OpyEQgtL038sCVnupy8FVmQI"}
+  [1m[35mUser Load (3.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "sdaulton8@gmail.com"]]
+Redirected to http://localhost:3000/users/welcome/2
+Completed 302 Found in 84ms (ActiveRecord: 8.1ms)
+
+
+Started GET "/users/welcome/2" for 127.0.0.1 at 2015-04-11 19:46:48 -0400
+Processing by UsersController#welcome as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (1.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered users/welcome.html.haml within layouts/application (6.6ms)
+Completed 200 OK in 311ms (Views: 294.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-11 19:58:32 -0400
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (3.3ms)
+Completed 200 OK in 296ms (Views: 295.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2015-04-11 19:59:36 -0400
+
+
+Started GET "/users/auth/google_oauth2/callback?state=f3c44fe104f3aa7df407bb665e74e420112815ead9883966&code=4/cas7tJ8q_8RHLpr8kpgJCaS3O-orodyS2KRkuY8fNL8.Mhljgs_Z5ogUJvIeHux6iLaB1dlVmQI" for 127.0.0.1 at 2015-04-11 19:59:55 -0400
+
+SyntaxError (/media/sf_software_engineering/TBD-App/app/controllers/omniauth_callbacks_controller.rb:12: syntax error, unexpected keyword_else, expecting keyword_end
+/media/sf_software_engineering/TBD-App/app/controllers/omniauth_callbacks_controller.rb:16: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/omniauth_callbacks_controller.rb:12: syntax error, unexpected keyword_else, expecting keyword_end
+  app/controllers/omniauth_callbacks_controller.rb:16: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (6.0ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.2ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (46.4ms)
+
+
+Started POST "/users/auth/google_oauth2/console/repl_sessions/2b473d5e52f6ecfb58e57f84406a1e95/trace" for 127.0.0.1 at 2015-04-11 20:00:25 -0400
+
+
+Started POST "/users/auth/google_oauth2/console/repl_sessions/2b473d5e52f6ecfb58e57f84406a1e95/trace" for 127.0.0.1 at 2015-04-11 20:00:28 -0400
+
+
+Started GET "/users/auth/google_oauth2/callback?state=f3c44fe104f3aa7df407bb665e74e420112815ead9883966&code=4/cbyrPnVrzqsPpvy_ow_tZykKrW09KnNngg8J1Y8pY1o.8vXfzlY9BUgbJvIeHux6iLbfKdxVmQI" for 127.0.0.1 at 2015-04-11 20:01:11 -0400
+Processing by OmniauthCallbacksController#failure as HTML
+  Parameters: {"state"=>"f3c44fe104f3aa7df407bb665e74e420112815ead9883966", "code"=>"4/cbyrPnVrzqsPpvy_ow_tZykKrW09KnNngg8J1Y8pY1o.8vXfzlY9BUgbJvIeHux6iLbfKdxVmQI"}
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-04-11 20:01:12 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/devise-3.4.1/app/views/devise/shared/_links.html.erb (9.5ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/devise-3.4.1/app/views/devise/sessions/new.html.erb within layouts/application (134.4ms)
+Completed 200 OK in 505ms (Views: 461.4ms | ActiveRecord: 8.6ms)
+
+
+Started GET "/assets/users-8be356f836551bcc0e999f527bcc6d12.css?body=1" for 127.0.0.1 at 2015-04-11 20:01:13 -0400
+
+
+Started GET "/assets/application-a3d5d6d2e7f84e941543c8c3140cfcaf.css?body=1" for 127.0.0.1 at 2015-04-11 20:01:13 -0400
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-11 20:01:13 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-11 20:01:13 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-11 20:01:13 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-11 20:01:13 -0400
+
+
+Started GET "/assets/application-110154e6a06efeee4a01b13a39295ae0.js?body=1" for 127.0.0.1 at 2015-04-11 20:01:13 -0400
+
+
+Started GET "/assets/background-img.jpg" for 127.0.0.1 at 2015-04-11 20:01:13 -0400
+
+
+Started GET "/users/auth/google_oauth2/callback?state=f3c44fe104f3aa7df407bb665e74e420112815ead9883966&code=4/qt4Z8d9vwNAA-c-eqhez6BW3eE6rQEKpER18wvOqQY8.oprLsVSGhBESJvIeHux6iLb9UtxVmQI" for 127.0.0.1 at 2015-04-11 20:01:17 -0400
+Processing by OmniauthCallbacksController#failure as HTML
+  Parameters: {"state"=>"f3c44fe104f3aa7df407bb665e74e420112815ead9883966", "code"=>"4/qt4Z8d9vwNAA-c-eqhez6BW3eE6rQEKpER18wvOqQY8.oprLsVSGhBESJvIeHux6iLb9UtxVmQI"}
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 18ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/background-img.jpg" for 127.0.0.1 at 2015-04-11 20:01:17 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-11 20:01:18 -0400
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (3.4ms)
+Completed 200 OK in 1026ms (Views: 1004.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/background-img.jpg" for 127.0.0.1 at 2015-04-11 20:01:20 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-11 20:01:20 -0400
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.5ms)
+Completed 200 OK in 424ms (Views: 424.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/background-img.jpg" for 127.0.0.1 at 2015-04-11 20:01:21 -0400
+
+
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2015-04-11 20:01:22 -0400
+
+
+Started GET "/users/auth/google_oauth2/callback?state=094e0869af2c1746cafe6ce99a52fb6ce29158aff5e638f0&code=4/o87EPhjJMwxZcn5QU-sBsOZ_FtF9HLbehHAjEUEMm-M.8tUV5THaXTkaJvIeHux6iLYdftxVmQI" for 127.0.0.1 at 2015-04-11 20:01:22 -0400
+Processing by OmniauthCallbacksController#failure as HTML
+  Parameters: {"state"=>"094e0869af2c1746cafe6ce99a52fb6ce29158aff5e638f0", "code"=>"4/o87EPhjJMwxZcn5QU-sBsOZ_FtF9HLbehHAjEUEMm-M.8tUV5THaXTkaJvIeHux6iLYdftxVmQI"}
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 10ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-04-11 20:01:23 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/devise-3.4.1/app/views/devise/shared/_links.html.erb (11.2ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/devise-3.4.1/app/views/devise/sessions/new.html.erb within layouts/application (146.6ms)
+Completed 200 OK in 1548ms (Views: 1546.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/background-img.jpg" for 127.0.0.1 at 2015-04-11 20:01:25 -0400
+
+
+Started GET "/assets/background-img.jpg" for 127.0.0.1 at 2015-04-11 20:01:30 -0400
+
+
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2015-04-11 20:01:38 -0400
+
+
+Started GET "/users/auth/google_oauth2/callback?state=1dd9e5378b1797812bcf6264253dfa93ce767f1247d7f81c&code=4/g1wFXj7zWqHgS25yxTECG7vAXbGfyDisLYJ_67CV8r0.0igc6yovujEVJvIeHux6iLZf-NxVmQI" for 127.0.0.1 at 2015-04-11 20:01:38 -0400
+Processing by OmniauthCallbacksController#failure as HTML
+  Parameters: {"state"=>"1dd9e5378b1797812bcf6264253dfa93ce767f1247d7f81c", "code"=>"4/g1wFXj7zWqHgS25yxTECG7vAXbGfyDisLYJ_67CV8r0.0igc6yovujEVJvIeHux6iLZf-NxVmQI"}
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 10ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-04-11 20:01:38 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/devise-3.4.1/app/views/devise/shared/_links.html.erb (11.3ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/devise-3.4.1/app/views/devise/sessions/new.html.erb within layouts/application (75.1ms)
+Completed 200 OK in 1367ms (Views: 1366.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/background-img.jpg" for 127.0.0.1 at 2015-04-11 20:01:40 -0400
+
+
+Started GET "/assets/background-img.jpg" for 127.0.0.1 at 2015-04-11 20:01:44 -0400
+
+
+Started GET "/users/register" for 127.0.0.1 at 2015-04-11 20:01:46 -0400
+Processing by UsersController#register as HTML
+  Rendered users/register.html.haml within layouts/application (151.9ms)
+Completed 200 OK in 1401ms (Views: 1400.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/background-img.jpg" for 127.0.0.1 at 2015-04-11 20:01:48 -0400
+
+
+Started GET "/assets/background-img.jpg" for 127.0.0.1 at 2015-04-11 20:01:53 -0400
+
+
+Started GET "/assets/background-img.jpg" for 127.0.0.1 at 2015-04-11 20:01:58 -0400
+
+
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2015-04-11 20:02:06 -0400
+
+
+Started GET "/users/auth/google_oauth2/callback?state=3b692ded6bd6115810a847fbd416c33afe7652d4afa34084&code=4/CKd027DrPsyO2UBCEj7_crYBzcIJ44GYQECB643i2Hg.YgVFh3rEvEIZJvIeHux6iLa7191VmQI" for 127.0.0.1 at 2015-04-11 20:02:07 -0400
+Processing by OmniauthCallbacksController#failure as HTML
+  Parameters: {"state"=>"3b692ded6bd6115810a847fbd416c33afe7652d4afa34084", "code"=>"4/CKd027DrPsyO2UBCEj7_crYBzcIJ44GYQECB643i2Hg.YgVFh3rEvEIZJvIeHux6iLa7191VmQI"}
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 14ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-04-11 20:02:07 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/devise-3.4.1/app/views/devise/shared/_links.html.erb (13.7ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/devise-3.4.1/app/views/devise/sessions/new.html.erb within layouts/application (648.0ms)
+Completed 200 OK in 2083ms (Views: 2081.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/background-img.jpg" for 127.0.0.1 at 2015-04-11 20:02:10 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-11 20:03:42 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (13.9ms)
+Completed 200 OK in 515ms (Views: 515.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users-8be356f836551bcc0e999f527bcc6d12.css?body=1" for 127.0.0.1 at 2015-04-11 20:03:43 -0400
+
+
+Started GET "/assets/application-a3d5d6d2e7f84e941543c8c3140cfcaf.css?body=1" for 127.0.0.1 at 2015-04-11 20:03:43 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-11 20:03:43 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-11 20:03:43 -0400
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-11 20:03:43 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-11 20:03:43 -0400
+
+
+Started GET "/assets/application-110154e6a06efeee4a01b13a39295ae0.js?body=1" for 127.0.0.1 at 2015-04-11 20:03:44 -0400
+
+
+Started GET "/assets/background-img.jpg" for 127.0.0.1 at 2015-04-11 20:03:44 -0400
+
+
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2015-04-11 20:03:46 -0400
+
+
+Started GET "/users/auth/google_oauth2/callback?state=aa361155dfb432791e2e5300a76a1fb97e8e196142356741&code=4/Ksz5KfXpfCAV6fqkimMOu6qOuCOatWcahJdstfKfDN4.EmcuFRaNY28bgtL038sCVntvTOFVmQI" for 127.0.0.1 at 2015-04-11 20:04:00 -0400
+Processing by OmniauthCallbacksController#failure as HTML
+  Parameters: {"state"=>"aa361155dfb432791e2e5300a76a1fb97e8e196142356741", "code"=>"4/Ksz5KfXpfCAV6fqkimMOu6qOuCOatWcahJdstfKfDN4.EmcuFRaNY28bgtL038sCVntvTOFVmQI"}
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 89ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-04-11 20:04:00 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/devise-3.4.1/app/views/devise/shared/_links.html.erb (11.2ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/devise-3.4.1/app/views/devise/sessions/new.html.erb within layouts/application (122.8ms)
+Completed 200 OK in 491ms (Views: 437.5ms | ActiveRecord: 10.9ms)
+
+
+Started GET "/assets/background-img.jpg" for 127.0.0.1 at 2015-04-11 20:04:01 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-11 20:05:57 -0400
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (117.8ms)
+Completed 200 OK in 1907ms (Views: 1893.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/background-img.jpg" for 127.0.0.1 at 2015-04-11 20:06:10 -0400
+
+
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2015-04-11 20:06:12 -0400
+
+
+Started GET "/users/auth/google_oauth2/callback?state=2d012243d6330393d235512780e8541e8799b610c4037640&code=4/aNQAtO2isLmxWisPrsEKIcnnC4zhRwyIdWXYjh1tlxg.8rmN8M2FMsMWgtL038sCVnufXeVVmQI" for 127.0.0.1 at 2015-04-11 20:06:13 -0400
+Processing by OmniauthCallbacksController#failure as HTML
+  Parameters: {"state"=>"2d012243d6330393d235512780e8541e8799b610c4037640", "code"=>"4/aNQAtO2isLmxWisPrsEKIcnnC4zhRwyIdWXYjh1tlxg.8rmN8M2FMsMWgtL038sCVnufXeVVmQI"}
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-04-11 20:06:16 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/devise-3.4.1/app/views/devise/shared/_links.html.erb (8.5ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/devise-3.4.1/app/views/devise/sessions/new.html.erb within layouts/application (182.7ms)
+Completed 200 OK in 1805ms (Views: 1591.8ms | ActiveRecord: 37.7ms)
+
+
+Started GET "/assets/background-img.jpg" for 127.0.0.1 at 2015-04-11 20:06:19 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-11 20:08:22 -0400
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.4ms)
+Completed 200 OK in 326ms (Views: 325.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users-8be356f836551bcc0e999f527bcc6d12.css?body=1" for 127.0.0.1 at 2015-04-11 20:08:23 -0400
+
+
+Started GET "/assets/application-a3d5d6d2e7f84e941543c8c3140cfcaf.css?body=1" for 127.0.0.1 at 2015-04-11 20:08:23 -0400
+
+
+Started GET "/assets/application-110154e6a06efeee4a01b13a39295ae0.js?body=1" for 127.0.0.1 at 2015-04-11 20:08:23 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-11 20:08:23 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-11 20:08:23 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-11 20:08:23 -0400
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-11 20:08:23 -0400
+
+
+Started GET "/assets/background-img.jpg" for 127.0.0.1 at 2015-04-11 20:08:24 -0400
+
+
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2015-04-11 20:08:25 -0400
+
+
+Started GET "/users/auth/google_oauth2/callback?state=f3fbc8bf817fdac75f60b8b7bc0eeffccde6bb343b0e6ee5&code=4/Jwx4GET8MAhOD9OZu38EHm3E9rMPdrmHkkx_9kOTOA8.Mja4hS87JLAXJvIeHux6iLYNyOlVmQI" for 127.0.0.1 at 2015-04-11 20:08:38 -0400
+Processing by OmniauthCallbacksController#failure as HTML
+  Parameters: {"state"=>"f3fbc8bf817fdac75f60b8b7bc0eeffccde6bb343b0e6ee5", "code"=>"4/Jwx4GET8MAhOD9OZu38EHm3E9rMPdrmHkkx_9kOTOA8.Mja4hS87JLAXJvIeHux6iLYNyOlVmQI"}
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-04-11 20:08:38 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/devise-3.4.1/app/views/devise/shared/_links.html.erb (7.5ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/devise-3.4.1/app/views/devise/sessions/new.html.erb within layouts/application (46.4ms)
+Completed 200 OK in 510ms (Views: 468.9ms | ActiveRecord: 13.0ms)
+
+
+Started GET "/assets/background-img.jpg" for 127.0.0.1 at 2015-04-11 20:08:39 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-11 20:09:04 -0400
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (1.1ms)
+Completed 200 OK in 1385ms (Views: 1385.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users-8be356f836551bcc0e999f527bcc6d12.css?body=1" for 127.0.0.1 at 2015-04-11 20:09:06 -0400
+
+
+Started GET "/assets/application-a3d5d6d2e7f84e941543c8c3140cfcaf.css?body=1" for 127.0.0.1 at 2015-04-11 20:09:06 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-11 20:09:06 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-11 20:09:06 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-11 20:09:06 -0400
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-11 20:09:06 -0400
+
+
+Started GET "/assets/application-110154e6a06efeee4a01b13a39295ae0.js?body=1" for 127.0.0.1 at 2015-04-11 20:09:06 -0400
+
+
+Started GET "/assets/background-img.jpg" for 127.0.0.1 at 2015-04-11 20:09:07 -0400
+
+
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2015-04-11 20:09:09 -0400
+
+
+Started GET "/users/auth/google_oauth2/callback?state=741677287d7d1af48282433b907523a9660ce1c15ad18249&code=4/PMcoYwrPChxlJSvar69Qu2wW7aV2UMWEtgSZC0NcPDI.sqBdj6ISItYdJvIeHux6iLYD_-pVmQI" for 127.0.0.1 at 2015-04-11 20:09:18 -0400
+Processing by OmniauthCallbacksController#google_oauth2 as HTML
+  Parameters: {"state"=>"741677287d7d1af48282433b907523a9660ce1c15ad18249", "code"=>"4/PMcoYwrPChxlJSvar69Qu2wW7aV2UMWEtgSZC0NcPDI.sqBdj6ISItYdJvIeHux6iLYD_-pVmQI"}
+  [1m[35mUser Load (23.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "sdaulton@colgate.edu"]]
+Redirected to http://localhost:3000/users/welcome/1
+Completed 302 Found in 708ms (ActiveRecord: 23.0ms)
+
+
+Started GET "/users/welcome/1" for 127.0.0.1 at 2015-04-11 20:09:19 -0400
+Processing by UsersController#welcome as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (3.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/welcome.html.haml within layouts/application (134.5ms)
+Completed 200 OK in 509ms (Views: 425.7ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/assets/background-img.jpg" for 127.0.0.1 at 2015-04-11 20:09:20 -0400

@@ -10,7 +10,6 @@ class UsersController < ApplicationController
     end
 
     def register
-      @empty_user = User.new
     end
     
     def login
@@ -41,19 +40,11 @@ class UsersController < ApplicationController
     end
 
     def create
-        user = User.new(create_update_params)
-		  redirect_to user_omniauth_authorize_path(:google_oauth2)
-        #if user.save
-        #    flash[:notice] = "New user #{u.name} created successfully"
-        #    redirect_to users_path
-        #else
-        #    flash[:warning] = "User couldn't be created"
-        #    redirect_to new_user_path
-        #end
+        redirect_to user_omniauth_authorize_path(:google_oauth2)
     end
 
 private
     def create_update_params
-        params.require(:user).permit(:name, :email, :encrypted_password)
+        params.require(:user).permit(:name, :email, :birthday, :driver, :encrypted_password)
     end
 end

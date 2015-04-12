@@ -65,5 +65,29 @@ RSpec.describe UsersController, type: :controller do
             it 'should select the register page for rendering'
             it 'should make the user available to the register template'
         end
+
     end
+
+    describe 'editing/updating account information' do
+        before :each do
+            @params = {"user"=>{"name"=>"John Smith", "email"=>"jsmith@colgate.edu", "birthday"=>"1986-01-03", "driver"=>"1"}, "commit"=>"Update user", "id" => "1"}
+            @fake_user = FactoryGirl.create(:user, "name" => "John Smith", "email" => "jsmith@colgate.edu", "birthday" => "1990-01-04", "driver" => "1")
+            User.should_receive(:find).with(@params["id"]).and_return(@fake_user)
+        end
+        it 'should select the edit page for rendering' do
+            get :edit, @params
+            response.should render_template('edit') 
+        end
+
+        it 'should call the find and update user model methods' do
+            @fake_user.should_receive(:update).with({"name" => "John Smith", "email" => "jsmith@colgate.edu", "birthday" => "1986-01-03", "driver" => "1"})
+            put :update, @params
+            flash[:notice].should == "John Smith was successfully updated"
+            response.should redirect_to(welcome_user_path(@fake_user))
+        end
+    end
+
+    
+
 end
+
