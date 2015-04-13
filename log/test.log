@@ -5411,3 +5411,1423 @@ Processing by UsersController#index as HTML
   Rendered users/index.html.haml within layouts/application (5.8ms)
 Completed 200 OK in 136ms (Views: 136.0ms | ActiveRecord: 0.0ms)
   [1m[36m (9.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 15ms (Views: 14.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by UsersController#welcome as HTML
+  Parameters: {"id"=>"1"}
+  Rendered users/welcome.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by UsersController#welcome as HTML
+  Parameters: {"id"=>"1"}
+  Rendered users/welcome.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "encrypted_password", "birthday", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$AIZ.9u5TFklu2RrmdurPWuGtlFeJcRlm4VP5aSGTyIED/Qn6HZpNi"], ["birthday", "1991-02-01"], ["created_at", "2015-04-13 22:02:45.076031"], ["updated_at", "2015-04-13 22:02:45.076031"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "jsmith@colgate.edu"]]
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "jsmith@colgate.edu"]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$ciIVarBJAVsMGoGQssmAjO8bXd5F/b7zyP4LxPgBHGX4VjT8lmaKW"], ["created_at", "2015-04-13 22:02:45.097954"], ["updated_at", "2015-04-13 22:02:45.097954"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.5ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (2.0ms)
+Completed 200 OK in 84ms (Views: 81.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.5ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Processing by UsersController#welcome as HTML
+  Parameters: {"id"=>"1"}
+  Rendered users/welcome.html.haml within layouts/application (1.1ms)
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.5ms)[0m  begin transaction
+Processing by UsersController#welcome as HTML
+  Parameters: {"id"=>"1"}
+  Rendered users/welcome.html.haml within layouts/application (0.7ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("name", "email", "encrypted_password", "birthday", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$JNWOOwbijPzkcFTGNE3Wl.2v7kB0QOnzPJEuI6fj9Z2NQh2TFqTjK"], ["birthday", "1991-02-01"], ["created_at", "2015-04-13 22:07:10.816851"], ["updated_at", "2015-04-13 22:07:10.816851"]]
+  [1m[35m (0.3ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "jsmith@colgate.edu"]]
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "jsmith@colgate.edu"]]
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1
+  [1m[36mSQL (1.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$rry2YyCXXHGSiJ3lVrMOSe6yJe5oL3U/tjcAucK5lEIHI95uhAKIm"], ["created_at", "2015-04-13 22:07:10.901766"], ["updated_at", "2015-04-13 22:07:10.901766"]]
+  [1m[35m (0.3ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.7ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.6ms)
+Completed 200 OK in 15ms (Views: 14.5ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by UsersController#welcome as HTML
+  Parameters: {"id"=>"1"}
+  Rendered users/welcome.html.haml within layouts/application (1.5ms)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Processing by UsersController#welcome as HTML
+  Parameters: {"id"=>"1"}
+  Rendered users/welcome.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "encrypted_password", "birthday", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$B8eWN8vUYgVDVxRy7ZftouFY/S.mowZfr9wNN7YdjnC4FfnkIDN5a"], ["birthday", "1991-02-01"], ["created_at", "2015-04-13 22:16:38.234166"], ["updated_at", "2015-04-13 22:16:38.234166"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "jsmith@colgate.edu"]]
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "jsmith@colgate.edu"]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$OPxCHgVLpd.74bjR5Kh.oes.6PZb6DduT8RDXN9XHXuogWRySfFfO"], ["created_at", "2015-04-13 22:16:38.252660"], ["updated_at", "2015-04-13 22:16:38.252660"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("name", "email", "encrypted_password", "birthday", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$IM0OlIVe92sXNpXmyy0iQeki2FR6SZv.5xg7XzLr4GVkbypfwocKu"], ["birthday", "1990-01-04"], ["created_at", "2015-04-13 22:18:51.747434"], ["updated_at", "2015-04-13 22:18:51.747434"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "drivers" ("id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["id", 1], ["user_id", 1], ["created_at", "2015-04-13 22:18:51.762053"], ["updated_at", "2015-04-13 22:18:51.762053"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 11ms (Views: 10.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by UsersController#welcome as HTML
+  Parameters: {"id"=>"1"}
+  Rendered users/welcome.html.haml within layouts/application (0.5ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by UsersController#welcome as HTML
+  Parameters: {"id"=>"1"}
+  Rendered users/welcome.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 1ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "email", "encrypted_password", "birthday", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$LiCjuI1Er/Kz7kWjkjI9B.okwFcqDzBuIjp9nyDX/Rxt8jGTeM7Ya"], ["birthday", "1991-02-01"], ["created_at", "2015-04-13 22:18:51.899157"], ["updated_at", "2015-04-13 22:18:51.899157"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "jsmith@colgate.edu"]]
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "jsmith@colgate.edu"]]
+  [1m[35m (0.3ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$Dtm/La54sdTUXEsEw5U2.eYjlYGp2UpJjVfceyhsXu.ltR3R1vvO6"], ["created_at", "2015-04-13 22:18:51.914110"], ["updated_at", "2015-04-13 22:18:51.914110"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1
+  [1m[36mSQL (1.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "encrypted_password", "birthday", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$3hSVy4QnrLw0GahG4rODQ.w/eAY3emNdQzZc0BeiYYBgzo5vURS5a"], ["birthday", "1990-01-04"], ["created_at", "2015-04-13 22:19:54.613052"], ["updated_at", "2015-04-13 22:19:54.613052"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "drivers" ("id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["id", 1], ["user_id", 1], ["created_at", "2015-04-13 22:19:54.624431"], ["updated_at", "2015-04-13 22:19:54.624431"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by DriversController#create as HTML
+  Parameters: {"user_id"=>"1"}
+Completed 500 Internal Server Error in 16ms
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 8ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by UsersController#welcome as HTML
+  Parameters: {"id"=>"1"}
+  Rendered users/welcome.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by UsersController#welcome as HTML
+  Parameters: {"id"=>"1"}
+  Rendered users/welcome.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "email", "encrypted_password", "birthday", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$UHDG25Tx6HpR53G2YA2NReVG9TS40/ivrkUeVctc8AcLRXlaRMPDq"], ["birthday", "1991-02-01"], ["created_at", "2015-04-13 22:19:54.769319"], ["updated_at", "2015-04-13 22:19:54.769319"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "jsmith@colgate.edu"]]
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "jsmith@colgate.edu"]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$LV5lVLGptefXAkgIvyUH1uPLVbQspMMRPHF4oN4g38natRsO/ljw6"], ["created_at", "2015-04-13 22:19:54.786593"], ["updated_at", "2015-04-13 22:19:54.786593"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (1.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "encrypted_password", "birthday", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$odCwEnKIsn3Gu5ANjMgzXeOremcv3XBqDbEVP4bvO7PYrz9gSxjLq"], ["birthday", "1990-01-04"], ["created_at", "2015-04-13 22:21:54.094288"], ["updated_at", "2015-04-13 22:21:54.094288"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "drivers" ("id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["id", 1], ["user_id", 1], ["created_at", "2015-04-13 22:21:54.101513"], ["updated_at", "2015-04-13 22:21:54.101513"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by DriversController#create as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendered drivers/create.html.haml within layouts/application (0.7ms)
+Completed 200 OK in 18ms (Views: 16.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 14ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by UsersController#welcome as HTML
+  Parameters: {"id"=>"1"}
+  Rendered users/welcome.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by UsersController#welcome as HTML
+  Parameters: {"id"=>"1"}
+  Rendered users/welcome.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "encrypted_password", "birthday", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$QH13cv4Q8nxtNrH4lmyBTeBt3AfWI5LvxupYvK.KqU5yqM0r4/t1S"], ["birthday", "1991-02-01"], ["created_at", "2015-04-13 22:21:54.274128"], ["updated_at", "2015-04-13 22:21:54.274128"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "jsmith@colgate.edu"]]
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "jsmith@colgate.edu"]]
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("name", "email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$.99c2LUGdlF7z8FxncNPbOSnbZEU6rP44JXsVNqQ3R09OYiAiUwZu"], ["created_at", "2015-04-13 22:21:54.297361"], ["updated_at", "2015-04-13 22:21:54.297361"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "encrypted_password", "birthday", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$eAozz1aj.qCk3ZU/lTXZNu8XZvmTZMSu2VHywy4JTHAUBYu5vS5Le"], ["birthday", "1990-01-04"], ["created_at", "2015-04-13 22:24:02.783981"], ["updated_at", "2015-04-13 22:24:02.783981"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "drivers" ("id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["id", 1], ["user_id", 1], ["created_at", "2015-04-13 22:24:02.791210"], ["updated_at", "2015-04-13 22:24:02.791210"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by DriversController#create as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendered drivers/create.html.haml within layouts/application (0.7ms)
+Completed 200 OK in 12ms (Views: 11.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("name", "email", "encrypted_password", "birthday", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$KV7xnUGyhKhy..4B590tR.KycSOchr/DRh/fyh6VldB1IdXVbikxm"], ["birthday", "1990-01-04"], ["created_at", "2015-04-13 22:24:02.819464"], ["updated_at", "2015-04-13 22:24:02.819464"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "drivers" ("id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 1], ["user_id", 1], ["created_at", "2015-04-13 22:24:02.824414"], ["updated_at", "2015-04-13 22:24:02.824414"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "encrypted_password", "birthday", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$wJ321SGwZ38DUmL8UDrUMuJma0hiopuDP7Sjm/Y/MaCAq5ATHYQkK"], ["birthday", "1990-01-04"], ["created_at", "2015-04-13 22:24:02.851638"], ["updated_at", "2015-04-13 22:24:02.851638"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "drivers" ("id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["id", 1], ["user_id", 1], ["created_at", "2015-04-13 22:24:02.855143"], ["updated_at", "2015-04-13 22:24:02.855143"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "encrypted_password", "birthday", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$ioAHPIbbQtFhrTp1NcSoiOGhiMLfJQacm5FjLnjjqfXc8rCdrDxD6"], ["birthday", "1990-01-04"], ["created_at", "2015-04-13 22:24:02.865269"], ["updated_at", "2015-04-13 22:24:02.865269"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "drivers" ("id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 1], ["user_id", 1], ["created_at", "2015-04-13 22:24:02.869413"], ["updated_at", "2015-04-13 22:24:02.869413"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "encrypted_password", "birthday", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$ou8SD5YhAdzsX246Qyk2SemiBiV/n9fUlydeH54od6xt.GtUhLA9."], ["birthday", "1990-01-04"], ["created_at", "2015-04-13 22:24:02.883046"], ["updated_at", "2015-04-13 22:24:02.883046"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "drivers" ("id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["id", 1], ["user_id", 1], ["created_at", "2015-04-13 22:24:02.887682"], ["updated_at", "2015-04-13 22:24:02.887682"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 6ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by UsersController#welcome as HTML
+  Parameters: {"id"=>"1"}
+  Rendered users/welcome.html.haml within layouts/application (0.5ms)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by UsersController#welcome as HTML
+  Parameters: {"id"=>"1"}
+  Rendered users/welcome.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "encrypted_password", "birthday", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$GpRY4f.TL5LenTd/lHqoRu.zhue0tjg//MA.x4UIQ.D4cp5ECG0/i"], ["birthday", "1991-02-01"], ["created_at", "2015-04-13 22:24:03.752347"], ["updated_at", "2015-04-13 22:24:03.752347"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "jsmith@colgate.edu"]]
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "jsmith@colgate.edu"]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$zrn3.6iv9iIGwXGPB.4a6e6BzXpGCRxArlCrLpTyK0gOUYoUbPXl."], ["created_at", "2015-04-13 22:24:03.779222"], ["updated_at", "2015-04-13 22:24:03.779222"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1
+  [1m[36mSQL (4.0ms)[0m  [1mINSERT INTO "users" ("name", "email", "encrypted_password", "birthday", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$mC4KjBnl6eEHOer/x0CywO/EJP57kRI8buTZ/d1FNeS4DeNs6LTOO"], ["birthday", "1990-01-04"], ["created_at", "2015-04-13 22:24:57.764131"], ["updated_at", "2015-04-13 22:24:57.764131"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "drivers" ("id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["id", 1], ["user_id", 1], ["created_at", "2015-04-13 22:24:57.775105"], ["updated_at", "2015-04-13 22:24:57.775105"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by DriversController#create as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendered drivers/create.html.haml within layouts/application (0.7ms)
+Completed 200 OK in 12ms (Views: 11.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "encrypted_password", "birthday", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$HeTIjJH2t7ZpXmF8wmwtSOas7tIZnTMb0OzmnnDVdPRCWfr.DCN7y"], ["birthday", "1990-01-04"], ["created_at", "2015-04-13 22:24:57.801252"], ["updated_at", "2015-04-13 22:24:57.801252"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "drivers" ("id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 1], ["user_id", 1], ["created_at", "2015-04-13 22:24:57.804019"], ["updated_at", "2015-04-13 22:24:57.804019"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "encrypted_password", "birthday", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$CLRxmer2GQXiuFMx38IWPOHCxWUtjkvfu8hXB4eW0LymAa/MqeKiK"], ["birthday", "1990-01-04"], ["created_at", "2015-04-13 22:24:57.829124"], ["updated_at", "2015-04-13 22:24:57.829124"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "drivers" ("id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["id", 1], ["user_id", 1], ["created_at", "2015-04-13 22:24:57.832351"], ["updated_at", "2015-04-13 22:24:57.832351"]]
+  [1m[36m (1.7ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "encrypted_password", "birthday", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$5Ox9.ze739S6oT9XlVsh1OuP5tNL42Dh4Zo832u9f3zBahfEk2xiG"], ["birthday", "1990-01-04"], ["created_at", "2015-04-13 22:24:57.845115"], ["updated_at", "2015-04-13 22:24:57.845115"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "drivers" ("id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 1], ["user_id", 1], ["created_at", "2015-04-13 22:24:57.848958"], ["updated_at", "2015-04-13 22:24:57.848958"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "encrypted_password", "birthday", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$3r6FV8zhdly6qR.sMUA.eueGonxpBxyq0NtoGTfqzQbrMREhP49Hu"], ["birthday", "1990-01-04"], ["created_at", "2015-04-13 22:24:57.864117"], ["updated_at", "2015-04-13 22:24:57.864117"]]
+  [1m[35m (0.3ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "drivers" ("id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["id", 1], ["user_id", 1], ["created_at", "2015-04-13 22:24:57.872730"], ["updated_at", "2015-04-13 22:24:57.872730"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.9ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by UsersController#welcome as HTML
+  Parameters: {"id"=>"1"}
+  Rendered users/welcome.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by UsersController#welcome as HTML
+  Parameters: {"id"=>"1"}
+  Rendered users/welcome.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "encrypted_password", "birthday", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$WQ3L2TQ07oacq9uCPjsYgu0yC/OKwrAMhxbbr.1bISTTCC9Fg6ULy"], ["birthday", "1991-02-01"], ["created_at", "2015-04-13 22:24:58.006638"], ["updated_at", "2015-04-13 22:24:58.006638"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "jsmith@colgate.edu"]]
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "jsmith@colgate.edu"]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$3V5OgPF4Xvs.Na5CmSkj4eezx.FDkaX.E0cMDZYFc9KK.dyHph.ty"], ["created_at", "2015-04-13 22:24:58.025628"], ["updated_at", "2015-04-13 22:24:58.025628"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("name", "email", "encrypted_password", "birthday", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$OB661L8KKrdG5m04dW8NFeHQZrGc2KOA.dN4zrd3vz1nQ8v6ZqXHa"], ["birthday", "1990-01-04"], ["created_at", "2015-04-13 22:27:23.673501"], ["updated_at", "2015-04-13 22:27:23.673501"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "drivers" ("id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["id", 1], ["user_id", 1], ["created_at", "2015-04-13 22:27:23.683526"], ["updated_at", "2015-04-13 22:27:23.683526"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by DriversController#create as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendered drivers/create.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 12ms (Views: 12.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "encrypted_password", "birthday", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$HliiioOTiuZMTXj1icNOA.MDsJtofQQDXJIOiCvy5pUDzN3Nm0U2i"], ["birthday", "1990-01-04"], ["created_at", "2015-04-13 22:27:23.714014"], ["updated_at", "2015-04-13 22:27:23.714014"]]
+  [1m[36m (1.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "drivers" ("id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 1], ["user_id", 1], ["created_at", "2015-04-13 22:27:23.718420"], ["updated_at", "2015-04-13 22:27:23.718420"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by DriversController#destroy as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  Rendered drivers/destroy.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 2ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (1.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "encrypted_password", "birthday", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$DzBcghwO.TwoUsanKV59ZOAdViqxJMkrNNVxwWekPK9RBjSkyGk6q"], ["birthday", "1990-01-04"], ["created_at", "2015-04-13 22:27:23.754534"], ["updated_at", "2015-04-13 22:27:23.754534"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "drivers" ("id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["id", 1], ["user_id", 1], ["created_at", "2015-04-13 22:27:23.760754"], ["updated_at", "2015-04-13 22:27:23.760754"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "encrypted_password", "birthday", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$Z5D9RjvNm5fFqawrl9WQRuWOlyFOX9eGwikoonL/rnpcBhWBwWuGS"], ["birthday", "1990-01-04"], ["created_at", "2015-04-13 22:27:23.777229"], ["updated_at", "2015-04-13 22:27:23.777229"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "drivers" ("id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 1], ["user_id", 1], ["created_at", "2015-04-13 22:27:23.780400"], ["updated_at", "2015-04-13 22:27:23.780400"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "users" ("name", "email", "encrypted_password", "birthday", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$EzWYjNeGAveKh65c4GQ43OUKC.9g6bnIjlpjsuNgtpMAz9/U7uFnC"], ["birthday", "1990-01-04"], ["created_at", "2015-04-13 22:27:23.790155"], ["updated_at", "2015-04-13 22:27:23.790155"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.6ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "drivers" ("id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["id", 1], ["user_id", 1], ["created_at", "2015-04-13 22:27:23.793342"], ["updated_at", "2015-04-13 22:27:23.793342"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 7ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by UsersController#welcome as HTML
+  Parameters: {"id"=>"1"}
+  Rendered users/welcome.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by UsersController#welcome as HTML
+  Parameters: {"id"=>"1"}
+  Rendered users/welcome.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("name", "email", "encrypted_password", "birthday", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$12CiU12rTl0peDBzSuK.0uBG0JRdpoFEdHFj8rFQPS2JuXDqXbdXq"], ["birthday", "1991-02-01"], ["created_at", "2015-04-13 22:27:23.918983"], ["updated_at", "2015-04-13 22:27:23.918983"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "jsmith@colgate.edu"]]
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "jsmith@colgate.edu"]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$Qg8W7WnRZEsRLymQ1X.MpuXHzkyIOqkRlJhod3FtQXx7Xf3DXls8K"], ["created_at", "2015-04-13 22:27:23.940742"], ["updated_at", "2015-04-13 22:27:23.940742"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "encrypted_password", "birthday", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$w1TNpglr4MvdtkdSj6DjleV6oAwqmCrmBapOuhafAIoyKEn0DnBQy"], ["birthday", "1990-01-04"], ["created_at", "2015-04-13 22:28:51.250145"], ["updated_at", "2015-04-13 22:28:51.250145"]]
+  [1m[35m (0.5ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "drivers" ("id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["id", 1], ["user_id", 1], ["created_at", "2015-04-13 22:28:51.257478"], ["updated_at", "2015-04-13 22:28:51.257478"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by DriversController#create as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendered drivers/create.html.haml within layouts/application (0.6ms)
+Completed 200 OK in 12ms (Views: 12.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("name", "email", "encrypted_password", "birthday", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$7d8G3tVppYUK/6DlEcXReuO7tlQCHszBISd9G5zpwnQQhPogV8b7."], ["birthday", "1990-01-04"], ["created_at", "2015-04-13 22:28:51.283175"], ["updated_at", "2015-04-13 22:28:51.283175"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "drivers" ("id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 1], ["user_id", 1], ["created_at", "2015-04-13 22:28:51.286027"], ["updated_at", "2015-04-13 22:28:51.286027"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by DriversController#destroy as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  Rendered drivers/destroy.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 18ms (Views: 17.5ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (1.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "users" ("name", "email", "encrypted_password", "birthday", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$GqZSmNERmFEjS4cXrgZz0eWred5dQqxzeebyFeikjYXqAx1a64SlW"], ["birthday", "1990-01-04"], ["created_at", "2015-04-13 22:28:51.316062"], ["updated_at", "2015-04-13 22:28:51.316062"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "drivers" ("id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["id", 1], ["user_id", 1], ["created_at", "2015-04-13 22:28:51.318694"], ["updated_at", "2015-04-13 22:28:51.318694"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by DriversController#first as HTML
+  Parameters: {"user_id"=>"1", "driver_id"=>"1"}
+Completed 500 Internal Server Error in 9ms
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "email", "encrypted_password", "birthday", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$4BY.TrDL6qTzTJeIwtsr3ekvaiXc6iRuDmvQQv.AD.yEwXxKv6XtC"], ["birthday", "1990-01-04"], ["created_at", "2015-04-13 22:28:51.340478"], ["updated_at", "2015-04-13 22:28:51.340478"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "drivers" ("id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 1], ["user_id", 1], ["created_at", "2015-04-13 22:28:51.348837"], ["updated_at", "2015-04-13 22:28:51.348837"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by DriversController#num as HTML
+  Parameters: {"user_id"=>"1", "driver_id"=>"1"}
+Completed 500 Internal Server Error in 3ms
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1
+  [1m[36mSQL (2.4ms)[0m  [1mINSERT INTO "users" ("name", "email", "encrypted_password", "birthday", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$6cRCxsHGC5c8OM2Uhzv0SuspF1YCaIzHRT/NXt.xQKMQ6CalaCuGm"], ["birthday", "1990-01-04"], ["created_at", "2015-04-13 22:28:51.361768"], ["updated_at", "2015-04-13 22:28:51.361768"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "drivers" ("id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["id", 1], ["user_id", 1], ["created_at", "2015-04-13 22:28:51.368765"], ["updated_at", "2015-04-13 22:28:51.368765"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.7ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 6ms (Views: 6.1ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by UsersController#welcome as HTML
+  Parameters: {"id"=>"1"}
+  Rendered users/welcome.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by UsersController#welcome as HTML
+  Parameters: {"id"=>"1"}
+  Rendered users/welcome.html.haml within layouts/application (0.4ms)
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("name", "email", "encrypted_password", "birthday", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$gZkHPmSkIiyRNDJzPfbEnOS6Hy1GPKsqn5editxqzpBMx70MjTIw6"], ["birthday", "1991-02-01"], ["created_at", "2015-04-13 22:28:51.491308"], ["updated_at", "2015-04-13 22:28:51.491308"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "jsmith@colgate.edu"]]
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "jsmith@colgate.edu"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$8EUhsqoBOBBAPuygraiHAucjKAI8g1dY8MpSQvTdVhfU4kICQEo6G"], ["created_at", "2015-04-13 22:28:51.509368"], ["updated_at", "2015-04-13 22:28:51.509368"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("name", "email", "encrypted_password", "birthday", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$Ef9gTTawRdCKYtTo9J4g3.NWEbzdO.S8dAK703xp0KQQlrfyMQg76"], ["birthday", "1990-01-04"], ["created_at", "2015-04-13 22:31:04.646960"], ["updated_at", "2015-04-13 22:31:04.646960"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "drivers" ("id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["id", 1], ["user_id", 1], ["created_at", "2015-04-13 22:31:04.653996"], ["updated_at", "2015-04-13 22:31:04.653996"]]
+  [1m[36m (0.4ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by DriversController#create as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendered drivers/create.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 11ms (Views: 10.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "encrypted_password", "birthday", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$HO6S7SIEVjQI1Q.myRxxD.Fo.xaFpQyWuNizf6Q/DIaUv2RdX0Iqq"], ["birthday", "1990-01-04"], ["created_at", "2015-04-13 22:31:04.678841"], ["updated_at", "2015-04-13 22:31:04.678841"]]
+  [1m[36m (0.9ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "drivers" ("id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 1], ["user_id", 1], ["created_at", "2015-04-13 22:31:04.682534"], ["updated_at", "2015-04-13 22:31:04.682534"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by DriversController#destroy as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  Rendered drivers/destroy.html.haml within layouts/application (0.4ms)
+Completed 200 OK in 19ms (Views: 18.4ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "encrypted_password", "birthday", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$F12o2ySGMunRBGCkrjzC6OTZXoFY/l4hZDMmLZOZSfJmzXeZo.Wqa"], ["birthday", "1990-01-04"], ["created_at", "2015-04-13 22:31:04.714069"], ["updated_at", "2015-04-13 22:31:04.714069"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.5ms)[0m  INSERT INTO "drivers" ("id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["id", 1], ["user_id", 1], ["created_at", "2015-04-13 22:31:04.718553"], ["updated_at", "2015-04-13 22:31:04.718553"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by DriversController#first as HTML
+  Parameters: {"user_id"=>"1", "driver_id"=>"1"}
+  Rendered drivers/first.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("name", "email", "encrypted_password", "birthday", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$.TPRGTZFTHTmKZfboMgbbegJVUPrk1FLNoRqN/sYH4hfur5ZPO03K"], ["birthday", "1990-01-04"], ["created_at", "2015-04-13 22:31:04.738314"], ["updated_at", "2015-04-13 22:31:04.738314"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "drivers" ("id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 1], ["user_id", 1], ["created_at", "2015-04-13 22:31:04.745289"], ["updated_at", "2015-04-13 22:31:04.745289"]]
+  [1m[35m (0.3ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by DriversController#num as HTML
+  Parameters: {"user_id"=>"1", "driver_id"=>"1"}
+Completed 500 Internal Server Error in 5ms
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (3.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "encrypted_password", "birthday", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$0ZLRPWNIrwPGRWdNfKZdGOUtcnzKZXZGzh09vnoNtgMKn4foiyX4q"], ["birthday", "1990-01-04"], ["created_at", "2015-04-13 22:31:04.764287"], ["updated_at", "2015-04-13 22:31:04.764287"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "drivers" ("id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["id", 1], ["user_id", 1], ["created_at", "2015-04-13 22:31:04.769841"], ["updated_at", "2015-04-13 22:31:04.769841"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by UsersController#welcome as HTML
+  Parameters: {"id"=>"1"}
+  Rendered users/welcome.html.haml within layouts/application (0.4ms)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by UsersController#welcome as HTML
+  Parameters: {"id"=>"1"}
+  Rendered users/welcome.html.haml within layouts/application (0.5ms)
+Completed 200 OK in 1ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.9ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "encrypted_password", "birthday", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$yWK1fqBeC.UU9A3igoyknOhWLfpZCKYBP8QRFEi8cx2sEIu/4onTm"], ["birthday", "1991-02-01"], ["created_at", "2015-04-13 22:31:04.893639"], ["updated_at", "2015-04-13 22:31:04.893639"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "jsmith@colgate.edu"]]
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "jsmith@colgate.edu"]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "users" ("name", "email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$7QNuXbXJo6WOMfynZqiG4eJdvbhU8hJwvYq5uJEply.wYWg0PS2ly"], ["created_at", "2015-04-13 22:31:04.911590"], ["updated_at", "2015-04-13 22:31:04.911590"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("name", "email", "encrypted_password", "birthday", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$FxgoFOKfuMJS1qGNRZzuKeMIbFyEmHIfzFqT5fQkNpKY8SbVTz/Pm"], ["birthday", "1990-01-04"], ["created_at", "2015-04-13 22:31:54.483653"], ["updated_at", "2015-04-13 22:31:54.483653"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "drivers" ("id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["id", 1], ["user_id", 1], ["created_at", "2015-04-13 22:31:54.491520"], ["updated_at", "2015-04-13 22:31:54.491520"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by DriversController#create as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendered drivers/create.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("name", "email", "encrypted_password", "birthday", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$J4pmH4liISQLp08xJk8E/u1lItoJnVnOYkPOJWyQysypUQCZcQGei"], ["birthday", "1990-01-04"], ["created_at", "2015-04-13 22:31:54.517376"], ["updated_at", "2015-04-13 22:31:54.517376"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "drivers" ("id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 1], ["user_id", 1], ["created_at", "2015-04-13 22:31:54.521411"], ["updated_at", "2015-04-13 22:31:54.521411"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by DriversController#destroy as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  Rendered drivers/destroy.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "encrypted_password", "birthday", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$.nRWuTIYwR8wTNFGNZTaeuo7lhjLpdFh6ymNeNGrn8f5h19kfNjy6"], ["birthday", "1990-01-04"], ["created_at", "2015-04-13 22:31:54.551988"], ["updated_at", "2015-04-13 22:31:54.551988"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "drivers" ("id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["id", 1], ["user_id", 1], ["created_at", "2015-04-13 22:31:54.555675"], ["updated_at", "2015-04-13 22:31:54.555675"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by DriversController#first as HTML
+  Parameters: {"user_id"=>"1", "driver_id"=>"1"}
+  Rendered drivers/first.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("name", "email", "encrypted_password", "birthday", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$UI0sSZwarmB63rICfBufiuyrwhr.QIyMBrBBsAvAVcFs8hJrktb/e"], ["birthday", "1990-01-04"], ["created_at", "2015-04-13 22:31:54.569716"], ["updated_at", "2015-04-13 22:31:54.569716"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "drivers" ("id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 1], ["user_id", 1], ["created_at", "2015-04-13 22:31:54.576978"], ["updated_at", "2015-04-13 22:31:54.576978"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by DriversController#num as HTML
+  Parameters: {"user_id"=>"1", "driver_id"=>"1"}
+  Rendered drivers/num.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "users" ("name", "email", "encrypted_password", "birthday", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$S63Ir1MqIWOGPJNFmvwQM.pu9JQl/bRs77irs3ID803.n/J/u2J16"], ["birthday", "1990-01-04"], ["created_at", "2015-04-13 22:31:54.594047"], ["updated_at", "2015-04-13 22:31:54.594047"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "drivers" ("id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["id", 1], ["user_id", 1], ["created_at", "2015-04-13 22:31:54.598967"], ["updated_at", "2015-04-13 22:31:54.598967"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.9ms)
+Completed 200 OK in 10ms (Views: 9.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (2.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by UsersController#welcome as HTML
+  Parameters: {"id"=>"1"}
+  Rendered users/welcome.html.haml within layouts/application (0.5ms)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by UsersController#welcome as HTML
+  Parameters: {"id"=>"1"}
+  Rendered users/welcome.html.haml within layouts/application (0.4ms)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "encrypted_password", "birthday", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$MCfv0pQ/bYWGd2jsAyALUuwOq5wgDwtAHLztTLb4LQAhvyGKBAs5G"], ["birthday", "1991-02-01"], ["created_at", "2015-04-13 22:31:54.741700"], ["updated_at", "2015-04-13 22:31:54.741700"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "jsmith@colgate.edu"]]
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "jsmith@colgate.edu"]]
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$H2MiCLK4YXANMxe9zPeWgOilEC.1BDRNNYR.gj8XDI3uszTeR7j9S"], ["created_at", "2015-04-13 22:31:54.760705"], ["updated_at", "2015-04-13 22:31:54.760705"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "users" ("name", "email", "encrypted_password", "birthday", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$Z1aiRJ14UKog3DwHRHsA6.NOkMJKat14OMyEZM895UPwy.bYm6hum"], ["birthday", "1990-01-04"], ["created_at", "2015-04-13 22:33:38.622042"], ["updated_at", "2015-04-13 22:33:38.622042"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "drivers" ("id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["id", 1], ["user_id", 1], ["created_at", "2015-04-13 22:33:38.632914"], ["updated_at", "2015-04-13 22:33:38.632914"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by DriversController#create as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendered drivers/create.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 13ms (Views: 12.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "encrypted_password", "birthday", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$ID87BVsIQAJcMj8OR9pDwuivYknhKirjCTA6CZXxA.PlWx2AXErFK"], ["birthday", "1990-01-04"], ["created_at", "2015-04-13 22:33:38.662314"], ["updated_at", "2015-04-13 22:33:38.662314"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "drivers" ("id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 1], ["user_id", 1], ["created_at", "2015-04-13 22:33:38.665739"], ["updated_at", "2015-04-13 22:33:38.665739"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by DriversController#destroy as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  Rendered drivers/destroy.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "encrypted_password", "birthday", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$K5sPWahvVAnDuu79fpp/kOmHV21pdaVyi/E3riiqrO.FZjfhqQ4Hi"], ["birthday", "1990-01-04"], ["created_at", "2015-04-13 22:33:38.695689"], ["updated_at", "2015-04-13 22:33:38.695689"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "drivers" ("id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["id", 1], ["user_id", 1], ["created_at", "2015-04-13 22:33:38.699040"], ["updated_at", "2015-04-13 22:33:38.699040"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by DriversController#first as HTML
+  Parameters: {"user_id"=>"1", "driver_id"=>"1"}
+  Rendered drivers/first.html.haml within layouts/application (0.9ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "email", "encrypted_password", "birthday", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$Yd89hbYQuq8faFEH58MvQOpYaFBWXyEUlbv/A4s/0ObCGhU6z0.gm"], ["birthday", "1990-01-04"], ["created_at", "2015-04-13 22:33:38.721992"], ["updated_at", "2015-04-13 22:33:38.721992"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "drivers" ("id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 1], ["user_id", 1], ["created_at", "2015-04-13 22:33:38.725572"], ["updated_at", "2015-04-13 22:33:38.725572"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by DriversController#num as HTML
+  Parameters: {"user_id"=>"1", "driver_id"=>"1"}
+  Rendered drivers/num.html.haml within layouts/application (0.4ms)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "encrypted_password", "birthday", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$tTt0HY344kdisjSN6HAcT.FlI6tih7CutPZ9iQkZX7ozz9ZG8MWYK"], ["birthday", "1990-01-04"], ["created_at", "2015-04-13 22:33:38.739434"], ["updated_at", "2015-04-13 22:33:38.739434"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "drivers" ("id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["id", 1], ["user_id", 1], ["created_at", "2015-04-13 22:33:38.745392"], ["updated_at", "2015-04-13 22:33:38.745392"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.5ms)
+Completed 200 OK in 9ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by UsersController#welcome as HTML
+  Parameters: {"id"=>"1"}
+  Rendered users/welcome.html.haml within layouts/application (0.5ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (1.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by UsersController#welcome as HTML
+  Parameters: {"id"=>"1"}
+  Rendered users/welcome.html.haml within layouts/application (0.6ms)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.5ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "encrypted_password", "birthday", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$MnIAihadA4tkLRhdwEsZre/yzDZ2ULvrTLv/oqu4fCEGpfg.eFTe2"], ["birthday", "1991-02-01"], ["created_at", "2015-04-13 22:33:38.875078"], ["updated_at", "2015-04-13 22:33:38.875078"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "jsmith@colgate.edu"]]
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "jsmith@colgate.edu"]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.7ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$HDmQJWSycftubMCpeQ3xmOcniKtjyM57VHcPiVrwwwmyjr3N2Em06"], ["created_at", "2015-04-13 22:33:38.901960"], ["updated_at", "2015-04-13 22:33:38.901960"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "encrypted_password", "birthday", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$uK/tD/gughwmlsHtf15h0uDZVtqoxw.rQxSJvYqj9RvXfWPHJK3qK"], ["birthday", "1990-01-04"], ["created_at", "2015-04-13 22:34:24.281445"], ["updated_at", "2015-04-13 22:34:24.281445"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "drivers" ("id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["id", 1], ["user_id", 1], ["created_at", "2015-04-13 22:34:24.289809"], ["updated_at", "2015-04-13 22:34:24.289809"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by DriversController#create as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendered drivers/create.html.haml within layouts/application (0.5ms)
+Completed 200 OK in 12ms (Views: 11.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "encrypted_password", "birthday", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$GBeFmSCvCvnnclaTGJsAfuN3reW3StE2.fHr38/Atsn5jXR/AfeZO"], ["birthday", "1990-01-04"], ["created_at", "2015-04-13 22:34:24.318005"], ["updated_at", "2015-04-13 22:34:24.318005"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "drivers" ("id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 1], ["user_id", 1], ["created_at", "2015-04-13 22:34:24.320935"], ["updated_at", "2015-04-13 22:34:24.320935"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by DriversController#destroy as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  Rendered drivers/destroy.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "encrypted_password", "birthday", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$guUSGgIY/vyYsVLFQYUz/OzApfSZ/i.mTyR.8dp0GSIhlpJM1RGVS"], ["birthday", "1990-01-04"], ["created_at", "2015-04-13 22:34:24.351238"], ["updated_at", "2015-04-13 22:34:24.351238"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "drivers" ("id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["id", 1], ["user_id", 1], ["created_at", "2015-04-13 22:34:24.355652"], ["updated_at", "2015-04-13 22:34:24.355652"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by DriversController#first as HTML
+  Parameters: {"user_id"=>"1", "driver_id"=>"1"}
+  Rendered drivers/first.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "encrypted_password", "birthday", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$rkign6zil3O8vFZtjECmxOI4NGXlEMOw.XnERJvGx.mpWXZBhvJJ6"], ["birthday", "1990-01-04"], ["created_at", "2015-04-13 22:34:24.372215"], ["updated_at", "2015-04-13 22:34:24.372215"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "drivers" ("id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 1], ["user_id", 1], ["created_at", "2015-04-13 22:34:24.376269"], ["updated_at", "2015-04-13 22:34:24.376269"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by DriversController#num as HTML
+  Parameters: {"user_id"=>"1", "driver_id"=>"1"}
+  Rendered drivers/num.html.haml within layouts/application (0.9ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "encrypted_password", "birthday", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$SOluazcSB0FKW9ilVpzrYeJQ3u.LsCGLuw9uxc5ZpniW5UenLu4vi"], ["birthday", "1990-01-04"], ["created_at", "2015-04-13 22:34:24.403490"], ["updated_at", "2015-04-13 22:34:24.403490"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "drivers" ("id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["id", 1], ["user_id", 1], ["created_at", "2015-04-13 22:34:24.407677"], ["updated_at", "2015-04-13 22:34:24.407677"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1[0m
+  [1m[35m (0.6ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.5ms)
+Completed 200 OK in 6ms (Views: 6.1ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by UsersController#welcome as HTML
+  Parameters: {"id"=>"1"}
+  Rendered users/welcome.html.haml within layouts/application (0.8ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by UsersController#welcome as HTML
+  Parameters: {"id"=>"1"}
+  Rendered users/welcome.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("name", "email", "encrypted_password", "birthday", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$Ytclu3X3PsPyVtmRX76WI.49qh0DgbHPKIj8Pqb6RGrU./FAhR58."], ["birthday", "1991-02-01"], ["created_at", "2015-04-13 22:34:24.516452"], ["updated_at", "2015-04-13 22:34:24.516452"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "jsmith@colgate.edu"]]
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "jsmith@colgate.edu"]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$Q8JY9jA/yQQr2iHH6fJB6essMy1NnBVYjwkbfaBSK2DhkTSYiJave"], ["created_at", "2015-04-13 22:34:24.540449"], ["updated_at", "2015-04-13 22:34:24.540449"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("name", "email", "encrypted_password", "birthday", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$rSxMn/KfFnjXjkWKOpl1qOldFF9KvG8Aopb2fotAZBQ2K0l2sE0HW"], ["birthday", "1990-01-04"], ["created_at", "2015-04-13 22:35:31.183702"], ["updated_at", "2015-04-13 22:35:31.183702"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "drivers" ("id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["id", 1], ["user_id", 1], ["created_at", "2015-04-13 22:35:31.190842"], ["updated_at", "2015-04-13 22:35:31.190842"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by DriversController#create as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendered drivers/create.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("name", "email", "encrypted_password", "birthday", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$h3DMk9ZOVm7DzFialoPiPuYbBuGGp7Miis9hsyGR.a26HoAu9.y5S"], ["birthday", "1990-01-04"], ["created_at", "2015-04-13 22:35:31.218422"], ["updated_at", "2015-04-13 22:35:31.218422"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "drivers" ("id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 1], ["user_id", 1], ["created_at", "2015-04-13 22:35:31.222882"], ["updated_at", "2015-04-13 22:35:31.222882"]]
+  [1m[35m (0.3ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by DriversController#destroy as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  Rendered drivers/destroy.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "encrypted_password", "birthday", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$gKEPStPmNCp/uiGlQ9FQwOsMQtB0On5UPHioZH24bxQBEZuwuAuIW"], ["birthday", "1990-01-04"], ["created_at", "2015-04-13 22:35:31.251523"], ["updated_at", "2015-04-13 22:35:31.251523"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "drivers" ("id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["id", 1], ["user_id", 1], ["created_at", "2015-04-13 22:35:31.255647"], ["updated_at", "2015-04-13 22:35:31.255647"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by DriversController#first as HTML
+  Parameters: {"user_id"=>"1", "driver_id"=>"1"}
+  Rendered drivers/first.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "users" ("name", "email", "encrypted_password", "birthday", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$Ux8BUxYjpt3XH6.4e5aZ7efKR2Sq50GxbWlX8sRF0UKss1QdpGFUm"], ["birthday", "1990-01-04"], ["created_at", "2015-04-13 22:35:31.267654"], ["updated_at", "2015-04-13 22:35:31.267654"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "drivers" ("id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 1], ["user_id", 1], ["created_at", "2015-04-13 22:35:31.275742"], ["updated_at", "2015-04-13 22:35:31.275742"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by DriversController#num as HTML
+  Parameters: {"user_id"=>"1", "driver_id"=>"1"}
+  Rendered drivers/num.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "encrypted_password", "birthday", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$B7f2LWn0cbapK.EInyRmJetRYPSVTtsMU6uEYmuEPEYHxC6QhVBhy"], ["birthday", "1990-01-04"], ["created_at", "2015-04-13 22:35:31.292052"], ["updated_at", "2015-04-13 22:35:31.292052"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "drivers" ("id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["id", 1], ["user_id", 1], ["created_at", "2015-04-13 22:35:31.297186"], ["updated_at", "2015-04-13 22:35:31.297186"]]
+  [1m[36m (0.9ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (1.7ms)
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by UsersController#welcome as HTML
+  Parameters: {"id"=>"1"}
+  Rendered users/welcome.html.haml within layouts/application (0.4ms)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by UsersController#welcome as HTML
+  Parameters: {"id"=>"1"}
+  Rendered users/welcome.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "encrypted_password", "birthday", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$okUVd6FdpVK6cTktCHXsHutoCAby/QAeZP5mMAEJeIiyMm8pwgrry"], ["birthday", "1990-01-04"], ["created_at", "2015-04-13 22:35:31.390273"], ["updated_at", "2015-04-13 22:35:31.390273"]]
+  [1m[35m (0.3ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by UsersController#edit as HTML
+  Parameters: {"user"=>{"name"=>"John Smith", "email"=>"jsmith@colgate.edu", "birthday"=>"1986-01-03"}, "commit"=>"Update user", "id"=>"1"}
+  Rendered users/edit.html.haml within layouts/application (0.4ms)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (1.8ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "encrypted_password", "birthday", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$ez7vZOu43ClxCdA.x6PBX.g8NpLWjJDJt2SUX1DB0hq9tDCtMVp06"], ["birthday", "1990-01-04"], ["created_at", "2015-04-13 22:35:31.416958"], ["updated_at", "2015-04-13 22:35:31.416958"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by UsersController#update as HTML
+  Parameters: {"user"=>{"name"=>"John Smith", "email"=>"jsmith@colgate.edu", "birthday"=>"1986-01-03"}, "commit"=>"Update user", "id"=>"1"}
+Redirected to http://test.host/users/1/welcome
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "encrypted_password", "birthday", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$NEW5.5JFwev7voIJ.Fu0.e03sDiPdIl3sgP/bvxOBcvGqymxmFBva"], ["birthday", "1991-02-01"], ["created_at", "2015-04-13 22:35:31.436990"], ["updated_at", "2015-04-13 22:35:31.436990"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "jsmith@colgate.edu"]]
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "jsmith@colgate.edu"]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("name", "email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$9mYM8.vxMj0J.h5GzAL1vehjbHXt4jWSoZx.ngGiC7mbgbBt2UpHO"], ["created_at", "2015-04-13 22:35:31.454265"], ["updated_at", "2015-04-13 22:35:31.454265"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "encrypted_password", "birthday", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$iddCuslr1f53Xe332pSXJ.an41/mZJVvSjfKRdlkTwWhemu/AH1fK"], ["birthday", "1990-01-04"], ["created_at", "2015-04-13 22:37:15.672803"], ["updated_at", "2015-04-13 22:37:15.672803"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "drivers" ("id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["id", 1], ["user_id", 1], ["created_at", "2015-04-13 22:37:15.680842"], ["updated_at", "2015-04-13 22:37:15.680842"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by DriversController#create as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendered drivers/create.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 12ms (Views: 11.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("name", "email", "encrypted_password", "birthday", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$Gpp7uSIZeT1ilnlzRroRmOZZmKPMYT2zdLo0SsACZ8d6TsxduZDcS"], ["birthday", "1990-01-04"], ["created_at", "2015-04-13 22:37:15.706834"], ["updated_at", "2015-04-13 22:37:15.706834"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "drivers" ("id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 1], ["user_id", 1], ["created_at", "2015-04-13 22:37:15.709731"], ["updated_at", "2015-04-13 22:37:15.709731"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by DriversController#destroy as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  Rendered drivers/destroy.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "encrypted_password", "birthday", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$r5EOSdDkFVX9Lkfx/7mBBOkaN.ZTcNxUfew2cbiUGo8ElLscqhj9W"], ["birthday", "1990-01-04"], ["created_at", "2015-04-13 22:37:15.747959"], ["updated_at", "2015-04-13 22:37:15.747959"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "drivers" ("id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["id", 1], ["user_id", 1], ["created_at", "2015-04-13 22:37:15.751241"], ["updated_at", "2015-04-13 22:37:15.751241"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by DriversController#first as HTML
+  Parameters: {"user_id"=>"1", "driver_id"=>"1"}
+  Rendered drivers/first.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "email", "encrypted_password", "birthday", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$fEZx22gbCnDLcgj7ojV7QuwkXKDL6YK3PpevIYEsQeZtWF/GyEWSW"], ["birthday", "1990-01-04"], ["created_at", "2015-04-13 22:37:15.771358"], ["updated_at", "2015-04-13 22:37:15.771358"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "drivers" ("id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", 1], ["user_id", 1], ["created_at", "2015-04-13 22:37:15.779066"], ["updated_at", "2015-04-13 22:37:15.779066"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by DriversController#num as HTML
+  Parameters: {"user_id"=>"1", "driver_id"=>"1"}
+  Rendered drivers/num.html.haml within layouts/application (0.4ms)
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "encrypted_password", "birthday", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$q3QpTQsueb0qWaBJgZnNQ.gWyrY3xRtNQVviYwvodGbZU3tHMGYbG"], ["birthday", "1990-01-04"], ["created_at", "2015-04-13 22:37:15.797557"], ["updated_at", "2015-04-13 22:37:15.797557"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.4ms)[0m  INSERT INTO "drivers" ("id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["id", 1], ["user_id", 1], ["created_at", "2015-04-13 22:37:15.800654"], ["updated_at", "2015-04-13 22:37:15.800654"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by DriversController#create as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendered drivers/create.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.5ms)
+Completed 200 OK in 14ms (Views: 13.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by UsersController#welcome as HTML
+  Parameters: {"id"=>"1"}
+  Rendered users/welcome.html.haml within layouts/application (0.5ms)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by UsersController#welcome as HTML
+  Parameters: {"id"=>"1"}
+  Rendered users/welcome.html.haml within layouts/application (0.4ms)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("name", "email", "encrypted_password", "birthday", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$/wjw0fkpOrsiGm0.GrvqS.AAr24gbx.kQhxbS.0xys3N5U0HFBXJK"], ["birthday", "1990-01-04"], ["created_at", "2015-04-13 22:37:15.879695"], ["updated_at", "2015-04-13 22:37:15.879695"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UsersController#edit as HTML
+  Parameters: {"user"=>{"name"=>"John Smith", "email"=>"jsmith@colgate.edu", "birthday"=>"1986-01-03"}, "commit"=>"Update user", "id"=>"1"}
+  Rendered users/edit.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1[0m
+  [1m[35mSQL (1.7ms)[0m  INSERT INTO "users" ("name", "email", "encrypted_password", "birthday", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$/lbh0D2yM.LHjp9O2vHPJ.aMn64WyvHpgENPNXzHY62ly59lNAYV2"], ["birthday", "1990-01-04"], ["created_at", "2015-04-13 22:37:15.905937"], ["updated_at", "2015-04-13 22:37:15.905937"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UsersController#update as HTML
+  Parameters: {"user"=>{"name"=>"John Smith", "email"=>"jsmith@colgate.edu", "birthday"=>"1986-01-03"}, "commit"=>"Update user", "id"=>"1"}
+Redirected to http://test.host/users/1/welcome
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "encrypted_password", "birthday", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$z2CXlYC2pery6hxW.X7zTeq7QeOKgHtlhwwHUzuga/uMkZCpmMJ1K"], ["birthday", "1991-02-01"], ["created_at", "2015-04-13 22:37:15.930569"], ["updated_at", "2015-04-13 22:37:15.930569"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "jsmith@colgate.edu"]]
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "jsmith@colgate.edu"]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'jsmith@colgate.edu' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "John Smith"], ["email", "jsmith@colgate.edu"], ["encrypted_password", "$2a$04$E8lmwhnQbb4Ckflem/eYduMKWYllwF5uygHwAgYKok7RG52NzIKei"], ["created_at", "2015-04-13 22:37:15.948837"], ["updated_at", "2015-04-13 22:37:15.948837"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
