@@ -3,7 +3,11 @@ class OmniauthCallbacksController < Devise::OmniauthCallbacksController
         @user = User.find_for_google_oauth2(request.env["omniauth.auth"], current_user)
         if @user.persisted?
             flash[:notice] = I18n.t "devise.omniauth_callbacks.success", :kind => "Google"
-            redirect_to  welcome_user_path(@user)
+            if @user.birthday == nil
+                redirect_to edit_user_path(@user)
+            else
+                redirect_to  welcome_user_path(@user)
+            end
         else
             session["devise.google_data"] = request.env["omniauth.auth"]
             redirect_to edit_user_path(@user)
