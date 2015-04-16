@@ -1,19 +1,54 @@
-#main
-    %h1 Drive App Account Setup
-=form_for @user, url: { action: "update" } do |f|
-    =f.label :name
-    =f.text_field :name
+%head
+  %link{:href => "http://fonts.googleapis.com/css?family=Varela+Round", :rel => "stylesheet", :type => "text/css"}
+  %link{:href => "http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css", :rel => "stylesheet"}
+  %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"}
+  %script{:src => "http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"}
 
-    </br>
-    =f.label :email
-    =f.email_field :email
-    
-    </br>
-    =f.label :birthday
-    =f.date_field :birthday
+%body
+  .container-fluid
+    .content-box
+      .row
+        .title-text
+          %h1 Your Account
+          .account-form
+            =form_for @user, url: { action: "update" } do |f|
+              =f.label :name
+              =f.text_field :name
+              </br>
+              =f.label :email
+              =f.email_field :email
+              </br>
+              =f.label :birthday
+              =f.date_field :birthday
+              </br>
+              =f.check_box :is_rider              
+              =f.label "I want to be a rider!"                  
+              </br>
+              =f.check_box :is_driver, :onclick => "$('#driver-info').slideToggle()"             
+              =f.label "I want to be a driver too!"                
+              </br>
+            
+              #driver-info
+                =f.label :driver_license
+                =f.text_field :driver_license
+                </br>
+                =f.label :driver_license_state
+                =f.text_field :driver_license_state
+                </br> 
+                =f.label :lisence_plate
+                =f.text_field :lisence_plate
+                </br>
+                =f.label :license_plate_state
+                =f.text_field :license_plate_state
+                </br>
+                =f.label :make
+                =f.text_field :make
+                </br>
+                =f.label :model
+                =f.text_field :model
+                </br>
+                =f.label :year
+                =f.number_field :year
 
-    </br>
-    =f.label :driver
-    =f.select(:driver, [['Drive and Ride', 1], ['Just Ride', 2]])
-    </br>
-    =f.submit "Update user"
+
+              =f.submit "Save changes"
