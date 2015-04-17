@@ -1,6 +1,7 @@
 class RidersController < ApplicationController
 
   def create
+    byebug
     @user = User.find(params[:user_id])
     
     #build sets the product foreign key automatically

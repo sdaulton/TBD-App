@@ -14,10 +14,12 @@
             %h1 Welcome back, #{@user.name}!  
         .row.spacing
           .btn.btn-default.col-md-6.col-md-offset-3
-            =link_to "Ready to drive!", :class=>"main-btn"
+            =form_for ([@user, Driver.new]) do |f|
+              =f.submit "Ready to Drive!"
         .row.spacing
           .btn.btn-default.col-md-6.col-md-offset-3
-            =link_to "Request a ride!", :class=>"main-btn"
+            =form_for ([@user, Rider.new]) do |f|
+              =f.submit "Request a ride!"
         .row.spacing
           .btn.btn-default.col-md-6.col-md-offset-3
             =link_to "Report a problem.", :class=>"main-btn"
