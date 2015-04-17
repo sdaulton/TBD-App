@@ -16,9 +16,9 @@ class UsersController < ApplicationController
     end
 
     def logging
-        email = params[:email]
-        @user = User.find_by email: email
-        redirect_to welcome_user_path(@user)
+        #email = params[:email]
+        #@user = User.find_by email: email
+        #redirect_to welcome_user_path(@user)
     end
 
     def edit
