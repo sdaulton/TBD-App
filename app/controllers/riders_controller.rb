@@ -1,7 +1,6 @@
 class RidersController < ApplicationController
 
   def create
-    byebug
     @user = User.find(params[:user_id])
     
     #build sets the product foreign key automatically
@@ -29,6 +28,8 @@ class RidersController < ApplicationController
   def wait
     @num_ahead = num - 1
     @num_drivers = Driver.count
+    @user = User.find(params[:user_id])
+    @rider = @user.rider
   end
 
   def first

@@ -27,6 +27,8 @@ class DriversController < ApplicationController
 
   def wait
     @num_ahead = num - 1
+    @user = User.find(params[:user_id])
+    @driver = @user.driver
   end
 
   def first

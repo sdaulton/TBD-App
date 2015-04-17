@@ -12440,3 +12440,1017 @@ Started GET "/assets/application-03e340c36a169015c8cd8ce39c1733c8.js?body=1" for
 
 
 Started GET "/assets/background-img.jpg" for 127.0.0.1 at 2015-04-16 23:59:52 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-17 00:04:12 -0400
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (2.2ms)
+Completed 200 OK in 91ms (Views: 91.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/drivers-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-04-17 00:04:12 -0400
+
+
+Started GET "/assets/drivers-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-17 00:04:12 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-17 00:04:12 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-17 00:04:12 -0400
+
+
+Started GET "/assets/application-0de171b0032611e18e2ed6918d827178.css?body=1" for 127.0.0.1 at 2015-04-17 00:04:12 -0400
+
+
+Started GET "/assets/users-ffed35ad8e7f1596891aa3dec0f3d583.css?body=1" for 127.0.0.1 at 2015-04-17 00:04:12 -0400
+
+
+Started GET "/assets/application-03e340c36a169015c8cd8ce39c1733c8.js?body=1" for 127.0.0.1 at 2015-04-17 00:04:12 -0400
+
+
+Started GET "/assets/riders-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-04-17 00:04:12 -0400
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-17 00:04:12 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-17 00:04:12 -0400
+
+
+Started GET "/assets/riders-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-17 00:04:12 -0400
+
+
+Started GET "/assets/background-img.jpg" for 127.0.0.1 at 2015-04-17 00:04:12 -0400
+
+
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2015-04-17 00:04:14 -0400
+
+
+Started GET "/users/auth/google_oauth2/callback?state=c79814c65ce8771ace144f72e611855a334665dfd2d436e7&code=4/UQVFo5CKNgG3l0XkeCMyW_hCazg-UsDbfBcU1HchX4o.QgjoseVRHyYZJvIeHux6iLbDxhiLmQI" for 127.0.0.1 at 2015-04-17 00:04:14 -0400
+Processing by OmniauthCallbacksController#google_oauth2 as HTML
+  Parameters: {"state"=>"c79814c65ce8771ace144f72e611855a334665dfd2d436e7", "code"=>"4/UQVFo5CKNgG3l0XkeCMyW_hCazg-UsDbfBcU1HchX4o.QgjoseVRHyYZJvIeHux6iLbDxhiLmQI"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "ffouladi@colgate.edu"]]
+Redirected to http://localhost:3000/users/1/welcome
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/users/1/welcome" for 127.0.0.1 at 2015-04-17 00:04:15 -0400
+Processing by UsersController#welcome as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/welcome.html.haml within layouts/application (3.6ms)
+Completed 200 OK in 96ms (Views: 92.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/drivers-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-04-17 00:04:15 -0400
+
+
+Started GET "/assets/users-ffed35ad8e7f1596891aa3dec0f3d583.css?body=1" for 127.0.0.1 at 2015-04-17 00:04:15 -0400
+
+
+Started GET "/assets/application-0de171b0032611e18e2ed6918d827178.css?body=1" for 127.0.0.1 at 2015-04-17 00:04:15 -0400
+
+
+Started GET "/assets/riders-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-04-17 00:04:15 -0400
+
+
+Started GET "/assets/drivers-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-17 00:04:15 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-17 00:04:15 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-17 00:04:15 -0400
+
+
+Started GET "/assets/riders-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-17 00:04:15 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-17 00:04:15 -0400
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-17 00:04:15 -0400
+
+
+Started GET "/assets/application-03e340c36a169015c8cd8ce39c1733c8.js?body=1" for 127.0.0.1 at 2015-04-17 00:04:15 -0400
+
+
+Started GET "/assets/background-img.jpg" for 127.0.0.1 at 2015-04-17 00:04:16 -0400
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2015-04-17 00:04:18 -0400
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered users/edit.html.haml within layouts/application (4.4ms)
+Completed 200 OK in 115ms (Views: 114.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/drivers-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-04-17 00:04:18 -0400
+
+
+Started GET "/assets/users-ffed35ad8e7f1596891aa3dec0f3d583.css?body=1" for 127.0.0.1 at 2015-04-17 00:04:18 -0400
+
+
+Started GET "/assets/application-0de171b0032611e18e2ed6918d827178.css?body=1" for 127.0.0.1 at 2015-04-17 00:04:18 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-17 00:04:18 -0400
+
+
+Started GET "/assets/riders-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-04-17 00:04:18 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-17 00:04:18 -0400
+
+
+Started GET "/assets/drivers-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-17 00:04:18 -0400
+
+
+Started GET "/assets/riders-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-17 00:04:18 -0400
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-17 00:04:18 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-17 00:04:18 -0400
+
+
+Started GET "/assets/application-03e340c36a169015c8cd8ce39c1733c8.js?body=1" for 127.0.0.1 at 2015-04-17 00:04:18 -0400
+
+
+Started GET "/assets/background-img.jpg" for 127.0.0.1 at 2015-04-17 00:04:18 -0400
+
+
+Started PATCH "/users/1" for 127.0.0.1 at 2015-04-17 00:04:21 -0400
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gAqK1HZTlCw91mu/+qi3LTvg8keh8sRMYWCNZ9ST6tD5nqVG6MHpqj9aBSnMW8k7Ymfqg47r93xW770eSE6RXQ==", "user"=>{"name"=>"Farah Fouladi '15", "email"=>"ffouladi@colgate.edu", "birthday"=>"1993-05-05", "is_driver"=>"2"}, "commit"=>"Update user", "id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "is_driver" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["is_driver", "2"], ["updated_at", "2015-04-17 04:04:21.494186"], ["id", 1]]
+  [1m[35m (759.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/users/1/welcome
+Completed 302 Found in 779ms (ActiveRecord: 760.3ms)
+
+
+Started GET "/users/1/welcome" for 127.0.0.1 at 2015-04-17 00:04:22 -0400
+Processing by UsersController#welcome as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/welcome.html.haml within layouts/application (2.6ms)
+Completed 200 OK in 92ms (Views: 89.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/drivers-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-04-17 00:04:22 -0400
+
+
+Started GET "/assets/riders-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-04-17 00:04:22 -0400
+
+
+Started GET "/assets/users-ffed35ad8e7f1596891aa3dec0f3d583.css?body=1" for 127.0.0.1 at 2015-04-17 00:04:22 -0400
+
+
+Started GET "/assets/application-0de171b0032611e18e2ed6918d827178.css?body=1" for 127.0.0.1 at 2015-04-17 00:04:22 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-17 00:04:22 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-17 00:04:22 -0400
+
+
+Started GET "/assets/drivers-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-17 00:04:22 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-17 00:04:22 -0400
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-17 00:04:22 -0400
+
+
+Started GET "/assets/application-03e340c36a169015c8cd8ce39c1733c8.js?body=1" for 127.0.0.1 at 2015-04-17 00:04:22 -0400
+
+
+Started GET "/assets/riders-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-17 00:04:22 -0400
+
+
+Started GET "/assets/background-img.jpg" for 127.0.0.1 at 2015-04-17 00:04:22 -0400
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2015-04-17 00:04:25 -0400
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered users/edit.html.haml within layouts/application (6.8ms)
+Completed 200 OK in 98ms (Views: 95.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/drivers-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-04-17 00:04:26 -0400
+
+
+Started GET "/assets/users-ffed35ad8e7f1596891aa3dec0f3d583.css?body=1" for 127.0.0.1 at 2015-04-17 00:04:26 -0400
+
+
+Started GET "/assets/application-0de171b0032611e18e2ed6918d827178.css?body=1" for 127.0.0.1 at 2015-04-17 00:04:26 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-17 00:04:26 -0400
+
+
+Started GET "/assets/drivers-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-17 00:04:26 -0400
+
+
+Started GET "/assets/riders-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-04-17 00:04:26 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-17 00:04:26 -0400
+
+
+Started GET "/assets/riders-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-17 00:04:26 -0400
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-17 00:04:26 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-17 00:04:26 -0400
+
+
+Started GET "/assets/application-03e340c36a169015c8cd8ce39c1733c8.js?body=1" for 127.0.0.1 at 2015-04-17 00:04:26 -0400
+
+
+Started GET "/assets/background-img.jpg" for 127.0.0.1 at 2015-04-17 00:04:26 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-17 12:56:30 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (13.9ms)
+Completed 200 OK in 242ms (Views: 241.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/drivers-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-04-17 12:56:31 -0400
+
+
+Started GET "/assets/application-0de171b0032611e18e2ed6918d827178.css?body=1" for 127.0.0.1 at 2015-04-17 12:56:31 -0400
+
+
+Started GET "/assets/users-ffed35ad8e7f1596891aa3dec0f3d583.css?body=1" for 127.0.0.1 at 2015-04-17 12:56:31 -0400
+
+
+Started GET "/assets/riders-069e88c06b889877799890854d7f4c40.css?body=1" for 127.0.0.1 at 2015-04-17 12:56:31 -0400
+
+
+Started GET "/assets/drivers-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-17 12:56:31 -0400
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for 127.0.0.1 at 2015-04-17 12:56:31 -0400
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for 127.0.0.1 at 2015-04-17 12:56:31 -0400
+
+
+Started GET "/assets/products-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-17 12:56:31 -0400
+
+
+Started GET "/assets/riders-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-17 12:56:31 -0400
+
+
+Started GET "/assets/users-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for 127.0.0.1 at 2015-04-17 12:56:31 -0400
+
+
+Started GET "/assets/application-03e340c36a169015c8cd8ce39c1733c8.js?body=1" for 127.0.0.1 at 2015-04-17 12:56:31 -0400
+
+
+Started GET "/assets/background-img.jpg" for 127.0.0.1 at 2015-04-17 12:56:31 -0400
+
+
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2015-04-17 12:56:34 -0400
+
+
+Started GET "/users/auth/google_oauth2/callback?state=521d17cede373c24a0b4bd734c1ec57791da1ee724564fd7&code=4/w2nPAxNLRNfbAF7aR-E5-wehdNRWjyFa-8OQ3S_ddwY.osxGr_CnQYgUgtL038sCVnvj9J6QmQI" for 127.0.0.1 at 2015-04-17 12:56:34 -0400
+Processing by OmniauthCallbacksController#google_oauth2 as HTML
+  Parameters: {"state"=>"521d17cede373c24a0b4bd734c1ec57791da1ee724564fd7", "code"=>"4/w2nPAxNLRNfbAF7aR-E5-wehdNRWjyFa-8OQ3S_ddwY.osxGr_CnQYgUgtL038sCVnvj9J6QmQI"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "ffouladi@colgate.edu"]]
+Redirected to http://localhost:3000/users/1/welcome
+Completed 302 Found in 165ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/users/1/welcome" for 127.0.0.1 at 2015-04-17 12:56:35 -0400
+Processing by UsersController#welcome as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (2.8ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/welcome.html.haml within layouts/application (38.8ms)
+Completed 200 OK in 171ms (Views: 140.8ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2015-04-17 12:56:40 -0400
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered users/edit.html.haml within layouts/application (64.5ms)
+Completed 200 OK in 168ms (Views: 165.0ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/users/1" for 127.0.0.1 at 2015-04-17 12:56:44 -0400
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"R3cD7ijG9JRg7pH3ZvQ5hxZajgdEKqnwpfFuem1uHzgcFPz1Sn9PQjvxIC8E6a1TeZy0+DiW3ojwWd7gndgm5g==", "user"=>{"name"=>"Farah Fouladi '15", "email"=>"ffouladi@colgate.edu", "birthday"=>"1993-05-05", "is_driver"=>"1"}, "commit"=>"Update user", "id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "users" SET "is_driver" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["is_driver", "1"], ["updated_at", "2015-04-17 16:56:44.450400"], ["id", 1]]
+  [1m[35m (9.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/users/1/welcome
+Completed 302 Found in 37ms (ActiveRecord: 9.7ms)
+
+
+Started GET "/users/1/welcome" for 127.0.0.1 at 2015-04-17 12:56:44 -0400
+Processing by UsersController#welcome as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/welcome.html.haml within layouts/application (37.7ms)
+Completed 200 OK in 156ms (Views: 143.8ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/users/1/drivers" for 127.0.0.1 at 2015-04-17 12:56:47 -0400
+Processing by DriversController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nr4CvpRz6chQnNdyHSbSNgMHkLrFTIfKi7cXFAXSmyjF3f2l9spSHguDZqp/O0bibMGqRbnw8LLeH6eO9WSi9g==", "commit"=>"Ready to Drive!", "user_id"=>"1"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mDriver Load (0.3ms)[0m  [1mSELECT  "drivers".* FROM "drivers" WHERE "drivers"."user_id" = ? LIMIT 1[0m  [["user_id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "drivers" ("user_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["user_id", 1], ["created_at", "2015-04-17 16:56:48.006812"], ["updated_at", "2015-04-17 16:56:48.006812"]]
+  [1m[35m (5.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/users/1/drivers/1/wait
+Completed 302 Found in 43ms (ActiveRecord: 5.8ms)
+
+
+Started GET "/users/1/drivers/1/wait" for 127.0.0.1 at 2015-04-17 12:56:48 -0400
+Processing by DriversController#wait as HTML
+  Parameters: {"user_id"=>"1", "driver_id"=>"1"}
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "drivers"[0m
+  Rendered drivers/wait.html.haml within layouts/application (1.5ms)
+Completed 200 OK in 191ms (Views: 184.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1/drivers/1/wait" for 127.0.0.1 at 2015-04-17 12:56:50 -0400
+Processing by DriversController#wait as HTML
+  Parameters: {"user_id"=>"1", "driver_id"=>"1"}
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "drivers"
+  Rendered drivers/wait.html.haml within layouts/application (7.1ms)
+Completed 200 OK in 99ms (Views: 98.0ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users/1/drivers" for 127.0.0.1 at 2015-04-17 12:58:58 -0400
+Processing by DriversController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nr4CvpRz6chQnNdyHSbSNgMHkLrFTIfKi7cXFAXSmyjF3f2l9spSHguDZqp/O0bibMGqRbnw8LLeH6eO9WSi9g==", "commit"=>"Ready to Drive!", "user_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mDriver Load (0.1ms)[0m  SELECT  "drivers".* FROM "drivers" WHERE "drivers"."user_id" = ? LIMIT 1  [["user_id", 1]]
+  [1m[36m (2.7ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "drivers" SET "user_id" = ?, "updated_at" = ? WHERE "drivers"."id" = ?  [["user_id", nil], ["updated_at", "2015-04-17 16:58:58.176740"], ["id", 1]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "drivers" ("user_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["user_id", 1], ["created_at", "2015-04-17 16:58:58.180697"], ["updated_at", "2015-04-17 16:58:58.180697"]]
+  [1m[35m (10.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/users/1/drivers/2/wait
+Completed 302 Found in 30ms (ActiveRecord: 14.0ms)
+
+
+Started GET "/users/1/drivers/2/wait" for 127.0.0.1 at 2015-04-17 12:58:58 -0400
+Processing by DriversController#wait as HTML
+  Parameters: {"user_id"=>"1", "driver_id"=>"2"}
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "drivers"[0m
+  Rendered drivers/wait.html.haml within layouts/application (0.4ms)
+Completed 200 OK in 86ms (Views: 85.5ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/users/1/riders" for 127.0.0.1 at 2015-04-17 12:59:03 -0400
+Processing by RidersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nr4CvpRz6chQnNdyHSbSNgMHkLrFTIfKi7cXFAXSmyjF3f2l9spSHguDZqp/O0bibMGqRbnw8LLeH6eO9WSi9g==", "commit"=>"Request a ride!", "user_id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mRider Load (0.2ms)[0m  [1mSELECT  "riders".* FROM "riders" WHERE "riders"."user_id" = ? LIMIT 1[0m  [["user_id", 1]]
+  [1m[35m (1.8ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "riders" ("user_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["user_id", 1], ["created_at", "2015-04-17 16:59:07.799149"], ["updated_at", "2015-04-17 16:59:07.799149"]]
+  [1m[35m (101.3ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/users/1/riders/1/wait
+Completed 302 Found in 4709ms (ActiveRecord: 104.1ms)
+
+
+Started GET "/users/1/riders/1/wait" for 127.0.0.1 at 2015-04-17 12:59:07 -0400
+Processing by RidersController#wait as HTML
+  Parameters: {"user_id"=>"1", "rider_id"=>"1"}
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "riders"[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "drivers"
+  Rendered riders/wait.html.haml within layouts/application (4.2ms)
+Completed 200 OK in 861ms (Views: 854.6ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/users/1/drivers" for 127.0.0.1 at 2015-04-17 13:01:08 -0400
+Processing by DriversController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nr4CvpRz6chQnNdyHSbSNgMHkLrFTIfKi7cXFAXSmyjF3f2l9spSHguDZqp/O0bibMGqRbnw8LLeH6eO9WSi9g==", "commit"=>"Ready to Drive!", "user_id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mDriver Load (0.4ms)[0m  SELECT  "drivers".* FROM "drivers" WHERE "drivers"."user_id" = ? LIMIT 1  [["user_id", 1]]
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  UPDATE "drivers" SET "user_id" = ?, "updated_at" = ? WHERE "drivers"."id" = ?  [["user_id", nil], ["updated_at", "2015-04-17 17:01:08.128051"], ["id", 2]]
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "drivers" ("user_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["user_id", 1], ["created_at", "2015-04-17 17:01:08.150501"], ["updated_at", "2015-04-17 17:01:08.150501"]]
+  [1m[35m (105.2ms)[0m  commit transaction
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  commit transaction
+Redirected to http://localhost:3000/users/1/drivers/3/wait
+Completed 302 Found in 187ms (ActiveRecord: 108.3ms)
+
+
+Started GET "/users/1/drivers/3/wait" for 127.0.0.1 at 2015-04-17 13:01:08 -0400
+Processing by DriversController#wait as HTML
+  Parameters: {"user_id"=>"1", "driver_id"=>"3"}
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "drivers"[0m
+  Rendered drivers/wait.html.haml within layouts/application (4.6ms)
+Completed 200 OK in 408ms (Views: 399.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-17 13:25:27 -0400
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (5.0ms)
+Completed 200 OK in 439ms (Views: 437.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2015-04-17 13:25:30 -0400
+
+
+Started GET "/users/auth/google_oauth2/callback?state=d974b5a1f0022bcc4cb060b7f6831178e869159d4bbceb5a&code=4/Dg2Bu41c3F866WejXMQ5y75R423UoWOD_rGvB-aWto0.ssvzIllXbP0cJvIeHux6iLZF6NOQmQI" for 127.0.0.1 at 2015-04-17 13:25:30 -0400
+Processing by OmniauthCallbacksController#google_oauth2 as HTML
+  Parameters: {"state"=>"d974b5a1f0022bcc4cb060b7f6831178e869159d4bbceb5a", "code"=>"4/Dg2Bu41c3F866WejXMQ5y75R423UoWOD_rGvB-aWto0.ssvzIllXbP0cJvIeHux6iLZF6NOQmQI"}
+  [1m[35mUser Load (2.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "ffouladi@colgate.edu"]]
+Redirected to http://localhost:3000/users/1/welcome
+Completed 302 Found in 96ms (ActiveRecord: 5.0ms)
+
+
+Started GET "/users/1/welcome" for 127.0.0.1 at 2015-04-17 13:25:31 -0400
+Processing by UsersController#welcome as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/welcome.html.haml within layouts/application (93.5ms)
+Completed 200 OK in 534ms (Views: 516.9ms | ActiveRecord: 3.6ms)
+
+
+Started POST "/users/1/riders" for 127.0.0.1 at 2015-04-17 13:25:35 -0400
+Processing by RidersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SZiSX/AiqshQ9g7uG2lGYNJYBO9cUy+8Cil4DvwgUukS+21EkpsRHgvpvzZ5dNK0vZ4+ECDvWMRfgciUDJZrNw==", "commit"=>"Request a ride!", "user_id"=>"1"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mRider Load (2.3ms)[0m  [1mSELECT  "riders".* FROM "riders" WHERE "riders"."user_id" = ? LIMIT 1[0m  [["user_id", 1]]
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36mSQL (4.6ms)[0m  [1mUPDATE "riders" SET "user_id" = ?, "updated_at" = ? WHERE "riders"."id" = ?[0m  [["user_id", nil], ["updated_at", "2015-04-17 17:25:40.797085"], ["id", 1]]
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "riders" ("user_id", "created_at", "updated_at") VALUES (?, ?, ?)  [["user_id", 1], ["created_at", "2015-04-17 17:25:40.837164"], ["updated_at", "2015-04-17 17:25:40.837164"]]
+  [1m[36m (12.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.6ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users/1/riders/2/wait
+Completed 302 Found in 4972ms (ActiveRecord: 21.5ms)
+
+
+Started GET "/users/1/riders/2/wait" for 127.0.0.1 at 2015-04-17 13:25:40 -0400
+Processing by RidersController#wait as HTML
+  Parameters: {"user_id"=>"1", "rider_id"=>"2"}
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "riders"
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "drivers"[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mRider Load (0.4ms)[0m  [1mSELECT  "riders".* FROM "riders" WHERE "riders"."user_id" = ? LIMIT 1[0m  [["user_id", 1]]
+  Rendered riders/wait.html.haml within layouts/application (8.0ms)
+Completed 200 OK in 560ms (Views: 517.6ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-17 13:27:45 -0400
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (5.8ms)
+Completed 200 OK in 410ms (Views: 408.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2015-04-17 13:27:48 -0400
+
+
+Started GET "/users/auth/google_oauth2/callback?state=cb2d3e811c5765a847a6566c30dce0790dc0973a3fad0efd&code=4/qdzQCDywDM4X-FFI5WQJPEsUN_gjlkOYeCIkaDgR1ow.0oTLJEHa8xgTJvIeHux6iLYDHtiQmQI" for 127.0.0.1 at 2015-04-17 13:27:48 -0400
+Processing by OmniauthCallbacksController#google_oauth2 as HTML
+  Parameters: {"state"=>"cb2d3e811c5765a847a6566c30dce0790dc0973a3fad0efd", "code"=>"4/qdzQCDywDM4X-FFI5WQJPEsUN_gjlkOYeCIkaDgR1ow.0oTLJEHa8xgTJvIeHux6iLYDHtiQmQI"}
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "ffouladi@colgate.edu"]]
+Redirected to http://localhost:3000/users/1/welcome
+Completed 302 Found in 97ms (ActiveRecord: 3.7ms)
+
+
+Started GET "/users/1/welcome" for 127.0.0.1 at 2015-04-17 13:27:49 -0400
+Processing by UsersController#welcome as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/welcome.html.haml within layouts/application (93.3ms)
+Completed 200 OK in 525ms (Views: 508.6ms | ActiveRecord: 3.4ms)
+
+
+Started POST "/users/1/riders" for 127.0.0.1 at 2015-04-17 13:27:52 -0400
+Processing by RidersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9Ete64nxAH5dBCaDDqXBU3055iGnKoAiPa2ZJXlO2m2vKKHw60i7qAYbl1tsuFWHEv/c3tuW91poBSm/ifjjsw==", "commit"=>"Request a ride!", "user_id"=>"1"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mRider Load (0.8ms)[0m  [1mSELECT  "riders".* FROM "riders" WHERE "riders"."user_id" = ? LIMIT 1[0m  [["user_id", 1]]
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36mSQL (1.2ms)[0m  [1mUPDATE "riders" SET "user_id" = ?, "updated_at" = ? WHERE "riders"."id" = ?[0m  [["user_id", nil], ["updated_at", "2015-04-17 17:27:52.379263"], ["id", 2]]
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "riders" ("user_id", "created_at", "updated_at") VALUES (?, ?, ?)  [["user_id", 1], ["created_at", "2015-04-17 17:27:52.407271"], ["updated_at", "2015-04-17 17:27:52.407271"]]
+  [1m[36m (10.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.6ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users/1/riders/3/wait
+Completed 302 Found in 127ms (ActiveRecord: 14.7ms)
+
+
+Started GET "/users/1/riders/3/wait" for 127.0.0.1 at 2015-04-17 13:27:52 -0400
+Processing by RidersController#wait as HTML
+  Parameters: {"user_id"=>"1", "rider_id"=>"3"}
+  [1m[35m (0.7ms)[0m  SELECT COUNT(*) FROM "riders"
+  [1m[36m (2.1ms)[0m  [1mSELECT COUNT(*) FROM "drivers"[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mRider Load (0.4ms)[0m  [1mSELECT  "riders".* FROM "riders" WHERE "riders"."user_id" = ? LIMIT 1[0m  [["user_id", 1]]
+  Rendered riders/wait.html.haml within layouts/application (12.7ms)
+Completed 200 OK in 485ms (Views: 445.9ms | ActiveRecord: 3.7ms)
+
+
+Started DELETE "/users/1/riders/3" for 127.0.0.1 at 2015-04-17 13:27:55 -0400
+Processing by RidersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"6JvPw2toryOB4XQOhrcP9LwvDjqXaVmqJEfvUYqB8j2z+DDYCdEU9dr+xdbkqpsg0+k0xevVLtJx71/LejfL4w==", "user_id"=>"1", "id"=>"3"}
+  [1m[35mRider Load (0.6ms)[0m  SELECT  "riders".* FROM "riders" WHERE "riders"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.5ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mDELETE FROM "riders" WHERE "riders"."id" = ?[0m  [["id", 3]]
+  [1m[35m (5.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/users/1/welcome
+Completed 302 Found in 47ms (ActiveRecord: 7.8ms)
+
+
+Started GET "/users/1/welcome" for 127.0.0.1 at 2015-04-17 13:27:55 -0400
+Processing by UsersController#welcome as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/welcome.html.haml within layouts/application (20.4ms)
+Completed 200 OK in 442ms (Views: 436.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-17 13:30:11 -0400
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (3.9ms)
+Completed 200 OK in 425ms (Views: 418.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2015-04-17 13:30:13 -0400
+
+
+Started GET "/users/auth/google_oauth2/callback?state=5369db2b32ecac9d6942cf69e2f74a4814977b2c259cd19d&code=4/IxPsMVpDbe-VDbWEu0zyulvr20jch3S3_vglH4Ggyu8.AixIfoMTEjkcJvIeHux6iLZNjtyQmQI" for 127.0.0.1 at 2015-04-17 13:30:14 -0400
+Processing by OmniauthCallbacksController#google_oauth2 as HTML
+  Parameters: {"state"=>"5369db2b32ecac9d6942cf69e2f74a4814977b2c259cd19d", "code"=>"4/IxPsMVpDbe-VDbWEu0zyulvr20jch3S3_vglH4Ggyu8.AixIfoMTEjkcJvIeHux6iLZNjtyQmQI"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "ffouladi@colgate.edu"]]
+Redirected to http://localhost:3000/users/1/welcome
+Completed 302 Found in 19ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/users/1/welcome" for 127.0.0.1 at 2015-04-17 13:30:14 -0400
+Processing by UsersController#welcome as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/welcome.html.haml within layouts/application (68.7ms)
+Completed 200 OK in 508ms (Views: 498.1ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users/1" for 127.0.0.1 at 2015-04-17 13:30:17 -0400
+
+ActionController::RoutingError (No route matches [POST] "/users/1"):
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /home/csvm/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/csvm/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/csvm/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (8.9ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_route.html.erb (29.9ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_table.html.erb (6.5ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (17.7ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.8ms)
+  Rendered /home/csvm/.rvm/gems/ruby-2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (321.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-17 13:30:43 -0400
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (3.4ms)
+Completed 200 OK in 392ms (Views: 390.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2015-04-17 13:30:46 -0400
+
+
+Started GET "/users/auth/google_oauth2/callback?state=b03af1b0c626b07ee687e5c6cc9994d1611133b594a91d82&code=4/rCkAUGul7ayjrq0z4L2mOfEALgAMtw3Pv83zVNcgAFA.cpfFJjmtMhAagtL038sCVnsHkN2QmQI" for 127.0.0.1 at 2015-04-17 13:30:47 -0400
+Processing by OmniauthCallbacksController#google_oauth2 as HTML
+  Parameters: {"state"=>"b03af1b0c626b07ee687e5c6cc9994d1611133b594a91d82", "code"=>"4/rCkAUGul7ayjrq0z4L2mOfEALgAMtw3Pv83zVNcgAFA.cpfFJjmtMhAagtL038sCVnsHkN2QmQI"}
+  [1m[35mUser Load (1.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "ffouladi@colgate.edu"]]
+Redirected to http://localhost:3000/users/1/welcome
+Completed 302 Found in 17ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/users/1/welcome" for 127.0.0.1 at 2015-04-17 13:30:47 -0400
+Processing by UsersController#welcome as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/welcome.html.haml within layouts/application (68.9ms)
+Completed 200 OK in 531ms (Views: 518.9ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users/1/riders" for 127.0.0.1 at 2015-04-17 13:30:56 -0400
+Processing by RidersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KjSmP1d1u5nitFFz6HUMbLGdatsUk5VGYoGjr3qflA9xV1kkNcwAT7mr4KuKaJi43ltQJGgv4j43KRM1iimt0Q==", "commit"=>"Request a ride!", "user_id"=>"1"}
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mRider Load (0.4ms)[0m  [1mSELECT  "riders".* FROM "riders" WHERE "riders"."user_id" = ? LIMIT 1[0m  [["user_id", 1]]
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "riders" ("user_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["user_id", 1], ["created_at", "2015-04-17 17:30:56.960147"], ["updated_at", "2015-04-17 17:30:56.960147"]]
+  [1m[35m (670.5ms)[0m  commit transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  commit transaction
+Redirected to http://localhost:3000/users/1/riders/4/wait
+Completed 302 Found in 729ms (ActiveRecord: 673.7ms)
+
+
+Started GET "/users/1/riders/4/wait" for 127.0.0.1 at 2015-04-17 13:30:57 -0400
+Processing by RidersController#wait as HTML
+  Parameters: {"user_id"=>"1", "rider_id"=>"4"}
+  [1m[36m (1.1ms)[0m  [1mSELECT COUNT(*) FROM "riders"[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "drivers"
+  [1m[36mUser Load (5.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mRider Load (0.6ms)[0m  SELECT  "riders".* FROM "riders" WHERE "riders"."user_id" = ? LIMIT 1  [["user_id", 1]]
+  Rendered riders/wait.html.haml within layouts/application (5.5ms)
+Completed 200 OK in 461ms (Views: 429.8ms | ActiveRecord: 7.8ms)
+
+
+Started DELETE "/users/1/riders/4" for 127.0.0.1 at 2015-04-17 13:31:08 -0400
+Processing by RidersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"odjNxdHyMAMvKy00zbfhe6fwdjSaQshSrnVLopcKAqX6uzLes0uL1XQ0nOyvqnWvyDZMy+b+vyr73fs4Z7w7ew==", "user_id"=>"1", "id"=>"4"}
+  [1m[36mRider Load (0.4ms)[0m  [1mSELECT  "riders".* FROM "riders" WHERE "riders"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  DELETE FROM "riders" WHERE "riders"."id" = ?  [["id", 4]]
+  [1m[36m (352.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users/1/welcome
+Completed 302 Found in 377ms (ActiveRecord: 353.9ms)
+
+
+Started GET "/users/1/welcome" for 127.0.0.1 at 2015-04-17 13:31:08 -0400
+Processing by UsersController#welcome as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (2.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered users/welcome.html.haml within layouts/application (18.9ms)
+Completed 200 OK in 486ms (Views: 476.9ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/users/1/riders" for 127.0.0.1 at 2015-04-17 13:31:11 -0400
+Processing by RidersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WzA+g+FvtI0RtbL/myxS7Ll5v7uV6GNATsH9mRCiZsMAU8GYg9YPW0qqAyf5McY41r+FROlUFDgbaU0D4BRfHQ==", "commit"=>"Request a ride!", "user_id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mRider Load (0.4ms)[0m  SELECT  "riders".* FROM "riders" WHERE "riders"."user_id" = ? LIMIT 1  [["user_id", 1]]
+  [1m[36m (3.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "riders" ("user_id", "created_at", "updated_at") VALUES (?, ?, ?)  [["user_id", 1], ["created_at", "2015-04-17 17:31:11.416332"], ["updated_at", "2015-04-17 17:31:11.416332"]]
+  [1m[36m (7.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users/1/riders/5/wait
+Completed 302 Found in 82ms (ActiveRecord: 12.4ms)
+
+
+Started GET "/users/1/riders/5/wait" for 127.0.0.1 at 2015-04-17 13:31:11 -0400
+Processing by RidersController#wait as HTML
+  Parameters: {"user_id"=>"1", "rider_id"=>"5"}
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "riders"
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "drivers"[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mRider Load (0.4ms)[0m  [1mSELECT  "riders".* FROM "riders" WHERE "riders"."user_id" = ? LIMIT 1[0m  [["user_id", 1]]
+  Rendered riders/wait.html.haml within layouts/application (2.3ms)
+Completed 200 OK in 435ms (Views: 407.5ms | ActiveRecord: 1.9ms)
+
+
+Started DELETE "/users/1/riders/5" for 127.0.0.1 at 2015-04-17 13:31:14 -0400
+Processing by RidersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Ylr8G8RIxQry9m6SgnlYsifT9NeFnGgwwzXN6aSQze45OQMApvF+3Knp30rgZMxmSBXOKPkgH0iWnX1zVCb0MA==", "user_id"=>"1", "id"=>"5"}
+  [1m[35mRider Load (0.4ms)[0m  SELECT  "riders".* FROM "riders" WHERE "riders"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.5ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mDELETE FROM "riders" WHERE "riders"."id" = ?[0m  [["id", 5]]
+  [1m[35m (8.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/users/1/welcome
+Completed 302 Found in 37ms (ActiveRecord: 10.3ms)
+
+
+Started GET "/users/1/welcome" for 127.0.0.1 at 2015-04-17 13:31:14 -0400
+Processing by UsersController#welcome as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/welcome.html.haml within layouts/application (18.6ms)
+Completed 200 OK in 442ms (Views: 437.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users/1/riders" for 127.0.0.1 at 2015-04-17 13:31:16 -0400
+Processing by RidersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"p+cpqTObIIFWB1cqkBxy6/TZHpgQo85VdDR8j1DscLv8hNayUSKbVw0Y5vLyAeY/mx8kZ2wfuS0hnMwVoFpJZQ==", "commit"=>"Request a ride!", "user_id"=>"1"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mRider Load (0.4ms)[0m  [1mSELECT  "riders".* FROM "riders" WHERE "riders"."user_id" = ? LIMIT 1[0m  [["user_id", 1]]
+  [1m[35m (0.6ms)[0m  begin transaction
+  [1m[36mSQL (4.0ms)[0m  [1mINSERT INTO "riders" ("user_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["user_id", 1], ["created_at", "2015-04-17 17:31:17.010922"], ["updated_at", "2015-04-17 17:31:17.010922"]]
+  [1m[35m (7.1ms)[0m  commit transaction
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  commit transaction
+Redirected to http://localhost:3000/users/1/riders/6/wait
+Completed 302 Found in 65ms (ActiveRecord: 13.2ms)
+
+
+Started GET "/users/1/riders/6/wait" for 127.0.0.1 at 2015-04-17 13:31:17 -0400
+Processing by RidersController#wait as HTML
+  Parameters: {"user_id"=>"1", "rider_id"=>"6"}
+  [1m[36m (0.9ms)[0m  [1mSELECT COUNT(*) FROM "riders"[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "drivers"
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mRider Load (0.5ms)[0m  SELECT  "riders".* FROM "riders" WHERE "riders"."user_id" = ? LIMIT 1  [["user_id", 1]]
+  Rendered riders/wait.html.haml within layouts/application (4.7ms)
+Completed 200 OK in 495ms (Views: 458.1ms | ActiveRecord: 2.8ms)
+
+
+Started POST "/users/1/riders" for 127.0.0.1 at 2015-04-17 13:31:20 -0400
+Processing by RidersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"p+cpqTObIIFWB1cqkBxy6/TZHpgQo85VdDR8j1DscLv8hNayUSKbVw0Y5vLyAeY/mx8kZ2wfuS0hnMwVoFpJZQ==", "commit"=>"Request a ride!", "user_id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mRider Load (0.4ms)[0m  SELECT  "riders".* FROM "riders" WHERE "riders"."user_id" = ? LIMIT 1  [["user_id", 1]]
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  UPDATE "riders" SET "user_id" = ?, "updated_at" = ? WHERE "riders"."id" = ?  [["user_id", nil], ["updated_at", "2015-04-17 17:31:20.976261"], ["id", 6]]
+  [1m[36mSQL (1.8ms)[0m  [1mINSERT INTO "riders" ("user_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["user_id", 1], ["created_at", "2015-04-17 17:31:20.998843"], ["updated_at", "2015-04-17 17:31:20.998843"]]
+  [1m[35m (10.7ms)[0m  commit transaction
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  commit transaction
+Redirected to http://localhost:3000/users/1/riders/7/wait
+Completed 302 Found in 104ms (ActiveRecord: 16.1ms)
+
+
+Started GET "/users/1/riders/7/wait" for 127.0.0.1 at 2015-04-17 13:31:21 -0400
+Processing by RidersController#wait as HTML
+  Parameters: {"user_id"=>"1", "rider_id"=>"7"}
+  [1m[36m (1.4ms)[0m  [1mSELECT COUNT(*) FROM "riders"[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "drivers"
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mRider Load (5.0ms)[0m  SELECT  "riders".* FROM "riders" WHERE "riders"."user_id" = ? LIMIT 1  [["user_id", 1]]
+  Rendered riders/wait.html.haml within layouts/application (2.9ms)
+Completed 200 OK in 506ms (Views: 468.8ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-17 13:33:42 -0400
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (4.2ms)
+Completed 200 OK in 412ms (Views: 410.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2015-04-17 13:33:45 -0400
+
+
+Started GET "/users/auth/google_oauth2/callback?state=e5a3077f95d994ab12dd244ed11e5bb1fb79918e48f9e193&code=4/ad_Xfc6kPIz1DZQvqV8iXWXq_8vS1AMyTcRnHewC_s0.YhI4ZjfFNTwRJvIeHux6iLbPAeOQmQI" for 127.0.0.1 at 2015-04-17 13:33:45 -0400
+Processing by OmniauthCallbacksController#google_oauth2 as HTML
+  Parameters: {"state"=>"e5a3077f95d994ab12dd244ed11e5bb1fb79918e48f9e193", "code"=>"4/ad_Xfc6kPIz1DZQvqV8iXWXq_8vS1AMyTcRnHewC_s0.YhI4ZjfFNTwRJvIeHux6iLbPAeOQmQI"}
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "ffouladi@colgate.edu"]]
+Redirected to http://localhost:3000/users/1/welcome
+Completed 302 Found in 99ms (ActiveRecord: 4.5ms)
+
+
+Started GET "/users/1/welcome" for 127.0.0.1 at 2015-04-17 13:33:46 -0400
+Processing by UsersController#welcome as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (19.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered users/welcome.html.haml within layouts/application (97.9ms)
+Completed 200 OK in 517ms (Views: 487.4ms | ActiveRecord: 22.6ms)
+
+
+Started POST "/users/1/drivers" for 127.0.0.1 at 2015-04-17 13:33:48 -0400
+Processing by DriversController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CIyOBLNVmhbdTYDIC2hu6idQ5EO0oyrXtSdzYpxtTzxT73Ef0ewhwIZSMRBpdfo+SJbevMgfXa/gj8P4bNt24g==", "commit"=>"Ready to Drive!", "user_id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mDriver Load (0.9ms)[0m  SELECT  "drivers".* FROM "drivers" WHERE "drivers"."user_id" = ? LIMIT 1  [["user_id", 1]]
+  [1m[36m (0.6ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  UPDATE "drivers" SET "user_id" = ?, "updated_at" = ? WHERE "drivers"."id" = ?  [["user_id", nil], ["updated_at", "2015-04-17 17:33:49.043784"], ["id", 3]]
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "drivers" ("user_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["user_id", 1], ["created_at", "2015-04-17 17:33:49.072117"], ["updated_at", "2015-04-17 17:33:49.072117"]]
+  [1m[35m (8.0ms)[0m  commit transaction
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  commit transaction
+Redirected to http://localhost:3000/users/1/drivers/4/wait
+Completed 302 Found in 125ms (ActiveRecord: 12.3ms)
+
+
+Started GET "/users/1/drivers/4/wait" for 127.0.0.1 at 2015-04-17 13:33:49 -0400
+Processing by DriversController#wait as HTML
+  Parameters: {"user_id"=>"1", "driver_id"=>"4"}
+  [1m[36m (0.7ms)[0m  [1mSELECT COUNT(*) FROM "drivers"[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mDriver Load (0.4ms)[0m  [1mSELECT  "drivers".* FROM "drivers" WHERE "drivers"."user_id" = ? LIMIT 1[0m  [["user_id", 1]]
+  Rendered drivers/wait.html.haml within layouts/application (9.3ms)
+Completed 200 OK in 462ms (Views: 430.2ms | ActiveRecord: 1.4ms)
+
+
+Started DELETE "/users/1/drivers/4" for 127.0.0.1 at 2015-04-17 13:33:52 -0400
+Processing by DriversController#destroy as HTML
+  Parameters: {"authenticity_token"=>"exSelOGGpYNICVwio2nmzs1U/mEIu6JCH3vbI1YQeOwgd2GPgz8eVRMW7frBdHIaopLEnnQH1TpK02u5pqZBMg==", "user_id"=>"1", "id"=>"4"}
+  [1m[35mDriver Load (0.9ms)[0m  SELECT  "drivers".* FROM "drivers" WHERE "drivers"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.5ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mDELETE FROM "drivers" WHERE "drivers"."id" = ?[0m  [["id", 4]]
+  [1m[35m (9.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/users/1/welcome
+Completed 302 Found in 49ms (ActiveRecord: 12.0ms)
+
+
+Started GET "/users/1/welcome" for 127.0.0.1 at 2015-04-17 13:33:52 -0400
+Processing by UsersController#welcome as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/welcome.html.haml within layouts/application (22.5ms)
+Completed 200 OK in 447ms (Views: 442.8ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users/1/drivers" for 127.0.0.1 at 2015-04-17 13:33:54 -0400
+Processing by DriversController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eI/vCDLkhdaeE1O7AyQNSWzGa1G1C07er4AEslrC3Ikj7BATUF0+AMUM4mNhOZmdAwBRrsm3Oab6KLQoqnTlVw==", "commit"=>"Ready to Drive!", "user_id"=>"1"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mDriver Load (0.3ms)[0m  [1mSELECT  "drivers".* FROM "drivers" WHERE "drivers"."user_id" = ? LIMIT 1[0m  [["user_id", 1]]
+  [1m[35m (0.6ms)[0m  begin transaction
+  [1m[36mSQL (2.9ms)[0m  [1mINSERT INTO "drivers" ("user_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["user_id", 1], ["created_at", "2015-04-17 17:33:54.438046"], ["updated_at", "2015-04-17 17:33:54.438046"]]
+  [1m[35m (7.3ms)[0m  commit transaction
+  [1m[36m (2.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/users/1/drivers/5/wait
+Completed 302 Found in 66ms (ActiveRecord: 14.3ms)
+
+
+Started GET "/users/1/drivers/5/wait" for 127.0.0.1 at 2015-04-17 13:33:54 -0400
+Processing by DriversController#wait as HTML
+  Parameters: {"user_id"=>"1", "driver_id"=>"5"}
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "drivers"[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mDriver Load (0.4ms)[0m  [1mSELECT  "drivers".* FROM "drivers" WHERE "drivers"."user_id" = ? LIMIT 1[0m  [["user_id", 1]]
+  Rendered drivers/wait.html.haml within layouts/application (2.8ms)
+Completed 200 OK in 456ms (Views: 436.5ms | ActiveRecord: 1.2ms)
+
+
+Started DELETE "/users/1/drivers/5" for 127.0.0.1 at 2015-04-17 13:33:56 -0400
+Processing by DriversController#destroy as HTML
+  Parameters: {"authenticity_token"=>"y8OUJndKHkm2ZeIIcRpEmOetqTdTSP6EU79YlhPQKSGQoGs9FfOln+16U9ATB9BMiGuTyC/0ifwGF+gM42YQ/w==", "user_id"=>"1", "id"=>"5"}
+  [1m[35mDriver Load (0.4ms)[0m  SELECT  "drivers".* FROM "drivers" WHERE "drivers"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.7ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mDELETE FROM "drivers" WHERE "drivers"."id" = ?[0m  [["id", 5]]
+  [1m[35m (5.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/users/1/welcome
+Completed 302 Found in 29ms (ActiveRecord: 8.0ms)
+
+
+Started GET "/users/1/welcome" for 127.0.0.1 at 2015-04-17 13:33:56 -0400
+Processing by UsersController#welcome as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/welcome.html.haml within layouts/application (25.6ms)
+Completed 200 OK in 502ms (Views: 492.6ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/users/1/drivers" for 127.0.0.1 at 2015-04-17 13:33:58 -0400
+Processing by DriversController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5zn/esEUStWOkMakU1oJjlxxHPtDGutfczvhEaOyrGS8WgBho63xA9WPd3wxR51aM7cmBD+mnCcmk1GLUwSVug==", "commit"=>"Ready to Drive!", "user_id"=>"1"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mDriver Load (0.3ms)[0m  [1mSELECT  "drivers".* FROM "drivers" WHERE "drivers"."user_id" = ? LIMIT 1[0m  [["user_id", 1]]
+  [1m[35m (0.7ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "drivers" ("user_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["user_id", 1], ["created_at", "2015-04-17 17:33:58.766284"], ["updated_at", "2015-04-17 17:33:58.766284"]]
+  [1m[35m (6.5ms)[0m  commit transaction
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/users/1/drivers/6/wait
+Completed 302 Found in 69ms (ActiveRecord: 9.6ms)
+
+
+Started GET "/users/1/drivers/6/wait" for 127.0.0.1 at 2015-04-17 13:33:58 -0400
+Processing by DriversController#wait as HTML
+  Parameters: {"user_id"=>"1", "driver_id"=>"6"}
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "drivers"[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mDriver Load (0.5ms)[0m  [1mSELECT  "drivers".* FROM "drivers" WHERE "drivers"."user_id" = ? LIMIT 1[0m  [["user_id", 1]]
+  Rendered drivers/wait.html.haml within layouts/application (9.6ms)
+Completed 200 OK in 503ms (Views: 484.7ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/users/1/drivers" for 127.0.0.1 at 2015-04-17 13:34:02 -0400
+Processing by DriversController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5zn/esEUStWOkMakU1oJjlxxHPtDGutfczvhEaOyrGS8WgBho63xA9WPd3wxR51aM7cmBD+mnCcmk1GLUwSVug==", "commit"=>"Ready to Drive!", "user_id"=>"1"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mDriver Load (0.5ms)[0m  [1mSELECT  "drivers".* FROM "drivers" WHERE "drivers"."user_id" = ? LIMIT 1[0m  [["user_id", 1]]
+  [1m[35m (0.7ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mUPDATE "drivers" SET "user_id" = ?, "updated_at" = ? WHERE "drivers"."id" = ?[0m  [["user_id", nil], ["updated_at", "2015-04-17 17:34:02.122200"], ["id", 6]]
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "drivers" ("user_id", "created_at", "updated_at") VALUES (?, ?, ?)  [["user_id", 1], ["created_at", "2015-04-17 17:34:02.143713"], ["updated_at", "2015-04-17 17:34:02.143713"]]
+  [1m[36m (7.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.5ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users/1/drivers/7/wait
+Completed 302 Found in 95ms (ActiveRecord: 11.3ms)
+
+
+Started GET "/users/1/drivers/7/wait" for 127.0.0.1 at 2015-04-17 13:34:02 -0400
+Processing by DriversController#wait as HTML
+  Parameters: {"user_id"=>"1", "driver_id"=>"7"}
+  [1m[35m (1.8ms)[0m  SELECT COUNT(*) FROM "drivers"
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mDriver Load (0.4ms)[0m  SELECT  "drivers".* FROM "drivers" WHERE "drivers"."user_id" = ? LIMIT 1  [["user_id", 1]]
+  Rendered drivers/wait.html.haml within layouts/application (5.3ms)
+Completed 200 OK in 541ms (Views: 522.2ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2015-04-17 13:34:06 -0400
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/edit.html.haml within layouts/application (44.6ms)
+Completed 200 OK in 436ms (Views: 425.7ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/users/1" for 127.0.0.1 at 2015-04-17 13:34:09 -0400
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"o4CnJDZxvIaLQ2SjqluvwuSI7eGvU2cIbxFA2iqSOHL441g/VMgHUNBc1XvIRjsWi07XHtPvEHA6ufBA2iQBrA==", "user"=>{"name"=>"Farah Fouladi '15", "email"=>"ffouladi@colgate.edu", "birthday"=>"1993-05-05", "is_driver"=>"2"}, "commit"=>"Update user", "id"=>"1"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  UPDATE "users" SET "is_driver" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["is_driver", "2"], ["updated_at", "2015-04-17 17:34:10.030412"], ["id", 1]]
+  [1m[36m (758.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users/1/welcome
+Completed 302 Found in 852ms (ActiveRecord: 760.6ms)
+
+
+Started GET "/users/1/welcome" for 127.0.0.1 at 2015-04-17 13:34:10 -0400
+Processing by UsersController#welcome as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered users/welcome.html.haml within layouts/application (17.1ms)
+Completed 200 OK in 455ms (Views: 449.7ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users/1/riders" for 127.0.0.1 at 2015-04-17 13:34:13 -0400
+Processing by RidersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"P/oykGWcTOuyq7o7Fs+jYOmOYZOrRsP79VC/0lhQ0/lkmc2LByX3Pem0C+N00je0hkhbbNf6tIOg+A9IqObqJw==", "commit"=>"Request a ride!", "user_id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mRider Load (0.5ms)[0m  SELECT  "riders".* FROM "riders" WHERE "riders"."user_id" = ? LIMIT 1  [["user_id", 1]]
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  UPDATE "riders" SET "user_id" = ?, "updated_at" = ? WHERE "riders"."id" = ?  [["user_id", nil], ["updated_at", "2015-04-17 17:34:13.389117"], ["id", 7]]
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "riders" ("user_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["user_id", 1], ["created_at", "2015-04-17 17:34:13.417227"], ["updated_at", "2015-04-17 17:34:13.417227"]]
+  [1m[35m (6.9ms)[0m  commit transaction
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  commit transaction
+Redirected to http://localhost:3000/users/1/riders/8/wait
+Completed 302 Found in 120ms (ActiveRecord: 10.4ms)
+
+
+Started GET "/users/1/riders/8/wait" for 127.0.0.1 at 2015-04-17 13:34:13 -0400
+Processing by RidersController#wait as HTML
+  Parameters: {"user_id"=>"1", "rider_id"=>"8"}
+  [1m[36m (1.1ms)[0m  [1mSELECT COUNT(*) FROM "riders"[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "drivers"
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mRider Load (0.4ms)[0m  SELECT  "riders".* FROM "riders" WHERE "riders"."user_id" = ? LIMIT 1  [["user_id", 1]]
+  Rendered riders/wait.html.haml within layouts/application (3.4ms)
+Completed 200 OK in 472ms (Views: 436.4ms | ActiveRecord: 2.6ms)
+
+
+Started DELETE "/users/1/riders/8" for 127.0.0.1 at 2015-04-17 13:34:22 -0400
+Processing by RidersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"iAFzAOOiYAm6Dl9uOtaCmD13ObqXfuBGnI9kZhAlQ+rTYowbgRvb3+ER7rZYyxZMUrEDRevClz7JJ9T84JN6NA==", "user_id"=>"1", "id"=>"8"}
+  [1m[36mRider Load (0.7ms)[0m  [1mSELECT  "riders".* FROM "riders" WHERE "riders"."id" = ? LIMIT 1[0m  [["id", 8]]
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.6ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  DELETE FROM "riders" WHERE "riders"."id" = ?  [["id", 8]]
+  [1m[36m (5.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users/1/welcome
+Completed 302 Found in 35ms (ActiveRecord: 8.2ms)
+
+
+Started GET "/users/1/welcome" for 127.0.0.1 at 2015-04-17 13:34:22 -0400
+Processing by UsersController#welcome as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered users/welcome.html.haml within layouts/application (16.4ms)
+Completed 200 OK in 490ms (Views: 478.4ms | ActiveRecord: 0.4ms)
