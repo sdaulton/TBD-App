@@ -15,5 +15,9 @@ class User < ActiveRecord::Base
     end
     return user
   end
+
+  def is_driver?
+    is_driver==1
+  end
   
 end

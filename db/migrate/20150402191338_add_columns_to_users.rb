@@ -4,6 +4,6 @@ class AddColumnsToUsers < ActiveRecord::Migration
     add_column :users, :uid, :string
     add_column :users, :name, :string
     add_column :users, :birthday, :date
-    add_column :users, :driver, :string
+    add_column :users, :is_driver, :string
   end
 end

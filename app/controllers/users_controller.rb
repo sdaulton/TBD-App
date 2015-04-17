@@ -45,6 +45,6 @@ class UsersController < ApplicationController
 
 private
     def create_update_params
-        params.require(:user).permit(:name, :email, :birthday, :driver_or_rider, :encrypted_password)
+        params.require(:user).permit(:name, :email, :birthday, :is_driver, :encrypted_password)
     end
 end
