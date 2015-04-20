@@ -45,6 +45,29 @@ Given /^(?:|I )am on (.+)$/ do |page_name|
   visit path_to(page_name)
 end
 
+Given /^(?:|I )am user (.+) on the welcome page$/ do |id|
+  visit welcome_user_path(id)
+end
+
+Then /^(?:|I )should be user (.+) on the welcome page$/ do |id|
+  visit welcome_user_path(id)
+end
+
+Then /^(?:|I )should be user (.+) rider (.+) on the rider wait page$/ do |user_id, rider_id|
+  visit user_rider_wait_path(user_id, rider_id)
+end
+
+Then /^(?:|I )should be user (.+) driver (.+) on the driver wait page$/ do |user_id, driver_id|
+  visit user_driver_wait_path(user_id, driver_id)
+end
+
+Given /^(?:|I )am user (.+) on the edit page$/ do |id|
+  visit edit_user_path(id)
+end
+
+Then /^(?:|I )should be user (.+) on the edit page$/ do |id|
+  visit edit_user_path(id)
+end
 When /^(?:|I )go to (.+)$/ do |page_name|
   visit path_to(page_name)
 end
