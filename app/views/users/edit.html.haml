@@ -1,19 +1,49 @@
-#main
-    %h1 Drive App Account Setup
-=form_for @user, url: { action: "update" } do |f|
-    =f.label :name
-    =f.text_field :name
+%head
+  %link{:href => "http://fonts.googleapis.com/css?family=Varela+Round", :rel => "stylesheet", :type => "text/css"}
+  %link{:href => "http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css", :rel => "stylesheet"}
+  %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"}
+  %script{:src => "http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"}
 
-    </br>
-    =f.label :email
-    =f.email_field :email
-    
-    </br>
-    =f.label :birthday
-    =f.date_field :birthday
-
-    </br>
-    =f.label :is_driver
-    =f.select(:is_driver, [['Drive and Ride', 1], ['Just Ride', 2]])
-    </br>
-    =f.submit "Update user"
+%body
+  .container-fluid
+    .content-box
+      .row
+        .title-text
+          %h1 Your Account
+          .account-form.form-horizontal
+            =form_for @user, url: { action: "update" }  do |f|
+              =f.label :name
+              =f.text_field :name, { :disabled => "" }
+              </br>
+              =f.label :email
+              =f.email_field :email, { :disabled => "" }
+              </br>
+              =f.label :birthday
+              =f.date_field :birthday
+              </br>
+              =f.check_box :is_rider              
+              =f.label "I want to be a rider!"                  
+              </br>
+              =f.check_box :is_driver, :onclick => "$('#driver-info').slideToggle()"             
+              =f.label "I want to be a driver too!"                
+              </br>
+              %p.driver-note *You can always sign up as a driver later.
+            
+              #driver-info
+                </br>
+                %p.driver-form-info Please enter the information below to sign up as a driver.
+                =f.text_field :driver_license, placeholder: 'Drive License Number'
+                </br>
+                =f.text_field :driver_license_state, placeholder: 'State of Driver License'
+                </br> 
+                =f.text_field :license_plate, placeholder: 'License Plate Number'
+                </br>
+                =f.text_field :license_plate_state, placeholder: 'State of License Plate'
+                </br>
+                %p.car-info Car Details
+                =f.text_field :make, placeholder: 'Make'
+                </br>
+                =f.text_field :model, placeholder: 'Model'
+                </br>
+                =f.number_field :year, placeholder: 'Year'
+              =f.submit "Save changes", :html => {class:'submit-btn'}
