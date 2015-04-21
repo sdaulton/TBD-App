@@ -28,11 +28,12 @@ h2 {
     margin-left: auto;
     margin-right: auto;
     margin-top: 5.5%;
-    padding: 3% 4% 4% 4%;
+    padding: 3% 4% 3% 4%;
 }
 .title-text {
     font-family: 'Varela Round', sans-serif;
-    font-size: 155%;   
+    font-size: 155%;  
+    margin-top: -24px;
 }
 .text-blurb {
     font-size: 80%;
@@ -50,14 +51,24 @@ h2 {
 }
 .main-btn:hover {
     text-decoration: none;
-    font-color: #494C53;
+    color: #494C53;
+}
+.google-signup {
+    text-decoration: none;
+    color: #5B5F68;
+    margin-left: -10px;
+
+}
+.google-signup:hover {
+    text-decoration: none;
+    color: #494C53;
 }
 .spacing {
     margin-bottom: 5px;
 }
 //**welcome page styling**//
 #notice {
-    visibility: hidden;
+    display: none;
 }
 .welcome {
     margin-bottom: 10%;
@@ -81,9 +92,6 @@ h2 {
     margin-left: 8%;
     margin-top: 4%;
 }
-#user_birthday {
-    line-height: 22px;
-}
 .sign-up-google {
     font-family: 'Varela Round', sans-serif;
     font-size: 100%;
@@ -97,3 +105,29 @@ h2 {
     text-decoration: none;
     font-color: #494C53;
 }
+
+//** edit account information page styling **//
+#driver-info {
+    display: none;
+    margin-bottom: 12px;
+}
+.edit_user {
+    font-size: 18px;
+}
+#user_birthday {
+    font-size: 18px;
+    height: 34px; 
+}
+.driver-note {
+    margin: -10px 0px 10px 19px;
+    font-size: 14px;
+}
+.car-info {
+    padding-top: 10px;
+    margin-bottom: 2px;
+    font-size: 16px;
+}
+input {
+    margin-bottom: 6px !important;
+}
+
