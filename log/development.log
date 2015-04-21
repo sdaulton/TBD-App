@@ -13621,3 +13621,550 @@ Processing by UsersController#welcome as HTML
   [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
   Rendered users/welcome.html.haml within layouts/application (19.8ms)
 Completed 200 OK in 472ms (Views: 463.3ms | ActiveRecord: 0.6ms)
+  [1m[36m (3.6ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (3.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to DeviseCreateUsers (20150402191216)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+DEPRECATION WARNING: `#timestamp` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in change at /home/csvm/TBD-App/db/migrate/20150402191216_devise_create_users.rb:34)
+  [1m[35m (0.5ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150402191216"]]
+  [1m[36m (3.2ms)[0m  [1mcommit transaction[0m
+Migrating to AddColumnsToUsers (20150402191338)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (1.8ms)[0m  [1mALTER TABLE "users" ADD "provider" varchar[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "users" ADD "uid" varchar
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "users" ADD "name" varchar[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "users" ADD "birthday" date
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "users" ADD "is_driver" varchar[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150402191338"]]
+  [1m[36m (4.2ms)[0m  [1mcommit transaction[0m
+Migrating to CreateDrivers (20150413211700)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "drivers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150413211700"]]
+  [1m[36m (8.2ms)[0m  [1mcommit transaction[0m
+Migrating to AddDrivers (20150413211735)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "drivers" ADD "user_id" integer[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150413211735"]]
+  [1m[36m (12.1ms)[0m  [1mcommit transaction[0m
+Migrating to CreateRiders (20150413212023)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "riders" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150413212023"]]
+  [1m[36m (3.7ms)[0m  [1mcommit transaction[0m
+Migrating to AddRiders (20150413212036)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "riders" ADD "user_id" integer[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150413212036"]]
+  [1m[36m (5.5ms)[0m  [1mcommit transaction[0m
+Migrating to AddDriverFormToUser (20150421172337)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (1.1ms)[0m  [1mALTER TABLE "users" ADD "is_riding" boolean[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "users" ADD "is_driving" boolean
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "users" ADD "driver_license" varchar[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "users" ADD "driver_license_state" varchar
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "users" ADD "license_plate" varchar[0m
+  [1m[35m (0.6ms)[0m  ALTER TABLE "users" ADD "license_plate_state" varchar
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "users" ADD "make" varchar[0m
+  [1m[35m (0.5ms)[0m  ALTER TABLE "users" ADD "model" varchar
+  [1m[36m (0.9ms)[0m  [1mALTER TABLE "users" ADD "year" integer[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150421172337"]]
+  [1m[36m (3.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.4ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.3ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36mUser Load (2.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-21 13:36:17 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (6.4ms)
+Completed 200 OK in 285ms (Views: 282.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/background-img.jpg" for 127.0.0.1 at 2015-04-21 13:36:18 -0400
+
+
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2015-04-21 13:36:21 -0400
+
+
+Started GET "/users/auth/google_oauth2/callback?state=dafb4dc61b9f23b8c709624955256941b48a489efb6d6bdc&code=4/OwBLmZhXyfLch5P0E69dFL8bxZlo9qunIKLtAXpbkGw.kgpXX6gjc60TJvIeHux6iLZbtxq6mQI" for 127.0.0.1 at 2015-04-21 13:36:21 -0400
+Processing by OmniauthCallbacksController#google_oauth2 as HTML
+  Parameters: {"state"=>"dafb4dc61b9f23b8c709624955256941b48a489efb6d6bdc", "code"=>"4/OwBLmZhXyfLch5P0E69dFL8bxZlo9qunIKLtAXpbkGw.kgpXX6gjc60TJvIeHux6iLZbtxq6mQI"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "ffouladi@colgate.edu"]]
+Redirected to http://localhost:3000/users/1/welcome
+Completed 302 Found in 96ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/users/1/welcome" for 127.0.0.1 at 2015-04-21 13:36:22 -0400
+Processing by UsersController#welcome as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/welcome.html.haml within layouts/application (31.6ms)
+Completed 200 OK in 134ms (Views: 125.8ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/assets/background-img.jpg" for 127.0.0.1 at 2015-04-21 13:36:22 -0400
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2015-04-21 13:36:24 -0400
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered users/edit.html.haml within layouts/application (42.4ms)
+Completed 200 OK in 149ms (Views: 147.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/background-img.jpg" for 127.0.0.1 at 2015-04-21 13:36:24 -0400
+
+
+Started PATCH "/users/1" for 127.0.0.1 at 2015-04-21 13:36:49 -0400
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lVJGrlJd6oxUU5qIGBmFVmAT3X138vYmm5xYX6+Z3yv2Cx1tHH9BhSFfjrHFg7sV8hFXFSBs9qGPnnw6PHFrJw==", "user"=>{"birthday"=>"1993-05-05", "is_riding"=>"1", "is_driving"=>"1", "driver_license"=>"123", "driver_license_state"=>"CA", "license_plate"=>"123", "license_plate_state"=>"CA", "make"=>"car", "model"=>"car", "year"=>"1999"}, "commit"=>"Save changes", "id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Unpermitted parameters: driver_license_state, license_plate
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (4.8ms)[0m  [1mUPDATE "users" SET "is_driving" = ?, "is_riding" = ?, "driver_license" = ?, "license_plate_state" = ?, "make" = ?, "model" = ?, "year" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["is_driving", "t"], ["is_riding", "t"], ["driver_license", "123"], ["license_plate_state", "CA"], ["make", "car"], ["model", "car"], ["year", 1999], ["updated_at", "2015-04-21 17:36:49.513222"], ["id", 1]]
+  [1m[35m (8.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/users/1/welcome
+Completed 302 Found in 46ms (ActiveRecord: 13.5ms)
+
+
+Started GET "/users/1/welcome" for 127.0.0.1 at 2015-04-21 13:36:49 -0400
+Processing by UsersController#welcome as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/welcome.html.haml within layouts/application (9.2ms)
+Completed 200 OK in 118ms (Views: 117.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/background-img.jpg" for 127.0.0.1 at 2015-04-21 13:36:49 -0400
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2015-04-21 13:36:52 -0400
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered users/edit.html.haml within layouts/application (5.4ms)
+Completed 200 OK in 98ms (Views: 94.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/background-img.jpg" for 127.0.0.1 at 2015-04-21 13:36:52 -0400
+
+
+Started PATCH "/users/1" for 127.0.0.1 at 2015-04-21 13:37:03 -0400
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0eQu3TYDZep0BIGgAw8qLWLc0/1y5hfpA9j2lvfKldyyvXUeeCHO4wEIlZnelRRu8N5ZlSV4F24X2tLzZCIh0A==", "user"=>{"birthday"=>"1993-05-05", "is_riding"=>"1", "is_driving"=>"1", "driver_license"=>"123", "driver_license_state"=>"", "license_plate"=>"", "license_plate_state"=>"CA", "make"=>"car", "model"=>"car", "year"=>"1999"}, "commit"=>"Save changes", "id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Unpermitted parameters: driver_license_state, license_plate
+  [1m[35m (0.5ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users/1/welcome
+Completed 302 Found in 28ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/users/1/welcome" for 127.0.0.1 at 2015-04-21 13:37:03 -0400
+Processing by UsersController#welcome as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered users/welcome.html.haml within layouts/application (1.8ms)
+Completed 200 OK in 95ms (Views: 93.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/background-img.jpg" for 127.0.0.1 at 2015-04-21 13:37:03 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-21 13:38:34 -0400
+Processing by UsersController#index as HTML
+  Rendered users/index.html.haml within layouts/application (0.8ms)
+Completed 200 OK in 108ms (Views: 107.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/background-img.jpg" for 127.0.0.1 at 2015-04-21 13:38:35 -0400
+
+
+Started GET "/users/auth/google_oauth2" for 127.0.0.1 at 2015-04-21 13:38:36 -0400
+
+
+Started GET "/users/auth/google_oauth2/callback?state=0574b04de55db6e971636bb34e1290ad54cf5c56b24586e7&code=4/o8MEeEhjJyPYYyxxjcBE-3pc7pWNrPiI7mB85x2MhvU.gmHXolonLNofJvIeHux6iLaX3B66mQI" for 127.0.0.1 at 2015-04-21 13:38:37 -0400
+Processing by OmniauthCallbacksController#google_oauth2 as HTML
+  Parameters: {"state"=>"0574b04de55db6e971636bb34e1290ad54cf5c56b24586e7", "code"=>"4/o8MEeEhjJyPYYyxxjcBE-3pc7pWNrPiI7mB85x2MhvU.gmHXolonLNofJvIeHux6iLaX3B66mQI"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "ffouladi@colgate.edu"]]
+Redirected to http://localhost:3000/users/1/welcome
+Completed 302 Found in 25ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/users/1/welcome" for 127.0.0.1 at 2015-04-21 13:38:37 -0400
+Processing by UsersController#welcome as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.9ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered users/welcome.html.haml within layouts/application (63.6ms)
+Completed 200 OK in 152ms (Views: 148.7ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/background-img.jpg" for 127.0.0.1 at 2015-04-21 13:38:38 -0400
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2015-04-21 13:38:40 -0400
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/edit.html.haml within layouts/application (16.7ms)
+Completed 200 OK in 119ms (Views: 116.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/background-img.jpg" for 127.0.0.1 at 2015-04-21 13:38:40 -0400
+
+
+Started PATCH "/users/1" for 127.0.0.1 at 2015-04-21 13:38:45 -0400
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"edyPUFkpmg3NPq1CRQF/rmh/fRE9RnoAGRuB+d3yTpcahdSTFwsxBLgyuXuYm0Ht+n33eWrYeocNGaWcThr6mw==", "user"=>{"birthday"=>"1993-05-05", "is_riding"=>"1", "is_driving"=>"0", "driver_license"=>"123", "driver_license_state"=>"", "license_plate"=>"", "license_plate_state"=>"CA", "make"=>"car", "model"=>"car", "year"=>"1999"}, "commit"=>"Save changes", "id"=>"1"}
+  [1m[35mUser Load (0.9ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Unpermitted parameters: driver_license_state, license_plate
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "users" SET "is_driving" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["is_driving", "f"], ["updated_at", "2015-04-21 17:38:45.627442"], ["id", 1]]
+  [1m[36m (719.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users/1/welcome
+Completed 302 Found in 755ms (ActiveRecord: 721.2ms)
+
+
+Started GET "/users/1/welcome" for 127.0.0.1 at 2015-04-21 13:38:46 -0400
+Processing by UsersController#welcome as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered users/welcome.html.haml within layouts/application (2.0ms)
+Completed 200 OK in 87ms (Views: 86.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/background-img.jpg" for 127.0.0.1 at 2015-04-21 13:38:46 -0400
+
+
+Started POST "/users/1/riders" for 127.0.0.1 at 2015-04-21 13:38:51 -0400
+Processing by RidersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iKtJC1t+ZA4MbXVm6k7EEdWCY0cxCVlZaHgKZ6AKnUHr8hLIFVzPB3lhYV831PpSR4DpL2aXWd58ei4CM+IpTQ==", "commit"=>"Request a ride!", "user_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mRider Load (0.3ms)[0m  SELECT  "riders".* FROM "riders" WHERE "riders"."user_id" = ? LIMIT 1  [["user_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "riders" ("user_id", "created_at", "updated_at") VALUES (?, ?, ?)  [["user_id", 1], ["created_at", "2015-04-21 17:38:51.297399"], ["updated_at", "2015-04-21 17:38:51.297399"]]
+  [1m[36m (12.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users/1/riders/1/wait
+Completed 302 Found in 59ms (ActiveRecord: 13.1ms)
+
+
+Started GET "/users/1/riders/1/wait" for 127.0.0.1 at 2015-04-21 13:38:51 -0400
+Processing by RidersController#wait as HTML
+  Parameters: {"user_id"=>"1", "rider_id"=>"1"}
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "riders"
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "drivers"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mRider Load (0.2ms)[0m  [1mSELECT  "riders".* FROM "riders" WHERE "riders"."user_id" = ? LIMIT 1[0m  [["user_id", 1]]
+  Rendered riders/wait.html.haml within layouts/application (5.0ms)
+Completed 200 OK in 130ms (Views: 122.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/background-img.jpg" for 127.0.0.1 at 2015-04-21 13:38:51 -0400
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2015-04-21 13:39:02 -0400
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered users/edit.html.haml within layouts/application (7.9ms)
+Completed 200 OK in 105ms (Views: 101.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/background-img.jpg" for 127.0.0.1 at 2015-04-21 13:39:02 -0400
+
+
+Started PATCH "/users/1" for 127.0.0.1 at 2015-04-21 13:39:08 -0400
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BbUGZ/hGkQnSGZQTOJ9cZ2F9Ou/lb24r6Y80hl+JFi9m7F2ktmQ6AKcVgCrlBWIk83+wh7Lxbqz9jRDjzGGiIw==", "user"=>{"birthday"=>"1993-05-05", "is_riding"=>"1", "is_driving"=>"1", "driver_license"=>"123", "driver_license_state"=>"", "license_plate"=>"", "license_plate_state"=>"CA", "make"=>"car", "model"=>"car", "year"=>"1999"}, "commit"=>"Save changes", "id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Unpermitted parameters: driver_license_state, license_plate
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (15.9ms)[0m  [1mUPDATE "users" SET "is_driving" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["is_driving", "t"], ["updated_at", "2015-04-21 17:39:08.337364"], ["id", 1]]
+  [1m[35m (252.4ms)[0m  commit transaction
+Redirected to http://localhost:3000/users/1/welcome
+Completed 302 Found in 288ms (ActiveRecord: 268.5ms)
+
+
+Started GET "/users/1/welcome" for 127.0.0.1 at 2015-04-21 13:39:08 -0400
+Processing by UsersController#welcome as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/welcome.html.haml within layouts/application (1.9ms)
+Completed 200 OK in 90ms (Views: 89.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/background-img.jpg" for 127.0.0.1 at 2015-04-21 13:39:08 -0400
+
+
+Started POST "/users/1/riders" for 127.0.0.1 at 2015-04-21 13:39:11 -0400
+Processing by RidersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IojjpRK8AAWwAAhVPVX4l488/yEoQWTVnTaLrOa+GupB0bhmXJ6rDMUMHGzgz8bUHT51SX/fZFKJNK/JdVau5g==", "commit"=>"Request a ride!", "user_id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mRider Load (0.1ms)[0m  [1mSELECT  "riders".* FROM "riders" WHERE "riders"."user_id" = ? LIMIT 1[0m  [["user_id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "riders" SET "user_id" = ?, "updated_at" = ? WHERE "riders"."id" = ?[0m  [["user_id", nil], ["updated_at", "2015-04-21 17:39:11.492962"], ["id", 1]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "riders" ("user_id", "created_at", "updated_at") VALUES (?, ?, ?)  [["user_id", 1], ["created_at", "2015-04-21 17:39:11.498553"], ["updated_at", "2015-04-21 17:39:11.498553"]]
+  [1m[36m (12.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users/1/riders/2/wait
+Completed 302 Found in 40ms (ActiveRecord: 13.7ms)
+
+
+Started GET "/users/1/riders/2/wait" for 127.0.0.1 at 2015-04-21 13:39:11 -0400
+Processing by RidersController#wait as HTML
+  Parameters: {"user_id"=>"1", "rider_id"=>"2"}
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "riders"
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "drivers"[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mRider Load (0.2ms)[0m  [1mSELECT  "riders".* FROM "riders" WHERE "riders"."user_id" = ? LIMIT 1[0m  [["user_id", 1]]
+  Rendered riders/wait.html.haml within layouts/application (0.6ms)
+Completed 200 OK in 129ms (Views: 123.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/background-img.jpg" for 127.0.0.1 at 2015-04-21 13:39:11 -0400
+
+
+Started POST "/users/1/drivers" for 127.0.0.1 at 2015-04-21 13:39:46 -0400
+Processing by DriversController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IojjpRK8AAWwAAhVPVX4l488/yEoQWTVnTaLrOa+GupB0bhmXJ6rDMUMHGzgz8bUHT51SX/fZFKJNK/JdVau5g==", "commit"=>"Ready to Drive!", "user_id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mDriver Load (0.2ms)[0m  [1mSELECT  "drivers".* FROM "drivers" WHERE "drivers"."user_id" = ? LIMIT 1[0m  [["user_id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "drivers" ("user_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["user_id", 1], ["created_at", "2015-04-21 17:39:47.038846"], ["updated_at", "2015-04-21 17:39:47.038846"]]
+  [1m[35m (4.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/users/1/drivers/1/wait
+Completed 302 Found in 20ms (ActiveRecord: 5.1ms)
+
+
+Started GET "/users/1/drivers/1/wait" for 127.0.0.1 at 2015-04-21 13:39:47 -0400
+Processing by DriversController#wait as HTML
+  Parameters: {"user_id"=>"1", "driver_id"=>"1"}
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "drivers"[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mDriver Load (0.2ms)[0m  [1mSELECT  "drivers".* FROM "drivers" WHERE "drivers"."user_id" = ? LIMIT 1[0m  [["user_id", 1]]
+  Rendered drivers/wait.html.haml within layouts/application (5.2ms)
+Completed 200 OK in 107ms (Views: 103.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/background-img.jpg" for 127.0.0.1 at 2015-04-21 13:39:47 -0400
+
+
+Started POST "/users/1/drivers" for 127.0.0.1 at 2015-04-21 13:39:51 -0400
+Processing by DriversController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IojjpRK8AAWwAAhVPVX4l488/yEoQWTVnTaLrOa+GupB0bhmXJ6rDMUMHGzgz8bUHT51SX/fZFKJNK/JdVau5g==", "commit"=>"Ready to Drive!", "user_id"=>"1"}
+  [1m[35mUser Load (2.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mDriver Load (0.1ms)[0m  [1mSELECT  "drivers".* FROM "drivers" WHERE "drivers"."user_id" = ? LIMIT 1[0m  [["user_id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "drivers" SET "user_id" = ?, "updated_at" = ? WHERE "drivers"."id" = ?[0m  [["user_id", nil], ["updated_at", "2015-04-21 17:39:51.691760"], ["id", 1]]
+  [1m[35mSQL (4.1ms)[0m  INSERT INTO "drivers" ("user_id", "created_at", "updated_at") VALUES (?, ?, ?)  [["user_id", 1], ["created_at", "2015-04-21 17:39:51.700555"], ["updated_at", "2015-04-21 17:39:51.700555"]]
+  [1m[36m (5.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users/1/drivers/2/wait
+Completed 302 Found in 41ms (ActiveRecord: 13.2ms)
+
+
+Started GET "/users/1/drivers/2/wait" for 127.0.0.1 at 2015-04-21 13:39:51 -0400
+Processing by DriversController#wait as HTML
+  Parameters: {"user_id"=>"1", "driver_id"=>"2"}
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "drivers"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mDriver Load (0.2ms)[0m  SELECT  "drivers".* FROM "drivers" WHERE "drivers"."user_id" = ? LIMIT 1  [["user_id", 1]]
+  Rendered drivers/wait.html.haml within layouts/application (1.5ms)
+Completed 200 OK in 101ms (Views: 90.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/background-img.jpg" for 127.0.0.1 at 2015-04-21 13:39:51 -0400
+
+
+Started POST "/users/1/drivers" for 127.0.0.1 at 2015-04-21 13:39:54 -0400
+Processing by DriversController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IojjpRK8AAWwAAhVPVX4l488/yEoQWTVnTaLrOa+GupB0bhmXJ6rDMUMHGzgz8bUHT51SX/fZFKJNK/JdVau5g==", "commit"=>"Ready to Drive!", "user_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mDriver Load (0.1ms)[0m  SELECT  "drivers".* FROM "drivers" WHERE "drivers"."user_id" = ? LIMIT 1  [["user_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "drivers" SET "user_id" = ?, "updated_at" = ? WHERE "drivers"."id" = ?  [["user_id", nil], ["updated_at", "2015-04-21 17:39:54.857769"], ["id", 2]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "drivers" ("user_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["user_id", 1], ["created_at", "2015-04-21 17:39:54.862579"], ["updated_at", "2015-04-21 17:39:54.862579"]]
+  [1m[35m (756.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/users/1/drivers/3/wait
+Completed 302 Found in 788ms (ActiveRecord: 757.7ms)
+
+
+Started GET "/users/1/drivers/3/wait" for 127.0.0.1 at 2015-04-21 13:39:55 -0400
+Processing by DriversController#wait as HTML
+  Parameters: {"user_id"=>"1", "driver_id"=>"3"}
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "drivers"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mDriver Load (0.2ms)[0m  [1mSELECT  "drivers".* FROM "drivers" WHERE "drivers"."user_id" = ? LIMIT 1[0m  [["user_id", 1]]
+  Rendered drivers/wait.html.haml within layouts/application (0.6ms)
+Completed 200 OK in 111ms (Views: 95.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/background-img.jpg" for 127.0.0.1 at 2015-04-21 13:39:55 -0400
+
+
+Started DELETE "/users/1/drivers/3" for 127.0.0.1 at 2015-04-21 13:39:57 -0400
+Processing by DriversController#destroy as HTML
+  Parameters: {"authenticity_token"=>"UGwbviGplfPsZWYy1JqbUCyX3rlY0scK1u+/IBn6xhUzNUB9b4s++plpcgsJAKUTvpVU0Q9Mx43C7ZtFihJyGQ==", "user_id"=>"1", "id"=>"3"}
+  [1m[35mDriver Load (0.9ms)[0m  SELECT  "drivers".* FROM "drivers" WHERE "drivers"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "drivers" WHERE "drivers"."id" = ?[0m  [["id", 3]]
+  [1m[35m (4.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/users/1/welcome
+Completed 302 Found in 14ms (ActiveRecord: 5.9ms)
+
+
+Started GET "/users/1/welcome" for 127.0.0.1 at 2015-04-21 13:39:57 -0400
+Processing by UsersController#welcome as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/welcome.html.haml within layouts/application (4.6ms)
+Completed 200 OK in 105ms (Views: 104.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/background-img.jpg" for 127.0.0.1 at 2015-04-21 13:39:57 -0400
+
+
+Started POST "/users/1/drivers" for 127.0.0.1 at 2015-04-21 13:39:59 -0400
+Processing by DriversController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"klXv4NyfbjeYPw7wV6ZeDtIq1Yb9TbzsrvS2XyGhBbXxDLQjkr3FPu0zGsmKPGBNQChf7qrTvGu69pI6skmxuQ==", "commit"=>"Ready to Drive!", "user_id"=>"1"}
+  [1m[35mUser Load (2.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mDriver Load (0.1ms)[0m  [1mSELECT  "drivers".* FROM "drivers" WHERE "drivers"."user_id" = ? LIMIT 1[0m  [["user_id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "drivers" ("user_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["user_id", 1], ["created_at", "2015-04-21 17:39:59.085550"], ["updated_at", "2015-04-21 17:39:59.085550"]]
+  [1m[35m (10.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/users/1/drivers/4/wait
+Completed 302 Found in 28ms (ActiveRecord: 14.1ms)
+
+
+Started GET "/users/1/drivers/4/wait" for 127.0.0.1 at 2015-04-21 13:39:59 -0400
+Processing by DriversController#wait as HTML
+  Parameters: {"user_id"=>"1", "driver_id"=>"4"}
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "drivers"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mDriver Load (0.1ms)[0m  [1mSELECT  "drivers".* FROM "drivers" WHERE "drivers"."user_id" = ? LIMIT 1[0m  [["user_id", 1]]
+  Rendered drivers/wait.html.haml within layouts/application (0.5ms)
+Completed 200 OK in 82ms (Views: 79.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/background-img.jpg" for 127.0.0.1 at 2015-04-21 13:39:59 -0400
+
+
+Started DELETE "/users/1/drivers/4" for 127.0.0.1 at 2015-04-21 13:40:00 -0400
+Processing by DriversController#destroy as HTML
+  Parameters: {"authenticity_token"=>"OyVSaADFGDeuYonH3SN8ed6gXyom0di7QwU31tQaJ5pYfAmrTuezPttunf4AuUI6TKLVQnFP2DxXBxOzR/KTlg==", "user_id"=>"1", "id"=>"4"}
+  [1m[35mDriver Load (0.1ms)[0m  SELECT  "drivers".* FROM "drivers" WHERE "drivers"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "drivers" WHERE "drivers"."id" = ?[0m  [["id", 4]]
+  [1m[35m (7.4ms)[0m  commit transaction
+Redirected to http://localhost:3000/users/1/welcome
+Completed 302 Found in 19ms (ActiveRecord: 8.0ms)
+
+
+Started GET "/users/1/welcome" for 127.0.0.1 at 2015-04-21 13:40:00 -0400
+Processing by UsersController#welcome as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/welcome.html.haml within layouts/application (3.7ms)
+Completed 200 OK in 102ms (Views: 101.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/background-img.jpg" for 127.0.0.1 at 2015-04-21 13:40:00 -0400
+
+
+Started POST "/users/1/riders" for 127.0.0.1 at 2015-04-21 13:40:04 -0400
+Processing by RidersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"S1QXDxAqVvuWlGucbvNeXdhqpttSOkly7j+QbETU0k0oDUzMXgj98uOYf6WzaWAeSmgsswWkSfX6PbQJ1zxmQQ==", "commit"=>"Request a ride!", "user_id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mRider Load (0.1ms)[0m  [1mSELECT  "riders".* FROM "riders" WHERE "riders"."user_id" = ? LIMIT 1[0m  [["user_id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "riders" SET "user_id" = ?, "updated_at" = ? WHERE "riders"."id" = ?[0m  [["user_id", nil], ["updated_at", "2015-04-21 17:40:04.513070"], ["id", 2]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "riders" ("user_id", "created_at", "updated_at") VALUES (?, ?, ?)  [["user_id", 1], ["created_at", "2015-04-21 17:40:04.520370"], ["updated_at", "2015-04-21 17:40:04.520370"]]
+  [1m[36m (759.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users/1/riders/3/wait
+Completed 302 Found in 790ms (ActiveRecord: 760.2ms)
+
+
+Started GET "/users/1/riders/3/wait" for 127.0.0.1 at 2015-04-21 13:40:05 -0400
+Processing by RidersController#wait as HTML
+  Parameters: {"user_id"=>"1", "rider_id"=>"3"}
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "riders"
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "drivers"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mRider Load (0.1ms)[0m  [1mSELECT  "riders".* FROM "riders" WHERE "riders"."user_id" = ? LIMIT 1[0m  [["user_id", 1]]
+  Rendered riders/wait.html.haml within layouts/application (0.9ms)
+Completed 200 OK in 107ms (Views: 103.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/background-img.jpg" for 127.0.0.1 at 2015-04-21 13:40:05 -0400
+
+
+Started POST "/users/1/drivers" for 127.0.0.1 at 2015-04-21 13:41:04 -0400
+Processing by DriversController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"S1QXDxAqVvuWlGucbvNeXdhqpttSOkly7j+QbETU0k0oDUzMXgj98uOYf6WzaWAeSmgsswWkSfX6PbQJ1zxmQQ==", "commit"=>"Ready to Drive!", "user_id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mDriver Load (0.1ms)[0m  [1mSELECT  "drivers".* FROM "drivers" WHERE "drivers"."user_id" = ? LIMIT 1[0m  [["user_id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "drivers" ("user_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["user_id", 1], ["created_at", "2015-04-21 17:41:04.408984"], ["updated_at", "2015-04-21 17:41:04.408984"]]
+  [1m[35m (718.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/users/1/drivers/5/wait
+Completed 302 Found in 738ms (ActiveRecord: 719.6ms)
+
+
+Started GET "/users/1/drivers/5/wait" for 127.0.0.1 at 2015-04-21 13:41:05 -0400
+Processing by DriversController#wait as HTML
+  Parameters: {"user_id"=>"1", "driver_id"=>"5"}
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "drivers"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mDriver Load (0.1ms)[0m  [1mSELECT  "drivers".* FROM "drivers" WHERE "drivers"."user_id" = ? LIMIT 1[0m  [["user_id", 1]]
+  Rendered drivers/wait.html.haml within layouts/application (0.7ms)
+Completed 200 OK in 99ms (Views: 96.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/background-img.jpg" for 127.0.0.1 at 2015-04-21 13:41:05 -0400
