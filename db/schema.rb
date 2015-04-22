@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150413212036) do
+ActiveRecord::Schema.define(version: 20150421172337) do
 
   create_table "drivers", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -43,6 +43,15 @@ ActiveRecord::Schema.define(version: 20150413212036) do
     t.string   "name"
     t.date     "birthday"
     t.string   "is_driver"
+    t.boolean  "is_riding"
+    t.boolean  "is_driving"
+    t.string   "driver_license"
+    t.string   "driver_license_state"
+    t.string   "license_plate"
+    t.string   "license_plate_state"
+    t.string   "make"
+    t.string   "model"
+    t.integer  "year"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
