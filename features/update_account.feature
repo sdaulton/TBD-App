@@ -12,18 +12,28 @@ Background: Users in the database
         Given I am user 1 on the welcome page
         And I press "View Account"
         Then I should be user 1 on the edit page
-        And I select "Just Ride" from "Is driver"    
-        When I press "Update user"
+        When I check "user_is_riding"    
+        And I press "Save changes"
         Then I should see "Sam Daulton was successfully updated"
         And I should see "Welcome back, Sam Daulton!"
 
-    Scenario: User account already initialized
+    Scenario: Initialize a driver account
+        Given I am user 1 on the welcome page
+        And I press "View Account"
+        Then I should be user 1 on the edit page
+        When I check "user_is_driving"    
+        Then I should see "Car Details"
+        And I press "Save changes"
+        Then I should see "Sam Daulton was successfully updated"
+        And I should see "Welcome back, Sam Daulton!"
+
+    Scenario: Update user account that is already initialized
         Given I am user 2 on the welcome page
         And I press "View Account"
         Then I should be user 2 on the edit page
         And I fill in "Birthday" with "12/12/1912" 
-        And I select "Just Ride" from "Is driver"    
-        When I press "Update user"
+        When I check "user_is_riding"    
+        And I press "Save changes"
         Then I should see "John Test was successfully updated"
         And I should see "Welcome back, John Test!"
 

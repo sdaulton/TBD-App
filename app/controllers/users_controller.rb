@@ -25,11 +25,12 @@ class UsersController < ApplicationController
     def welcome
         id = params[:id]
         @user = User.find(id)
+        @user_is_a_driver = @user.is_driving
     end
 
 
 private
     def create_update_params
-        params.require(:user).permit(:name, :email, :birthday, :is_driver, :encrypted_password)
+        params.require(:user).permit(:name, :email, :birthday, :is_driving, :is_riding, :driver_license, :driver_license_sate, :license_place, :license_plate_state, :make, :model, :year, :encrypted_password)
     end
 end
