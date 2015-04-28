@@ -2,7 +2,12 @@ class DriversController < ApplicationController
 
   def create
     @user = User.find(params[:user_id])
-    
+    if @user.driver
+      # user is already ready to drive
+      flash[:notice] = 'You have already made yourself available to drive'
+      @driver = @user.driver
+      redirect_to(user_driver_wait_path(@user, @driver)) and return
+    end
     #build sets the product foreign key automatically
     @driver = Driver.new
     @user.driver = @driver

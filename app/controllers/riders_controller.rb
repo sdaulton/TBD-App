@@ -2,7 +2,12 @@ class RidersController < ApplicationController
 
   def create
     @user = User.find(params[:user_id])
-    
+    if @user.rider
+      # user is already waiting for a ride
+      flash[:notice] = 'You have already requested a ride'
+      @rider = @user.rider
+      redirect_to(user_rider_wait_path(@user, @rider)) and return
+    end
     #build sets the product foreign key automatically
     @rider = Rider.new
     @user.rider = @rider
