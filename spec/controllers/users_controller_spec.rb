@@ -51,12 +51,6 @@ RSpec.describe UsersController, type: :controller do
         end
     end
     
-    describe "signing in/ signing up" do
-        it "should redirect to google auth" do
-            response.should redirect_to(user_omniauth_authorize_path(:google_oauth2))
-            post :create
-        end
-    end
     
 
 end

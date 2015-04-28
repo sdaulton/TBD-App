@@ -8,5 +8,4 @@
 
 User.delete_all
 
-User.create!(name: "Sam Daulton", email: "sdaulton@colgate.edu", password: "easyguess")
 
