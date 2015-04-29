@@ -5,8 +5,8 @@ Feature: Ready to Drive
 
     Background: Users in the database
         Given these users:
-            | name        | email                  | password  | id | birthday   |
-            | Sam Daulton | sdaulton@colgate.edu   | guesswhat | 1  | 12/01/1991 |
+            | name        | email                  | password  | id | birthday   | is_driving |
+            | Sam Daulton | sdaulton@colgate.edu   | guesswhat | 1  | 12/01/1991 | 1          |
 
         Scenario: Sam becomes ready to drive
             Given I am user 1 on the welcome page

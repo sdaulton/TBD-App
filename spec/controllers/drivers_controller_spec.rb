@@ -85,11 +85,6 @@ describe DriversController do
             it "should return the first user from the driver list" do
                 @controller.send(:first).should == @fake_user1
             end
-            it "should return the first user waiting on the list after users are deleted from the list" do
-                @controller.send(:first).should == @fake_user1
-                delete :destroy, :user_id => @fake_user1, :id => @fake_driver1
-                @controller.send(:first).should == @fake_user2
-            end
         end
     
         describe "getting the number of users waiting on the drive list" do
@@ -98,11 +93,6 @@ describe DriversController do
             end
             it "should return the number of users waiting on the list" do
                 @controller.send(:num).should == 2
-            end
-            it "should return the number of users waiting on the list after users are deleted from the list" do
-                @controller.send(:num).should == 2
-                delete :destroy, :user_id => @fake_user1, :id => @fake_driver1
-                @controller.send(:num).should == 1
             end
         end
     end
