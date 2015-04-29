@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150421172337) do
+ActiveRecord::Schema.define(version: 20150429022707) do
 
   create_table "drivers", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -23,6 +23,18 @@ ActiveRecord::Schema.define(version: 20150421172337) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer  "user_id"
+  end
+
+  create_table "rides", force: :cascade do |t|
+    t.string   "start_location"
+    t.string   "end_location"
+    t.boolean  "driver_at_pickup"
+    t.boolean  "rider_pickup_confirm"
+    t.boolean  "driver_pickup_confirm"
+    t.boolean  "rider_dropoff_confirm"
+    t.string   "driver_dropoff_confirm"
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
   end
 
   create_table "users", force: :cascade do |t|

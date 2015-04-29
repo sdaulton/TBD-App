@@ -6,6 +6,7 @@ class User < ActiveRecord::Base
 
   has_one :driver
   has_one :rider
+  belongs_to :ride
 
   def self.find_for_google_oauth2(access_token, signed_in_resource=nil)
     data = access_token.info
