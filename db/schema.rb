@@ -26,6 +26,8 @@ ActiveRecord::Schema.define(version: 20150429022707) do
   end
 
   create_table "rides", force: :cascade do |t|
+    t.integer  "user_r_id"
+    t.integer  "user_d_id"
     t.string   "start_location"
     t.string   "end_location"
     t.boolean  "driver_at_pickup"
