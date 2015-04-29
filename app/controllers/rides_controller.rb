@@ -1,9 +1,22 @@
 class RidesController < ApplicationController
 
   def create
-    @rider = Rider.find(params[:rider_id])
-    @driver = Driver.find(params[:drive_id])
+    #only the rider does this function
+    @rider = Rider.find(params["ride"][:rider_id])
+    @driver = Driver.find(params["ride"][:driver_id])
     @ride = Ride.new
+    @rider.user.ride_as_rider = @ride
+    @driver.user.ride_as_driver = @ride
+    @rider.destroy
+    @driver.destroy
+
+    if @ride.save
+      flash[:notice] = "Ride has begun"
+      redirect_to(ride_location_path(@ride))
+    else 
+      flash[:notice] = "Failed to create a ride"
+      redirect_to(welcome_user_path(@user))
+    end
   end
 
   def destroy

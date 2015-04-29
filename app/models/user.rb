@@ -8,7 +8,6 @@ class User < ActiveRecord::Base
   has_one :rider
   has_one :ride_as_driver, class_name:"Ride", foreign_key:"user_d_id"
   has_one :ride_as_rider, class_name:"Ride", foreign_key:"user_r_id"
-  #has_one :ride, class_name:"Ride", foreign_key:"user_id"
 
   def self.find_for_google_oauth2(access_token, signed_in_resource=nil)
     data = access_token.info

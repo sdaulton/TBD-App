@@ -1,7 +1,18 @@
-You are now waiting for an available driver
-</br>
-Number of drivers currently working: #{@num_drivers}
-</br>
-Number of ride requests ahead of yours: #{@num_ahead}
-</br>
-=link_to "I'm Done Waiting.", [@user,@rider], method: :delete
+
+-if(@rider.driver_available?)
+  A driver is available!
+  </br>
+  =form_for Ride.new do |f|
+    =f.hidden_field :rider_id, value:@rider.id
+    =f.hidden_field :driver_id, value:Driver.first.id
+    =f.submit "Confirm Ride!"
+  </br>
+  =link_to "I'm not ready yet.", [@user,@rider], method: :delete
+-else
+  You are now waiting for an available driver
+  </br>
+  Number of drivers currently working: #{@num_drivers}
+  </br>
+  Number of ride requests ahead of yours: #{@num_ahead}
+  </br>
+  =link_to "I'm Done Waiting.", [@user,@rider], method: :delete
