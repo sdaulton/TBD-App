@@ -35,6 +35,9 @@ class RidersController < ApplicationController
     @num_drivers = Driver.count
     @user = User.find(params[:user_id])
     @rider = @user.rider
+    if @num_drivers>=1 && @rider.id==Rider.first.id
+       @driver_available = true
+    end
   end
 
   def first

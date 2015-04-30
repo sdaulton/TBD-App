@@ -2,7 +2,6 @@ class RidesController < ApplicationController
 
   def create
     #only the rider does this function
-    byebug
     @rider = Rider.find(params["ride"][:rider_id])
     @driver = Driver.find(params["ride"][:driver_id])
     @ride = Ride.new
@@ -28,17 +27,34 @@ class RidesController < ApplicationController
   def edit
   end
 
-  def update
-    byebug
-    @ride = Ride.find params[:id]
+  def update_location
+    @ride = Ride.find params[:ride_id]
     @ride.update(create_update_params)
-    if params["ride"]["current_page"]=="location"
-      redirect_to ride_driver_enroute_path(@ride)
-    end
+    redirect_to ride_driver_enroute_path(@ride)
+  end
+
+  def update_drive_to_pickup
+	 @ride = Ride.find(params[:ride_id])
+	 @ride.driver_at_pickup = true
+	 @ride.save
+	 redirect_to ride_pickup_rider_path(@ride)
+  end
+
+  def update_pickup_rider
+	 @ride = Ride.find(params[:ride_id])
+	 @ride.driver_pickup_confirm = true
+	 @ride.save
+	 redirect_to ride_wait_for_rider_confirm_path(@ride)
+  end
+
+  def update_picked_up
+	 @ride = Ride.find(params[:ride_id])
+	 @ride.rider_pickup_confirm = true
+	 @ride.save
+	 redirect_to ride_wait_for_driver_confirm_path(@ride)
   end
 
   def location
-    byebug
     if params[:ride_id]
       id = params[:ride_id]
     else
@@ -49,24 +65,33 @@ class RidesController < ApplicationController
   end
 
   def driver_enroute
-    byebug
     @ride = Ride.find(params[:ride_id])
     @driver = User.find(@ride.user_d_id)
+	 if @ride.driver_at_pickup
+		redirect_to ride_picked_up_path(@ride)
+    end
   end
 
   def picked_up
+	 @ride = Ride.find(params[:ride_id])
   end
 
   def dropped_off
   end
 
   def wait_for_location
+	 @ride = Ride.find(params[:ride_id])
+	 if @ride.start_location && @ride.end_location
+	 	redirect_to ride_drive_to_pickup_path(@ride)
+	 end	 
   end
 
   def drive_to_pickup
+	 @ride = Ride.find(params[:ride_id])
   end
 
   def pickup_rider
+	 @ride = Ride.find(params[:ride_id])
   end
 
   def dropoff_rider
