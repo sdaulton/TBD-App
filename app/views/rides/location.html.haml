@@ -1,1 +1,13 @@
-Please select your location!
+#{@user.name}, Please select your location!
+</br>
+** This will be a drop-down menu later?? **
+</br>
+** Doing text field now to make it easy **
+</br>
+=form_for @ride, url: {action: "update", id:@ride} do |f|
+  =f.label :start_location
+  =f.text_field :start_location
+  =f.label :end_location
+  =f.text_field :end_location
+  =f.hidden_field :current_page, value:"location"
+  =f.submit "Send driver my location"
