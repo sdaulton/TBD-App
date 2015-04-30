@@ -16,11 +16,11 @@
           .row.spacing
             .btn.btn-default.col-md-6.col-md-offset-3
               =form_for ([@user, Driver.new]) do |f|
-                =f.submit "Ready to Drive!"
+                =f.submit "Ready to Drive!", :html => {class:"main-btn"}
         .row.spacing
           .btn.btn-default.col-md-6.col-md-offset-3
             =form_for ([@user, Rider.new]) do |f|
-              =f.submit "Request a ride!"
+              =f.submit "Request a ride!", :html => {class:"main-btn"}
         .row.spacing
           .btn.btn-default.col-md-6.col-md-offset-3
             =link_to "Report a problem.", :class=>"main-btn"
