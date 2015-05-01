@@ -75,6 +75,9 @@ h2 {
 .welcome {
     margin-bottom: 10%;
 }
+.add-bottom-margin {
+    margin-bottom: 10px;
+}
 
 //**sign up for account page styling**//
 .field-text {
@@ -131,5 +134,22 @@ h2 {
 }
 input {
     margin-bottom: 6px !important;
+}
+.top-spacing {
+    margin-top: 6px;
+}
+
+//**report a problem page styling**//
+.not-btn-btn {
+    text-decoration: none;
+    color: #5B5F68;
+}
+.not-btn-btn:hover {
+    text-decoration: none;
+    color: #202020;
+}
+.smaller-txt {
+    margin-top: 6px;
+    font-size: 14px; 
 }
 
