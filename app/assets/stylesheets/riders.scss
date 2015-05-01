@@ -4,8 +4,18 @@
 
 
 //** ready to go styling **//
+
 .not-btn-btn {
+    text-decoration: none;
     color: #5B5F68;
 }
-
-
+.not-btn-btn:hover {
+    text-decoration: none;
+    color: #202020;
+}
+.small-txt {
+    font-size: 20px; 
+}
+.h3-styling {
+    font-size: 20px;
+}

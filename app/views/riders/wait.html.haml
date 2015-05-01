@@ -1,18 +1,38 @@
+%head
+  %link{:href => "http://fonts.googleapis.com/css?family=Varela+Round", :rel => "stylesheet", :type => "text/css"}
+  %link{:href => "http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css", :rel => "stylesheet"}
+  %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"}
+  %script{:src => "http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"}
 
--if(@rider.driver_available?)
-  A driver is available!
-  </br>
-  =form_for Ride.new do |f|
-    =f.hidden_field :rider_id, value:@rider.id
-    =f.hidden_field :driver_id, value:Driver.first.id
-    =f.submit "Confirm Ride!"
-  </br>
-  =link_to "I'm not ready yet.", [@user,@rider], method: :delete
--else
-  You are now waiting for an available driver
-  </br>
-  Number of drivers currently working: #{@num_drivers}
-  </br>
-  Number of ride requests ahead of yours: #{@num_ahead}
-  </br>
-  =link_to "I'm Done Waiting.", [@user,@rider], method: :delete
+%body
+  .container-fluid
+    .content-box
+      .row
+        .title-text.text-center
+          .driver-available
+            -if(@rider.driver_available?)
+              %h1 Ready to go?
+              </br>
+              .sub-title
+                A driver is available!
+              </br>
+              =form_for Ride.new do |f|
+                =f.hidden_field :rider_id, value:@rider.id
+                =f.hidden_field :driver_id, value:Driver.first.id
+                =f.submit "Confirm Ride!", :class => "main-btn btn btn-lg"
+              </br>
+              =link_to "I'm not ready yet.", [@user,@rider], method: :delete, :class => "not-btn-btn"
+            -else
+              %h1 Just a moment...
+              </br>
+              .sub-title 
+                You're in line for the next available driver!
+              .row.small-txt
+                </br>
+                There are #{@num_drivers} drivers working right now,
+                </br>
+                and #{@num_ahead} people requested rides before you.
+                </br>
+                </br>
+                .row
+                  =link_to "I'm Done Waiting.", [@user,@rider], method: :delete, :class => "not-btn-btn"
