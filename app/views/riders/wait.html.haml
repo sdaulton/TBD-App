@@ -10,7 +10,7 @@
       .row
         .title-text.text-center
           .driver-available
-            -if(@rider.driver_available?)
+            -if(@driver_available)
               %h1 Ready to go?
               </br>
               .sub-title
@@ -36,3 +36,4 @@
                 </br>
                 .row
                   =link_to "I'm Done Waiting.", [@user,@rider], method: :delete, :class => "not-btn-btn"
+

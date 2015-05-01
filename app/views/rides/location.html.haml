@@ -4,7 +4,7 @@
 </br>
 ** Doing text field now to make it easy **
 </br>
-=form_for @ride, url: {action: "update", id:@ride} do |f|
+=form_for @ride, url: {action: "update_location", ride_id:@ride} do |f|
   =f.label :start_location
   =f.text_field :start_location
   =f.label :end_location
