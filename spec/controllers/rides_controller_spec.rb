@@ -150,6 +150,92 @@ RSpec.describe RidesController, type: :controller do
                     get :pickup_rider, :ride_id => @fake_ride
                 end
             end
+
+
+            describe "wait_for_driver_confirm" do
+                it "should make ride available to the to the view" do
+                    get :wait_for_driver_confirm, :ride_id => @fake_ride
+                end
+                it "it should redirect to the dropped off path if the driver has confirmed the pickup" do
+                    @fake_ride.should_receive(:driver_pickup_confirm).and_return(true)
+                    get :wait_for_driver_confirm, :ride_id => @fake_ride
+                    response.should redirect_to(ride_dropped_off_path(@fake_ride))
+                end
+                it "it should should not redirect to the picked up path if the driver has not confirmed the pickup" do
+                    @fake_ride.should_receive(:driver_pickup_confirm).and_return(false)
+                    get :wait_for_driver_confirm, :ride_id => @fake_ride
+                    response.status.should == 200
+                end
+            end
+
+            describe "wait_for_rider_confirm" do
+                it "should make ride available to the to the view" do
+                    get :wait_for_rider_confirm, :ride_id => @fake_ride
+                end
+                it "it should redirect to the droppoff rider path if the rider has confirmed the pickup" do
+                    @fake_ride.should_receive(:rider_pickup_confirm).and_return(true)
+                    get :wait_for_rider_confirm, :ride_id => @fake_ride
+                    response.should redirect_to(ride_dropoff_rider_path(@fake_ride))
+                end
+                it "it should should not redirect to the picked up path if the driver has not confirmed the pickup" do
+                    @fake_ride.should_receive(:rider_pickup_confirm).and_return(false)
+                    get :wait_for_rider_confirm, :ride_id => @fake_ride
+                    response.status.should == 200
+                end
+            end
+
+            describe "wait_for_rider_dropoff_confirm" do
+                it "should make ride and user available to the to the view" do
+                    User.should_receive(:find).with("1").and_return(@fake_user1)
+                    get :wait_for_rider_dropoff_confirm, :ride_id => @fake_ride, :user_id => @fake_user1
+                end
+                
+                it "it should redirect to the user welcome path if the rider has confirmed the dropoff" do
+                    @fake_ride.should_receive(:rider_dropoff_confirm).and_return(true)
+                    get :wait_for_rider_dropoff_confirm, :ride_id => @fake_ride, :user_id => @fake_user1
+                    response.should redirect_to(welcome_user_path("1"))
+                end
+                it "it should should not redirect to the user welcome path if the rider has not confirmed the dropoff" do
+                    @fake_ride.should_receive(:rider_dropoff_confirm).and_return(false)
+                    get :wait_for_rider_dropoff_confirm, :ride_id => @fake_ride, :user_id => @fake_user1
+                    response.status.should == 200
+                end
+            end
+
+            describe "wait_for_driver_dropoff_confirm" do
+                it "should make ride and user available to the to the view" do
+                    User.should_receive(:find).with("2").and_return(@fake_user2)
+                    get :wait_for_driver_dropoff_confirm, :ride_id => @fake_ride, :user_id => @fake_user2
+                end
+                
+                it "it should redirect to the user welcome path if the driver has confirmed the dropoff" do
+                    @fake_ride.should_receive(:driver_dropoff_confirm).and_return(true)
+                    get :wait_for_driver_dropoff_confirm, :ride_id => @fake_ride, :user_id => @fake_user2
+                    response.should redirect_to(welcome_user_path("2"))
+                end
+                it "it should should not redirect to the user welcome path if the driver has not confirmed the dropoff" do
+                    @fake_ride.should_receive(:driver_dropoff_confirm).and_return(false)
+                    get :wait_for_driver_dropoff_confirm, :ride_id => @fake_ride, :user_id => @fake_user2
+                    response.status.should == 200
+                end
+            end
+
+            describe "wait_for_location" do
+                it "should make ride available to the view" do
+                    get :wait_for_location, :ride_id => @fake_ride
+                end
+                it "it should redirect to the drive to pickup path if a start and end location have been entered" do
+                    @fake_ride.should_receive(:end_location).and_return(true)
+                    @fake_ride.should_receive(:start_location).and_return(true)
+                    get :wait_for_location, :ride_id => @fake_ride
+                    response.should redirect_to(ride_drive_to_pickup_path(@fake_ride))
+                end
+                it "it should should not redirect to the drive to pickup path if a start or end location have not been entered" do
+                    @fake_ride.should_receive(:start_location).and_return(nil)
+                    get :wait_for_location, :ride_id => @fake_ride
+                    response.status.should == 200
+                end
+            end
         end
     end
 

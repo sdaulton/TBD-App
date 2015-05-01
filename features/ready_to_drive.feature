@@ -12,8 +12,8 @@ Feature: Ready to Drive
             Given I am user 1 on the welcome page
             And I press "Ready to Drive!"
             Then I should be user 1 driver 1 on the driver wait page
-            And I should see "You are now waiting for ride requests"
-            And I should see "Number of drivers waiting ahead of you: 0"
+            And I should see "You're waiting for ride requests"
+            And I should see "There are 0 drivers waiting to pick up people ahead of you"
             When I press "I'm Done Waiting."
             Then I should be user 1 on the welcome page
 

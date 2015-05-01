@@ -13,9 +13,8 @@ Feature: Request a ride
             Given I am user 1 on the welcome page
             And I press "Request a ride!"
             Then I should be user 1 rider 1 on the rider wait page
-            And I should see "You are now waiting for an available driver"
-            And I should see "Number of drivers currently working: 0"
-            And I should see "Number of ride requests ahead of yours: 0"
+            And I should see "You're in line for the next available driver!"
+            And I should see "There are 0 drivers working right now, and 0 people requested rides before you"
             When I press "I'm Done Waiting."
             Then I should be user 1 on the welcome page
 
