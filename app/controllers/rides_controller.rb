@@ -12,13 +12,9 @@ class RidesController < ApplicationController
 
     params[:ride_id] = @ride.id
 
-    if @ride.save
-      flash[:notice] = "Ride has begun"
-      redirect_to(ride_location_path(@ride))
-    else 
-      flash[:notice] = "Failed to create a ride"
-      redirect_to(welcome_user_path(@user))
-    end
+    @ride.save
+    flash[:notice] = "Ride has begun"
+    redirect_to(ride_location_path(@ride))
   end
 
   def destroy
