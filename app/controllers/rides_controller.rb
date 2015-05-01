@@ -56,17 +56,17 @@ class RidesController < ApplicationController
 
   def update_dropoff_rider
 	 @ride = Ride.find(params[:ride_id])
+	 @user = User.find(@ride.user_d_id)
 	 @ride.driver_dropoff_confirm = true
 	 @ride.save
-	 @user = User.find(@ride.user_d_id)
 	 redirect_to ride_wait_for_rider_dropoff_confirm_path(@ride, :user_id=>@user) and return 
   end
 
   def update_dropped_off
 	 @ride = Ride.find(params[:ride_id])
+	 @user = User.find(@ride.user_r_id)
 	 @ride.rider_dropoff_confirm = true
 	 @ride.save
-	 @user = User.find(@ride.user_r_id)
 	 redirect_to ride_wait_for_driver_dropoff_confirm_path(@ride, :user_id=>@user) and return
   end
 
@@ -85,7 +85,7 @@ class RidesController < ApplicationController
     @driver = User.find(@ride.user_d_id)
 	 if @ride.driver_at_pickup
 		redirect_to ride_picked_up_path(@ride)
-    end
+         end
   end
 
   def picked_up
@@ -125,28 +125,25 @@ class RidesController < ApplicationController
   def wait_for_rider_confirm
 	 @ride = Ride.find(params[:ride_id])
 	 if @ride.rider_pickup_confirm
-	 	redirect_to ride_dropoff_rider_path(@ride)
+	    redirect_to ride_dropoff_rider_path(@ride)
 	 end
   end
 
   def wait_for_driver_dropoff_confirm
 	 @ride = Ride.find(params[:ride_id])
-	 @user = User.find(params[:user_id])
-	 if @ride.driver_dropoff_confirm
-		@ride.destroy
-   	redirect_to(welcome_user_path(@user))
+         if @ride.driver_dropoff_confirm
+            @user = User.find(params[:user_id])
+            #@ride.destroy
+            redirect_to(welcome_user_path(@user)) and return
 	 end
   end
 
   def wait_for_rider_dropoff_confirm
 	 @ride = Ride.find(params[:ride_id])
+         #@ride = Ride.where("id = ?", params[:ride_id])
 	 @user = User.find(params[:user_id])
-	 if @ride
-	 	if @ride.rider_dropoff_confirm
-    	  redirect_to(welcome_user_path(@user))
-	 	end
-	 else
-      redirect_to(welcome_user_path(@user))  
+	 if @ride.rider_dropoff_confirm
+    	    redirect_to(welcome_user_path(@user))
 	 end
   end
 
