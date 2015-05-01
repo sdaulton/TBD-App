@@ -93,6 +93,63 @@ RSpec.describe RidesController, type: :controller do
                 end
             end
 
+            describe "set_location" do
+                let(:users) {double(User)}
+                before do
+                    allow(User).to receive(:find).with([2]).and_return(users)
+                end
+                it "should make rider's user and ride available to the view" do
+                    users.should_receive(:first).and_return(@fake_user2)
+                    get :set_location, :ride_id => @fake_ride
+                end
+            end
+            
+            describe "driver_enroute" do
+                it "should make driver's user available to the to the view" do
+                    User.should_receive(:find).with(1).and_return(@fake_user1)
+                    get :driver_enroute, :ride_id => @fake_ride
+                end
+                it "it should redirect to the picked up path if the driver is at the pickup" do
+                    @fake_ride.should_receive(:driver_at_pickup).and_return(true)
+                    get :driver_enroute, :ride_id => @fake_ride
+                    response.should redirect_to(ride_picked_up_path(@fake_ride))
+                end
+                it "it should should not redirect to the picked up path if the driver is not at the pickup" do
+                    @fake_ride.should_receive(:driver_at_pickup).and_return(false)
+                    get :driver_enroute, :ride_id => @fake_ride
+                    response.status.should == 200
+                end
+            end
+
+            describe "picked_up" do
+                it "should just make ride available to the view" do
+                    get :picked_up, :ride_id => @fake_ride
+                end
+            end
+
+            describe "dropped_off" do
+                it "should just make ride available to the view" do
+                    get :dropped_off, :ride_id => @fake_ride
+                end
+            end
+
+            describe "dropoff_rider" do
+                it "should just make ride available to the view" do
+                    get :dropoff_rider, :ride_id => @fake_ride
+                end
+            end
+
+            describe "drive_to_pickup" do
+                it "should just make ride available to the view" do
+                    get :drive_to_pickup, :ride_id => @fake_ride
+                end
+            end
+
+            describe "pickup_rider" do
+                it "should just make ride available to the view" do
+                    get :pickup_rider, :ride_id => @fake_ride
+                end
+            end
         end
     end
 
