@@ -9,5 +9,6 @@
     .content-box
       .row
         .title-text.text-center
+          %h1 got riders?
           =form_for @ride, url: {action:"update_pickup_rider"} do |f|
-            =f.submit "I've picked up my rider!"
+            =f.submit "yup.", :class => "main-btn btn btn-lg btn-spacing"

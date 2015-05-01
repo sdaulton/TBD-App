@@ -9,6 +9,8 @@
     .content-box
       .row
         .title-text.text-center
-          %h2 Let the passengers know you're here:
+          %h2 Are you there yet?
           =form_for @ride, url: {action:"update_drive_to_pickup"} do |f|
             =f.submit "I'm here!", :class => "main-btn btn btn-lg btn-spacing"
+            .help-txt
+              %p This will ping your passengers.
