@@ -28,18 +28,21 @@ describe RidersController do
            @fake_user = FactoryGirl.create(:user, "name" => "John Smith", "email" => "jsmith@colgate.edu", "birthday" => "1990-01-04")
            @fake_rider = FactoryGirl.create(:rider, "id" => "1", "user_id" => "1")
            User.should_receive(:find).with(@params["user_id"]).and_return(@fake_user)
-           Rider.should_receive(:new).and_return(@fake_rider)
         end
 
         it "should redirect to wait on success" do
+           @fake_user.should_receive(:rider).and_return(false)
+           Rider.should_receive(:new).and_return(@fake_rider)
            @fake_rider.should_receive(:save).and_return(true)
            post :create, @params
            flash[:notice].should == "You are now waiting for a driver to become available."
-           assigns(:user).rider.should == @fake_rider
+           #assigns(:user).rider.should == @fake_rider
            response.should redirect_to(user_rider_wait_path(@fake_user, @fake_rider))
         end
 
         it "should redirect to the user welcome page on failure" do
+           @fake_user.should_receive(:rider).and_return(false)
+           Rider.should_receive(:new).and_return(@fake_rider)
            @fake_rider.should receive(:save).and_return(nil)
            post :create, @params
            flash[:notice].should == "Failed to request a ride.  Please try again"

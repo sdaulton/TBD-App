@@ -31,14 +31,16 @@ describe DriversController do
            Driver.should_receive(:new).and_return(@fake_driver)
         end
         it "should redirect to wait on success" do
+           @fake_user.should_receive(:driver).and_return(false)
            @fake_driver.should_receive(:save).and_return(true)
            post :create, @params
            flash[:notice].should == "You are now waiting for a rider."
-           assigns(:user).driver.should == @fake_driver
+           #assigns(:user).driver.should == @fake_driver
            response.should redirect_to(user_driver_wait_path(@fake_user, @fake_driver))
         end
 
         it "should redirect to the user welcome page on failure" do
+           @fake_user.should_receive(:driver).and_return(false)
            @fake_driver.should receive(:save).and_return(nil)
            post :create, @params
            flash[:notice].should == "Failed to add you as an available driver.  Please try again"
@@ -103,16 +105,25 @@ describe DriversController do
             @fake_user2 = FactoryGirl.create(:user, "name" => "Joe Buck", "email" => "jbuck@colgate.edu", "birthday" => "1990-02-04", "driver" => @fake_driver2)
             @fake_driver1 = FactoryGirl.create(:driver, "id" => "1", "user_id" => "1")
             @fake_driver2 = FactoryGirl.create(:driver, "id" => "2", "user_id" => "2")
+            @fake_ride1 = FactoryGirl.create(:ride, "id" => "1", "user_r_id" => "1", "user_d_id" => "3")
             @num_waiting = 2
             @controller = DriversController.new
             @controller.should_receive(:num).and_return(@num_waiting)
-            get :wait, :user_id => @fake_user2, :driver_id => @fake_driver2
         end
         it "should render the driver wait template" do
+            get :wait, :user_id => @fake_user2, :driver_id => @fake_driver2
             response.should render_template('wait')
         end
         it "should make the number of waiting drivers available to the template" do
+            get :wait, :user_id => @fake_user2, :driver_id => @fake_driver2
             assigns(:num_ahead).should == 1 
+        end
+
+        it "should redirect to wait for location is there is a rider waiting" do
+            @fake_user3 = FactoryGirl.create(:user, "name" => "Ready Fred", "email" => "rfred@colgate.edu", "birthday" => "1990-02-04", "driver" => @fake_driver1, "ride_as_driver" => @fake_ride1)
+            
+            get :wait, :user_id => @fake_user3, :driver_id => @fake_driver1
+            response.should redirect_to(ride_wait_for_location_path(@fake_ride1))
         end
     end
 end
