@@ -1,7 +1,24 @@
-=form_for @ride, url: {action: "update_location", ride_id:@ride} do |f|
-  =f.label :start_location
-  =f.text_field :start_location
-  =f.label :end_location
-  =f.text_field :end_location
-  =f.hidden_field :current_page, value:"location"
-  =f.submit "Send my location"
+%head
+  %link{:href => "http://fonts.googleapis.com/css?family=Varela+Round", :rel => "stylesheet", :type => "text/css"}
+  %link{:href => "http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css", :rel => "stylesheet"}
+  %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"}
+  %script{:src => "http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"}
+
+%body
+  .container-fluid
+    .content-box
+      .row
+        .title-text.text-center
+          %h1 Where are you?
+          </br>
+          .sub-title
+            #{@user.name}, please select your location!
+            </br>
+            </br>
+            =form_for @ride, url: {action: "update_location", ride_id:@ride} do |f|
+              =f.label :start_location
+              =f.text_field :start_location
+              =f.label :end_location
+              =f.text_field :end_location
+              =f.hidden_field :current_page, value:"location"
+              =f.submit "Send my location", :class => "main-btn btn btn-lg btn-spacing"
