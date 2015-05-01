@@ -67,7 +67,6 @@ class RidesController < ApplicationController
   end
 
   def set_location
-    byebug
     @ride = Ride.find(params[:ride_id])
     @user = User.find([@ride.user_r_id]).first
   end
