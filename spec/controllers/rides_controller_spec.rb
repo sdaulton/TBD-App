@@ -75,6 +75,24 @@ RSpec.describe RidesController, type: :controller do
                 end
             end
 
+            describe "update dropoff rider" do
+                it "should should redirect to wait for rider dropoff confirm path on success" do
+						  User.should_receive(:find).with(1).and_return(@fake_user1)
+						  @fake_ride.should_receive(:save).and_return(true)
+                    patch :update_dropoff_rider, :ride_id => @fake_ride
+                    response.should redirect_to(ride_wait_for_rider_dropoff_confirm_path(@fake_ride, :user_id=>@fake_user1))
+                end
+            end
+
+            describe "dropped off" do
+                it "should should redirect to wait for driver dropoff confirm path on success" do
+						  User.should_receive(:find).with(2).and_return(@fake_user2)
+                    @fake_ride.should_receive(:save).and_return(true)
+                    patch :update_dropped_off, :ride_id => @fake_ride
+                    response.should redirect_to(ride_wait_for_driver_dropoff_confirm_path(@fake_ride, :user_id=>@fake_user2))
+                end
+            end
+
         end
     end
 

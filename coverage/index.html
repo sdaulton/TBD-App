@@ -5,7 +5,7 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <script src='./assets/0.9.0/application.js' type='text/javascript'></script>    
     <link href='./assets/0.9.0/application.css' media='screen, projection, print' rel='stylesheet' type='text/css'>
-    <link rel="shortcut icon" type="image/png" href="./assets/0.9.0/favicon_red.png" />
+    <link rel="shortcut icon" type="image/png" href="./assets/0.9.0/favicon_yellow.png" />
     <link rel="icon" type="image/png" href="./assets/0.9.0/favicon.png" />
   </head>
   
@@ -14,18 +14,18 @@
       <img src="./assets/0.9.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2015-05-01T14:29:43-04:00">2015-05-01T14:29:43-04:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2015-05-01T16:21:24-04:00">2015-05-01T16:21:24-04:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="red">78.71%</span></span>
+    (<span class="covered_percent"><span class="yellow">83.66%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.16
+         1.2
        </span>
     </span> hits/line)
   </h2>
@@ -33,8 +33,8 @@
   <div>
     <b>15</b> files in total.
     <b>202</b> relevant lines. 
-    <span class="green"><b>159</b> lines covered</span> and
-    <span class="red"><b>43</b> lines missed </span>
+    <span class="green"><b>169</b> lines covered</span> and
+    <span class="red"><b>33</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -82,12 +82,12 @@
       
       <tr>
         <td class="strong"><a href="#fe6486bf1276a4d9fb3cb16ca857f8057ab3a024" class="src_link" title="app/controllers/rides_controller.rb">app/controllers/rides_controller.rb</a></td>
-        <td class="red strong">56.67 %</td>
+        <td class="red strong">67.78 %</td>
         <td>146</td>
         <td>90</td>
-        <td>51</td>
-        <td>39</td>
-        <td>0.7</td>
+        <td>61</td>
+        <td>29</td>
+        <td>0.8</td>
       </tr>
       
       <tr>
@@ -209,11 +209,11 @@
           <div class="file_list_container" id="Controllers">
   <h2>
     <span class="group_name">Controllers</span>
-    (<span class="covered_percent"><span class="red">75.84%</span></span>
+    (<span class="covered_percent"><span class="yellow">81.46%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.16
+         1.21
        </span>
     </span> hits/line)
   </h2>
@@ -221,8 +221,8 @@
   <div>
     <b>5</b> files in total.
     <b>178</b> relevant lines. 
-    <span class="green"><b>135</b> lines covered</span> and
-    <span class="red"><b>43</b> lines missed </span>
+    <span class="green"><b>145</b> lines covered</span> and
+    <span class="red"><b>33</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -270,12 +270,12 @@
       
       <tr>
         <td class="strong"><a href="#fe6486bf1276a4d9fb3cb16ca857f8057ab3a024" class="src_link" title="app/controllers/rides_controller.rb">app/controllers/rides_controller.rb</a></td>
-        <td class="red strong">56.67 %</td>
+        <td class="red strong">67.78 %</td>
         <td>146</td>
         <td>90</td>
-        <td>51</td>
-        <td>39</td>
-        <td>0.7</td>
+        <td>61</td>
+        <td>29</td>
+        <td>0.8</td>
       </tr>
       
       <tr>
@@ -1274,11 +1274,11 @@
         <div class="source_table" id="fe6486bf1276a4d9fb3cb16ca857f8057ab3a024">
   <div class="header">
     <h3>app/controllers/rides_controller.rb</h3>
-    <h4><span class="red">56.67 %</span> covered</h4>
+    <h4><span class="red">67.78 %</span> covered</h4>
     <div>
       <b>90</b> relevant lines. 
-      <span class="green"><b>51</b> lines covered</span> and
-      <span class="red"><b>39</b> lines missed.</span>
+      <span class="green"><b>61</b> lines covered</span> and
+      <span class="red"><b>29</b> lines missed.</span>
     </div>
   </div>
   
@@ -1603,32 +1603,32 @@
           <code class="ruby">  def update_dropoff_rider</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="54">
-          
+        <li class="covered" data-hits="1" data-linenumber="54">
+          <span class="hits">1</span>
           
           <code class="ruby">	 @ride = Ride.find(params[:ride_id])</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="55">
-          
+        <li class="covered" data-hits="1" data-linenumber="55">
+          <span class="hits">1</span>
           
           <code class="ruby">	 @user = User.find(@ride.user_d_id)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="56">
-          
+        <li class="covered" data-hits="1" data-linenumber="56">
+          <span class="hits">1</span>
           
           <code class="ruby">	 @ride.driver_dropoff_confirm = true</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="57">
-          
+        <li class="covered" data-hits="1" data-linenumber="57">
+          <span class="hits">1</span>
           
           <code class="ruby">	 @ride.save</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="58">
-          
+        <li class="covered" data-hits="1" data-linenumber="58">
+          <span class="hits">1</span>
           
           <code class="ruby">	 redirect_to ride_wait_for_rider_dropoff_confirm_path(@ride, :user_id=&gt;@user) and return </code>
         </li>
@@ -1651,32 +1651,32 @@
           <code class="ruby">  def update_dropped_off</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="62">
-          
+        <li class="covered" data-hits="1" data-linenumber="62">
+          <span class="hits">1</span>
           
           <code class="ruby">	 @ride = Ride.find(params[:ride_id])</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="63">
-          
+        <li class="covered" data-hits="1" data-linenumber="63">
+          <span class="hits">1</span>
           
           <code class="ruby">	 @user = User.find(@ride.user_r_id)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="64">
-          
+        <li class="covered" data-hits="1" data-linenumber="64">
+          <span class="hits">1</span>
           
           <code class="ruby">	 @ride.rider_dropoff_confirm = true</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="65">
-          
+        <li class="covered" data-hits="1" data-linenumber="65">
+          <span class="hits">1</span>
           
           <code class="ruby">	 @ride.save</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="66">
-          
+        <li class="covered" data-hits="1" data-linenumber="66">
+          <span class="hits">1</span>
           
           <code class="ruby">	 redirect_to ride_wait_for_driver_dropoff_confirm_path(@ride, :user_id=&gt;@user) and return</code>
         </li>
