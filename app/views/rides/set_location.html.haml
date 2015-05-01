@@ -1,0 +1,7 @@
+=form_for @ride, url: {action: "update_location", ride_id:@ride} do |f|
+  =f.label :start_location
+  =f.text_field :start_location
+  =f.label :end_location
+  =f.text_field :end_location
+  =f.hidden_field :current_page, value:"location"
+  =f.submit "Send my location"

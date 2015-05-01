@@ -35,7 +35,7 @@ RSpec.describe RidesController, type: :controller do
                 Ride.should_receive(:new).and_return(@fake_ride)
                 @fake_ride.should_receive(:save).and_return(true)
                 post :create, @params
-                response.should redirect_to(ride_location_path(@fake_ride))
+                response.should redirect_to(ride_set_location_path(@fake_ride))
             end
         end
         context "rider/driver exchange" do
@@ -45,7 +45,7 @@ RSpec.describe RidesController, type: :controller do
             describe "update location" do
                 it "should redirect to pickup rider path on success" do
                     @location_params = {"start_location" => "Frank", "end_location" => "Downtown"}
-                    @fake_ride.should_receive(:update).with({:ride => @location_params}).and_return(true)
+                    @fake_ride.should_receive(:update).with(@location_params).and_return(true)
                     patch :update_location, {:ride_id => @fake_ride, :ride => @location_params}
                     response.should redirect_to(ride_driver_enroute_path(@fake_ride))
                 end
@@ -55,6 +55,23 @@ RSpec.describe RidesController, type: :controller do
                 it "should should redirect to pickup rider on success" do
                     @fake_ride.should_receive(:save).and_return(true)
                     patch :update_drive_to_pickup, :ride_id => @fake_ride
+                    response.should redirect_to(ride_pickup_rider_path(@fake_ride))
+                end
+            end
+
+            describe "update pickup rider" do
+                it "should should redirect to wait for rider confirm path on success" do
+                    @fake_ride.should_receive(:save).and_return(true)
+                    patch :update_pickup_rider, :ride_id => @fake_ride
+                    response.should redirect_to(ride_wait_for_rider_confirm_path(@fake_ride))
+                end
+            end
+
+            describe "update picked up" do
+                it "should should redirect to wait for driver confirm path on success" do
+                    @fake_ride.should_receive(:save).and_return(true)
+                    patch :update_picked_up, :ride_id => @fake_ride
+                    response.should redirect_to(ride_wait_for_driver_confirm_path(@fake_ride))
                 end
             end
 

@@ -11,7 +11,7 @@
       .row
         .title-text.text-center
           .driver-info
-            -if @num_ahead==0 && @driver.rider_available?
+            -if @num_ahead==0 && @rider_available
               %h1 Close to your car?
               </br>
               .sub-title

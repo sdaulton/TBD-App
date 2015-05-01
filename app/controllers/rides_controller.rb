@@ -14,7 +14,7 @@ class RidesController < ApplicationController
 
     @ride.save
     flash[:notice] = "Ride has begun"
-    redirect_to(ride_location_path(@ride))
+    redirect_to ride_set_location_path(@ride)
   end
 
   def destroy
@@ -66,13 +66,9 @@ class RidesController < ApplicationController
 	 redirect_to ride_wait_for_driver_dropoff_confirm_path(@ride, :user_id=>@user) and return
   end
 
-  def location
-    if params[:ride_id]
-      id = params[:ride_id]
-    else
-      id = params[:id]
-    end
-    @ride = Ride.find(id)
+  def set_location
+    byebug
+    @ride = Ride.find(params[:ride_id])
     @user = User.find([@ride.user_r_id]).first
   end
 

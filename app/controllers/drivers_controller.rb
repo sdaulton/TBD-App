@@ -34,6 +34,9 @@ class DriversController < ApplicationController
     @num_ahead = num - 1
     @user = User.find(params[:user_id])
     @driver = @user.driver
+    if Rider.count>=1
+      @rider_available = true
+    end
     if @user.ride_as_driver
       redirect_to(ride_wait_for_location_path(@user.ride_as_driver))
     end
